@@ -1,19 +1,22 @@
 {
   "name": "world-explorer",
   "version": "1.0.0",
-  "description": "Application displaying world data.",
+  "description": "Application displaying global statistics.",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "vite"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aangelinux/1DV610-L3.git"
   },
-  "devDependencies": {
-
-  },
   "author": "Angelina Larsson",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@aangelinux/charts": "^1.0.1"
+  },
+  "devDependencies": {
+    "vite": "^6.3.6"
+  }
 }
