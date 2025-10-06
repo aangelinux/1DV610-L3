@@ -2,28 +2,32 @@ export const template = document.createElement("template")
 template.innerHTML =
 `
 <style>
-	.container {
+	:host {
+		font-family: Segoe UI;
+	}
+
+	.dropdown-container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		gap: 20px;
-		width: 500px;
+		width: 800px;
 	}
 
 	.dropdown {
 		position: relative;
-		font-family: Segoe UI;
 	}
 
 	.dropbtn {
 		background-color: #4CAF50;
 		color: white;
-		padding: 16px;
+		padding: 13px;
 		font-size: 16px;
+		font-family: Segoe UI;
 		border: none;
 		cursor: pointer;
 		min-width: 200px;
+		border-radius: 2px;
 	}
 
 	.dropdown-content {
@@ -54,19 +58,41 @@ template.innerHTML =
 		background-color: #3e8e41;
 	}
 
-	.buttons {
+	#region {
+		// display: none;
 	}
 
-	/* Specific styles */
+	/* -------------- Buttons --------------- */
 
-	#region {
-		display: none;
+	.button-container {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 800px;
+		gap: 10px;
+		justify-content: center;
+	}
+
+	.chartbtn {
+		background-color: white;
+		color: black;
+		padding: 10px;
+		font-size: 16px;
+		font-family: Segoe UI;
+		border: 2px solid #3e8e41;
+		cursor: pointer;
+		min-width: 150px;
+		border-radius: 5px;
+	}
+
+	.chartbtn:hover {
+		box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
 	}
 </style>
 
 
-<div class="container">
-
+<div class="dropdown-container">
 	<div class="dropdown">
 		<button class="dropbtn">Dataset</button>
 		<div class="dropdown-content">
@@ -96,12 +122,11 @@ template.innerHTML =
 			<p>Oceania</p>
 		</div>
 	</div>
+</div>
 
-	<div class="buttons">
+<div class="button-container">
 		<button class="chartbtn">Bar Chart</button>
 		<button class="chartbtn">Line Graph</button>
 		<button class="chartbtn">Pie Chart</button>
-	</div>
-
 </div>
 `
