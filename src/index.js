@@ -7,4 +7,6 @@ import './components/user-controls.js'
 import './components/chart-display.js'
 
 const body = document.querySelector("body")
-body.appendChild("user-controls")
+
+const userControls = document.createElement("user-controls")
+body.appendChild(userControls)
