@@ -1,30 +1,29 @@
 /**
  * @module Defines logic for extracting and parsing data into usable objects.
- * @file src/utils/dataParser.js
  */
 
 import { RegionConfig } from "../config/regions"
-import { FileConfig } from "../config/files"
+import { PathConfig } from "../config/paths"
 
 export class DataParser {
 	#regionConfig
-	#fileConfig
+	#pathConfig
 
 	constructor() {
 		this.#regionConfig = new RegionConfig()
-		this.#fileConfig = new FileConfig()
+		this.#pathConfig = new PathConfig()
 	}
 
 	getDataFrom(choices) {
 		const dataset = choices.dataset
 		const filter = choices.filter
 
-		const filePath = this.#fileConfig.dataset_files[dataset]
+		const filePath = this.#pathConfig.files[dataset]
 
 		const rawData = this.#fetchDataFrom(filePath)
 		const filteredData = this.#filterDataFrom(rawData, filter)
 		const parsedData = this.#parseData(filteredData)
-		
+
 		console.log("parsed data: ", parsedData)
 	}
 
@@ -36,7 +35,7 @@ export class DataParser {
 			}
 
 			const result = await response.json()
-			console.log(result)
+			return result
 		} catch (error) {
 			console.error(error.message)
 		}

@@ -1,6 +1,5 @@
 /**
  * @module Stores configuration rules for regions.
- * @file src/config/regions.js
  */
 
 export class RegionConfig {
