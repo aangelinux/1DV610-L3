@@ -5,8 +5,8 @@
 export class PathConfig {
 	#FILES = {
 		"Population": "/data/population.json",
-		"GDP": "",
-		"Emissions": ""
+		"GDP": "/data/gdp.json",
+		"Emissions": "/data/emissions.json"
 	}
 
 	#API = {

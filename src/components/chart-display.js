@@ -34,6 +34,10 @@ customElements.define("chart-display",
 			this.abortController.abort()
 		}
 
+		#renderTitle(data) {
+			
+		}
+
 		#renderChart(data) {
 			let chart
 			const dataObjects = data.data
