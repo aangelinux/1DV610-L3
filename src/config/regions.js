@@ -96,35 +96,16 @@ export class RegionConfig {
 	constructor() {
 	}
 
-	get global() {
-		return this.#GLOBAL
-	}
-
-	get eas() {
-		return this.#EAS
-	}
-
-	get ecs() {
-		return this.#ECS
-	}
-
-	get lcn() {
-		return this.#LCN
-	}
-
-	get mea() {
-		return this.#MEA
-	}
-
-	get nac() {
-		return this.#NAC
-	}
-
-	get sas() {
-		return this.#SAS
-	}
-
-	get ssf() {
-		return this.#SSF
+	get region() {
+		return {
+			"Global": this.#GLOBAL,
+			"East Asia & Pacific": this.#EAS,
+			"Europe & Central Asia": this.#ECS,
+			"Latin America & Caribbean": this.#LCN,
+			"Middle East & North Africa": this.#MEA,
+			"North America": this.#NAC,
+			"South Asia": this.#SAS,
+			"Sub-Saharan Africa": this.#SSF
+		}
 	}
 }

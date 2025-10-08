@@ -55,7 +55,7 @@ customElements.define("user-controls",
 
 			this.#buttons.forEach((button) => {
 				button.addEventListener("click", (event) => {  // TODO extract into separate method
-					this.#choices.chart = event.target.innerText,
+					this.#choices.chart = event.target.innerText
 					this.#getData()
 				}, { signal: this.abortController.signal })})
 		}
@@ -64,20 +64,21 @@ customElements.define("user-controls",
 			this.abortController.abort()
 		}
 
-		#getData() {
-			// TODO make sure methods are not called if dataset or filter is undefined
-
-			this.dataParser.getDataFrom(this.#choices)
+		async #getData() {
+			// TODO add check so method is not called if any choice is undefined
+			const data = await this.dataParser.getDataFrom(this.#choices)
+			
+			this.#emitEvent(data)
 		}
 
-		#emitEvent() {
-			console.log(this.#choices)
-
+		async #emitEvent(data) {
 			const event = new CustomEvent("choices-submitted", {
 				detail: {
-					data,
-					chartType
-				}})
+					data: data,
+					chart: this.#choices.chart
+				},
+				bubbles: true
+			})
 
 			this.dispatchEvent(event)
 		}

@@ -10,3 +10,6 @@ const body = document.querySelector("body")
 
 const userControls = document.createElement("user-controls")
 body.appendChild(userControls)
+
+const chartDisplay = document.createElement("chart-display")
+body.appendChild(chartDisplay)

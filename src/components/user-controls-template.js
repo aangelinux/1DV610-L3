@@ -98,7 +98,7 @@ template.innerHTML =
 		<div class="dropdown-content" id="dataset">
 			<p>Population</p>
 			<p>GDP</p>
-			<p>CO2 Emissions</p>
+			<p>Emissions</p>
 		</div>
 	</div>
 
@@ -113,13 +113,13 @@ template.innerHTML =
 	<div class="dropdown" id="regionDropdown">
 		<button class="dropbtn">Region</button>
 		<div class="dropdown-content" id="region">
+			<p>East Asia & Pacific</p>
+			<p>Europe & Central Asia</p>
+			<p>Latin America & Caribbean</p>
+			<p>Middle East & North Africa</p>
 			<p>North America</p>
-			<p>South America</p>
-			<p>Europe</p>
-			<p>Africa</p>
-			<p>Middle East</p>
-			<p>Asia</p>
-			<p>Oceania</p>
+			<p>South Asia</p>
+			<p>Sub-Saharan Africa</p>
 		</div>
 	</div>
 </div>

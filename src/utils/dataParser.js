@@ -20,8 +20,7 @@ export class DataParser {
 
 		const filePath = this.#pathConfig.files[dataset]
 		const rawData = await this.#fetchDataFrom(filePath)
-		const filteredData = this.#filterDataFrom(rawData, filter)
-		const parsedData = this.#parseData(filteredData)
+		return this.#filterDataFrom(rawData, filter)
 	}
 
 	async #fetchDataFrom(url) {
@@ -41,7 +40,7 @@ export class DataParser {
 	#filterDataFrom(data, filter) {
 		let dataArray = []
 
-		this.#regionConfig.global.forEach((element) => {
+		this.#regionConfig.region[filter].forEach((element) => {
 			for (const dataObject of data) {
 				const values = Object.values(dataObject)
 				const match = JSON.stringify(values).match(element)
@@ -49,21 +48,22 @@ export class DataParser {
 				if (match) {
 					const input = match.input
 					const regex = /[^:_"a-z][,0-9]+/gm
-					const values = input.match(regex)
-					const dataValue = values[0]
+					const numbers = input.match(regex)
+					const index = filter === "Global" ? 0 : 1
+					const value = numbers[index].replaceAll(",", "")
 
 					dataArray.push({
 						name: element,
-						value: dataValue
+						value: parseInt(value)
 					})
 
-					break  // Once the correct country has been found, move on to the next
-									// to ensure there are no duplicates
+					break  // When the country has been found move on to the next
+								// to ensure there are no duplicates
 				}
 			}
 		})
 		
-		console.log(dataArray)
+		return dataArray
 	}
 
 	#parseData() {

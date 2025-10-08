@@ -10,8 +10,8 @@ export class ChartConfig {
 	}
 
 	#LINEAR = {
-		height: 350,
-		width: 500,
+		height: 400,
+		width: 700,
 		title: "",
 		color: "darkred",
 		font: "Monaco, monospace"
