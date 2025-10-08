@@ -1,3 +1,4 @@
+<!-- Screenshots från kod för varje kapitel! -->
 ## Kapitel 2
 
 

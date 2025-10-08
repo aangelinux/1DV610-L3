@@ -14,17 +14,14 @@ export class DataParser {
 		this.#pathConfig = new PathConfig()
 	}
 
-	getDataFrom(choices) {
+	async getDataFrom(choices) {
 		const dataset = choices.dataset
 		const filter = choices.filter
 
 		const filePath = this.#pathConfig.files[dataset]
-
-		const rawData = this.#fetchDataFrom(filePath)
+		const rawData = await this.#fetchDataFrom(filePath)
 		const filteredData = this.#filterDataFrom(rawData, filter)
 		const parsedData = this.#parseData(filteredData)
-
-		console.log("parsed data: ", parsedData)
 	}
 
 	async #fetchDataFrom(url) {
@@ -42,7 +39,31 @@ export class DataParser {
 	}
 
 	#filterDataFrom(data, filter) {
+		let dataArray = []
 
+		this.#regionConfig.global.forEach((element) => {
+			for (const dataObject of data) {
+				const values = Object.values(dataObject)
+				const match = JSON.stringify(values).match(element)
+
+				if (match) {
+					const input = match.input
+					const regex = /[^:_"a-z][,0-9]+/gm
+					const values = input.match(regex)
+					const dataValue = values[0]
+
+					dataArray.push({
+						name: element,
+						value: dataValue
+					})
+
+					break  // Once the correct country has been found, move on to the next
+									// to ensure there are no duplicates
+				}
+			}
+		})
+		
+		console.log(dataArray)
 	}
 
 	#parseData() {
