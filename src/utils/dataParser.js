@@ -57,6 +57,8 @@ export class DataParser {
 			const match = JSON.stringify(dataObject).match(element)
 			if (match) {
 				return this.#parse(match)
+			} else {
+				break
 			}
 		}
 	}

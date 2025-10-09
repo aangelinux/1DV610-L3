@@ -27,4 +27,9 @@ export class ChartConfig {
 	get linear() {
 		return this.#LINEAR
 	}
+
+	set title(content) {
+		this.#LINEAR.title = content
+		this.#RADIAL.title = content
+	}
 }

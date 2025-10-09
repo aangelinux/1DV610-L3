@@ -26,36 +26,35 @@ customElements.define("chart-display",
     }
 
 		connectedCallback() {
-			document.addEventListener("choices-submitted", (event) => this.#renderChart(event.detail),
-				{ signal: this.abortController.signal })
+			document.addEventListener("options-submitted", (event) => {
+				this.#setTitle(event.detail.title)
+				this.#renderChart(event.detail)
+			}, { signal: this.abortController.signal })
 		}
 
 		disconnectedCallback() {
 			this.abortController.abort()
 		}
 
-		#renderTitle(data) {
-			
+		#setTitle(content) {
+			this.#chartConfig.title = content
 		}
 
-		#renderChart(data) {
+		#renderChart(options) {
 			let chart
-			const dataObjects = data.data
-			const chartType = data.chart
-
-			switch (chartType) {
-				case "Bar Chart":
-					chart = this.chart.createBarChart(dataObjects, this.#chartConfig.linear)
+			switch (options.chart) {
+				default: case "Bar Chart":
+					chart = this.chart.createBarChart(options.data, this.#chartConfig.linear)
 					break
 				case "Line Graph":
-					chart = this.chart.createLineGraph(dataObjects, this.#chartConfig.linear)
+					chart = this.chart.createLineGraph(options.data, this.#chartConfig.linear)
 					break
 				case "Pie Chart":
-					chart = this.chart.createPieChart(dataObjects, this.#chartConfig.radial)
+					chart = this.chart.createPieChart(options.data, this.#chartConfig.radial)
 					break
 			}
 
 			this.#chartContainer.appendChild(chart)
-		}
-  }
+  	}
+	}
 )

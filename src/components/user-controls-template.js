@@ -58,10 +58,6 @@ template.innerHTML =
 		background-color: #3e8e41;
 	}
 
-	#regionDropdown {
-		display: none;
-	}
-
 	/* -------------- Buttons --------------- */
 
 	.button-container {
@@ -106,13 +102,6 @@ template.innerHTML =
 		<button class="dropbtn">Filter</button>
 		<div class="dropdown-content" id="filter">
 			<p>Global</p>
-			<p>Region</p>
-		</div>
-	</div>
-
-	<div class="dropdown" id="regionDropdown">
-		<button class="dropbtn">Region</button>
-		<div class="dropdown-content" id="region">
 			<p>East Asia & Pacific</p>
 			<p>Europe & Central Asia</p>
 			<p>Latin America & Caribbean</p>
@@ -124,9 +113,10 @@ template.innerHTML =
 	</div>
 </div>
 
+
 <div class="button-container">
-		<button class="chartbtn" id="bar">Bar Chart</button>
-		<button class="chartbtn" id="line">Line Graph</button>
-		<button class="chartbtn" id="pie">Pie Chart</button>
+	<button class="chartbtn" id="bar">Bar Chart</button>
+	<button class="chartbtn" id="line">Line Graph</button>
+	<button class="chartbtn" id="pie">Pie Chart</button>
 </div>
 `
