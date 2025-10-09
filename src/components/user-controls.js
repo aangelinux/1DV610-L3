@@ -66,7 +66,7 @@ customElements.define("user-controls",
 
 		async #getData() {
 			// TODO add check so method is not called if any choice is undefined
-			const data = await this.dataParser.getDataFrom(this.#choices)
+			const data = await this.dataParser.process(this.#choices)
 			
 			this.#emitEvent(data)
 		}

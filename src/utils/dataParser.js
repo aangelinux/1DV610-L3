@@ -15,20 +15,22 @@ export class DataParser {
 		this.#pathConfig = new PathConfig()
 	}
 
-	async getDataFrom(choices) {
+	async process(choices) {
 		const dataset = choices.dataset
 		const filter = choices.filter
 
 		const filePath = this.#pathConfig.files[dataset]
 		const rawData = await this.#fetchDataFrom(filePath)
-		return this.#filterDataFrom(rawData, filter)
+		const parsedData = this.#filter(rawData, filter)
+
+		return parsedData
 	}
 
 	async #fetchDataFrom(url) {
 		try {
 			const response = await fetch(url)
 			if (!response.ok) {
-				throw new Error("File could not be loaded", response.status)
+				throw new Error("Data could not be fetched", response.status)
 			}
 
 			const result = await response.json()
@@ -38,41 +40,37 @@ export class DataParser {
 		}
 	}
 
-	#filterDataFrom(data, filter) {
-		let dataArray = []
+	#filter(data, filter) {
+		let parsedData = []
+		const chosenFilter = this.#regionConfig.region[filter]
 
-		this.#regionConfig.region[filter].forEach((element) => {
-			for (const dataObject of data) {
-				const match = JSON.stringify(dataObject).match(element)
-
-				if (match) {
-					const input = match.input
-					const parsedInput = JSON.parse(input)
-
-					if (parsedInput["value"] === "NA") {
-						break
-					}
-					
-					const value = parseInt(parsedInput["value"].trim().replaceAll(",", ""))
-					const name = parsedInput["name"]
-
-					dataArray.push({
-						name,
-						value
-					})
-
-					break  // When the country has been found move on to the next
-									// to ensure there are no duplicates
-				}
-			}
+		chosenFilter.forEach((element) => {
+			let parsedObject = this.#match(element, data)
+			parsedData.push(parsedObject)
 		})
 
-		console.log(dataArray)
-		
-		return dataArray
+		return parsedData
 	}
 
-	#parseData() {
+	#match(element, data) {
+		for (const dataObject of data) {
+			const match = JSON.stringify(dataObject).match(element)
+			if (match) {
+				return this.#parse(match)
+			}
+		}
+	}
 
+	#parse(match) {
+		const input = match.input
+		const parsedInput = JSON.parse(input)
+		if (parsedInput["value"] === "NA") {
+			return  // Shouldn't include countries who doesn't have data
+		}
+		
+		const value = parseInt(parsedInput["value"].trim().replaceAll(",", ""))
+		const name = parsedInput["name"]
+
+		return { name, value }
 	}
 }
