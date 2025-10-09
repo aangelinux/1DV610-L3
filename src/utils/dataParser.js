@@ -6,6 +6,7 @@ import { RegionConfig } from "../config/regions"
 import { PathConfig } from "../config/paths"
 
 export class DataParser {
+	#regex = /[^:_"a-z][,0-9]+/gm
 	#regionConfig
 	#pathConfig
 
@@ -42,23 +43,22 @@ export class DataParser {
 
 		this.#regionConfig.region[filter].forEach((element) => {
 			for (const dataObject of data) {
-				const values = Object.values(dataObject)
-				const match = JSON.stringify(values).match(element)
+				const match = JSON.stringify(dataObject).match(element)
 
 				if (match) {
 					const input = match.input
-					const regex = /[^:_"a-z][,0-9]+/gm
-					const numbers = input.match(regex)
-					const index = filter === "Global" ? 0 : 1
-					const value = numbers[index].replaceAll(",", "")
+					const parsedInput = JSON.parse(input)
+
+					const value = parseInt(parsedInput["value"].trim().replaceAll(",", ""))
+					const name = parsedInput["name"]
 
 					dataArray.push({
-						name: element,
-						value: parseInt(value)
+						name,
+						value
 					})
 
 					break  // When the country has been found move on to the next
-								// to ensure there are no duplicates
+									// to ensure there are no duplicates
 				}
 			}
 		})
