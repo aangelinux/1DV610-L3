@@ -49,6 +49,10 @@ export class DataParser {
 					const input = match.input
 					const parsedInput = JSON.parse(input)
 
+					if (parsedInput["value"] === "NA") {
+						break
+					}
+					
 					const value = parseInt(parsedInput["value"].trim().replaceAll(",", ""))
 					const name = parsedInput["name"]
 
@@ -62,6 +66,8 @@ export class DataParser {
 				}
 			}
 		})
+
+		console.log(dataArray)
 		
 		return dataArray
 	}

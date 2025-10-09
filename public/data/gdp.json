@@ -868,179 +868,27 @@
     "value": "35.2"
   },
   {
-    "name": "Africa Eastern and Southern",
-    "value": "1,133.8"
-  },
-  {
-    "name": "Africa Western and Central",
-    "value": "814.7"
-  },
-  {
-    "name": "Arab World",
-    "value": "3,606.0"
-  },
-  {
-    "name": "Caribbean small states",
-    "value": "79.5"
-  },
-  {
-    "name": "Central Europe and the Baltics",
-    "value": "2,273.9"
-  },
-  {
-    "name": "Early-demographic dividend",
-    "value": "15,147.8"
-  },
-  {
     "name": "East Asia & Pacific",
     "value": "31,279.4"
-  },
-  {
-    "name": "East Asia & Pacific (excluding high income)",
-    "value": "21,644.1"
-  },
-  {
-    "name": "East Asia & Pacific (IDA & IBRD countries)",
-    "value": "21,617.4"
-  },
-  {
-    "name": "Euro area",
-    "value": "15,787.2"
   },
   {
     "name": "Europe & Central Asia",
     "value": "27,617.2"
   },
   {
-    "name": "Europe & Central Asia (excluding high income)",
-    "value": "2,134.7"
-  },
-  {
-    "name": "Europe & Central Asia (IDA & IBRD countries)",
-    "value": "5,556.3"
-  },
-  {
-    "name": "European Union",
-    "value": "18,602.7"
-  },
-  {
-    "name": "Fragile and conflict affected situations",
-    "value": "1,820.2"
-  },
-  {
-    "name": "Heavily indebted poor countries (HIPC)",
-    "value": "1,045.9"
-  },
-  {
-    "name": "High income",
-    "value": "68,618.8"
-  },
-  {
-    "name": "IBRD only",
-    "value": "39,445.8"
-  },
-  {
-    "name": "IDA & IBRD total",
-    "value": "42,232.8"
-  },
-  {
-    "name": "IDA blend",
-    "value": "1,149.4"
-  },
-  {
-    "name": "IDA only",
-    "value": "1,638.6"
-  },
-  {
-    "name": "IDA total",
-    "value": "2,781.2"
-  },
-  {
-    "name": "Late-demographic dividend",
-    "value": "28,903.2"
-  },
-  {
     "name": "Latin America & Caribbean",
     "value": "7,127.8"
   },
   {
-    "name": "Latin America & Caribbean (excluding high income)",
-    "value": "5,997.4"
-  },
-  {
-    "name": "Latin America & the Caribbean (IDA & IBRD countries)",
-    "value": "6,805.0"
-  },
-  {
-    "name": "Least developed countries: UN classification",
-    "value": "1,416.5"
-  },
-  {
-    "name": "Low & middle income",
-    "value": "37,824.4"
-  },
-  {
-    "name": "Low income",
-    "value": "423.7"
-  },
-  {
-    "name": "Lower middle income",
-    "value": "7,530.6"
-  },
-  {
-    "name": "Middle East, North Africa, Afghanistan & Pakistan",
+    "name": "Middle East & North Africa",
     "value": "4,837.1"
-  },
-  {
-    "name": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
-    "value": "2,039.5"
-  },
-  {
-    "name": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
-    "value": "2,021.7"
-  },
-  {
-    "name": "Middle income",
-    "value": "37,397.4"
   },
   {
     "name": "North America",
     "value": "29,902.6"
   },
   {
-    "name": "Not classified",
-    "value": "NA"
-  },
-  {
-    "name": "OECD members",
-    "value": "64,803.5"
-  },
-  {
-    "name": "Other small states",
-    "value": "194.6"
-  },
-  {
-    "name": "Pacific island small states",
-    "value": "11.2"
-  },
-  {
-    "name": "Post-demographic dividend",
-    "value": "60,538.8"
-  },
-  {
-    "name": "Pre-demographic dividend",
-    "value": "1,527.1"
-  },
-  {
-    "name": "Small states",
-    "value": "285.2"
-  },
-  {
     "name": "South Asia",
-    "value": "4,210.3"
-  },
-  {
-    "name": "South Asia (IDA & IBRD)",
     "value": "4,210.3"
   },
   {
@@ -1048,23 +896,7 @@
     "value": "1,946.2"
   },
   {
-    "name": "Sub-Saharan Africa (excluding high income)",
-    "value": "1,825.7"
-  },
-  {
-    "name": "Sub-Saharan Africa (IDA & IBRD countries)",
-    "value": "1,946.2"
-  },
-  {
-    "name": "Upper middle income",
-    "value": "29,868.1"
-  },
-  {
     "name": "World",
     "value": "106,939.2"
-  },
-  {
-    "name": "Created from: World Development Indicators\nSeries : GDP (current US$)\n",
-    "value": ""
   }
 ]
