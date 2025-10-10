@@ -4,6 +4,7 @@ template.innerHTML =
 <style>
 	:host {
 		font-family: "Lexend Light";
+		color: black;
 	}
 
 	.dropdown-container {
@@ -27,7 +28,7 @@ template.innerHTML =
 		border: none;
 		cursor: pointer;
 		min-width: 200px;
-		border-radius: 2px;
+		border-radius: 4px;
 	}
 
 	.dropdown-content {
@@ -61,12 +62,12 @@ template.innerHTML =
 	/* -------------- Buttons --------------- */
 
 	.button-container {
-		margin-top: 20px;
+		margin-top: 40px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 800px;
-		gap: 10px;
+		gap: 15px;
 		justify-content: center;
 	}
 
@@ -91,6 +92,7 @@ template.innerHTML =
 
 <div class="dropdown-container">
 	<div class="dropdown">
+		<p>Choose a dataset ...</p>
 		<button class="dropbtn" id="datasetbtn">Dataset</button>
 		<div class="dropdown-content" id="dataset">
 			<p>Population</p>
@@ -100,6 +102,7 @@ template.innerHTML =
 	</div>
 
 	<div class="dropdown">
+		<p>Choose a filter ...</p>
 		<button class="dropbtn" id="filterbtn">Filter</button>
 		<div class="dropdown-content" id="filter">
 			<p>Global</p>

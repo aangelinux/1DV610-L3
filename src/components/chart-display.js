@@ -55,6 +55,11 @@ customElements.define("chart-display",
 			}
 
 			this.#chartContainer.appendChild(chart)
+			this.#addInfo()
   	}
+
+		#addInfo() {
+			this.shadowRoot.querySelector("#info").style.display = "block"
+		}
 	}
 )
