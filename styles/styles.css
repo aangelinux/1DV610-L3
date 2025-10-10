@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: grid;
+	grid-template: 150px / auto;
+	justify-content: center;
+	font-family: MuseoSansRounded, sans-serif;
+	background-color: aliceblue;
+	color: #3e8e41;
+}
+
+h1 {
+	grid-area: 1 / 1;
+	justify-self: center;
+	align-self: center;
+	z-index: 1;
+	font-size: 3rem;
+}
+
+img {
+	grid-area: 1 / 1;
+	justify-self: center;
+}
+
+div {
+	padding: 40px 0;
+	min-width: 95vw;
+	grid-area: 2 / 1;
+	display: grid;
+	grid-template: auto / auto;
+	justify-content: center;
+	gap: 40px;
+	background-color: white;
+	border-radius: 10px;
+}

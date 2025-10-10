@@ -46,7 +46,11 @@ export class DataParser {
 
 		chosenFilter.forEach((element) => {
 			let parsedObject = this.#match(element, data)
-			parsedData.push(parsedObject)
+			if (parsedObject) {
+				parsedData.push(parsedObject)
+			} else {
+				return
+			}
 		})
 
 		return parsedData
@@ -58,7 +62,7 @@ export class DataParser {
 			if (match) {
 				return this.#parse(match)
 			} else {
-				break
+				continue
 			}
 		}
 	}
@@ -67,7 +71,7 @@ export class DataParser {
 		const input = match.input
 		const parsedInput = JSON.parse(input)
 		if (parsedInput["value"] === "NA") {
-			return  // Shouldn't include countries who doesn't have data
+			return  // Shouldn't include countries who don't have data
 		}
 		
 		const value = parseInt(parsedInput["value"].trim().replaceAll(",", ""))

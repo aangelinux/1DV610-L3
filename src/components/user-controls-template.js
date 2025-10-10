@@ -3,7 +3,7 @@ template.innerHTML =
 `
 <style>
 	:host {
-		font-family: Segoe UI;
+		font-family: MuseoSansRounded, sans-serif;
 	}
 
 	.dropdown-container {
@@ -23,7 +23,6 @@ template.innerHTML =
 		color: white;
 		padding: 13px;
 		font-size: 16px;
-		font-family: Segoe UI;
 		border: none;
 		cursor: pointer;
 		min-width: 200px;
@@ -72,10 +71,9 @@ template.innerHTML =
 
 	.chartbtn {
 		background-color: white;
-		color: black;
+		color: #3e8e41;
 		padding: 10px;
 		font-size: 16px;
-		font-family: Segoe UI;
 		border: 2px solid #3e8e41;
 		cursor: pointer;
 		min-width: 150px;

@@ -90,6 +90,7 @@ customElements.define("user-controls",
 			})
 
 			this.dispatchEvent(event)
+			console.log(event)
 		}
 	}
 )
