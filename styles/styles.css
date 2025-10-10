@@ -1,12 +1,22 @@
+@font-face {
+	font-family: "Lexend Regular";
+	src: url(Lexend-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Lexend Light";
+	src: url(Lexend-Light.ttf);
+}
+
 body {
 	margin: 0;
 	min-height: 100vh;
 	display: grid;
 	grid-template: 150px / auto;
 	justify-content: center;
-	font-family: MuseoSansRounded, sans-serif;
-	background-color: aliceblue;
-	color: #3e8e41;
+	font-family: "Lexend Regular";
+	background-color: #EAF6FB;
+	color: #3F5734;
 }
 
 h1 {
@@ -24,12 +34,19 @@ img {
 
 div {
 	padding: 40px 0;
-	min-width: 95vw;
+	min-width: 90vw;
 	grid-area: 2 / 1;
 	display: grid;
 	grid-template: auto / auto;
 	justify-content: center;
 	gap: 40px;
-	background-color: white;
-	border-radius: 10px;
+	background-color: #e4ebdb;
+	border: 4px inset #d2d8ca;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+}
+
+hr {
+	width: 100%;
+	border: 1.5px solid #3F5734;
 }

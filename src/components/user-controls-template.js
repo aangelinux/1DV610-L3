@@ -3,7 +3,7 @@ template.innerHTML =
 `
 <style>
 	:host {
-		font-family: MuseoSansRounded, sans-serif;
+		font-family: "Lexend Light";
 	}
 
 	.dropdown-container {
@@ -19,9 +19,10 @@ template.innerHTML =
 	}
 
 	.dropbtn {
-		background-color: #4CAF50;
+		background-color: #3F5734;
 		color: white;
 		padding: 13px;
+		font-family: "Lexend Light";
 		font-size: 16px;
 		border: none;
 		cursor: pointer;
@@ -54,7 +55,7 @@ template.innerHTML =
 	}
 
 	.dropdown:hover .dropbtn {
-		background-color: #3e8e41;
+		background-color: #577748ff;
 	}
 
 	/* -------------- Buttons --------------- */
@@ -71,24 +72,26 @@ template.innerHTML =
 
 	.chartbtn {
 		background-color: white;
-		color: #3e8e41;
+		color: #3F5734;
 		padding: 10px;
+		font-family: "Lexend Light";
 		font-size: 16px;
-		border: 2px solid #3e8e41;
+		border: 2px solid #3F5734;
 		cursor: pointer;
 		min-width: 150px;
 		border-radius: 5px;
 	}
 
 	.chartbtn:hover {
-		box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+		background-color: #3F5734;
+		color: white;
 	}
 </style>
 
 
 <div class="dropdown-container">
 	<div class="dropdown">
-		<button class="dropbtn">Dataset</button>
+		<button class="dropbtn" id="datasetbtn">Dataset</button>
 		<div class="dropdown-content" id="dataset">
 			<p>Population</p>
 			<p>GDP</p>
@@ -97,7 +100,7 @@ template.innerHTML =
 	</div>
 
 	<div class="dropdown">
-		<button class="dropbtn">Filter</button>
+		<button class="dropbtn" id="filterbtn">Filter</button>
 		<div class="dropdown-content" id="filter">
 			<p>Global</p>
 			<p>East Asia & Pacific</p>

@@ -16,6 +16,8 @@ customElements.define("user-controls",
 			filter: null,
 			chart: null,
 		}
+		#datasetButton
+		#filterButton
 
 		constructor() {
 			super()
@@ -27,18 +29,25 @@ customElements.define("user-controls",
 			this.#filters = this.shadowRoot.querySelectorAll("#filter p")
 			this.#buttons = this.shadowRoot.querySelectorAll(".chartbtn")
 
+			this.#datasetButton = this.shadowRoot.querySelector("#datasetbtn")
+			this.#filterButton = this.shadowRoot.querySelector("#filterbtn")
+
 			this.dataParser = new DataParser()
 			this.abortController = new AbortController()
 		}
 
 		connectedCallback() {
 			this.#datasets.forEach((dataset) => {
-				dataset.addEventListener("click", (event) => this.#set("dataset", event.target),
-			{ signal: this.abortController.signal })})
+				dataset.addEventListener("click", (event) => {
+					this.#set("dataset", event.target)
+					this.#display(event.target, this.#datasetButton)
+				}, { signal: this.abortController.signal })})
 			
 			this.#filters.forEach((filter) => { 
-				filter.addEventListener("click", (event) => this.#set("filter", event.target),
-			{ signal: this.abortController.signal })})
+				filter.addEventListener("click", (event) => {
+					this.#set("filter", event.target)
+					this.#display(event.target, this.#filterButton)
+				}, { signal: this.abortController.signal })})
 
 			this.#buttons.forEach((button) => {
 				button.addEventListener("click", (event) => {
@@ -53,6 +62,10 @@ customElements.define("user-controls",
 
 		#set(option, choice) {
 			this.#options[option] = choice.innerText
+		}
+
+		#display(choice, button) {
+			button.innerText = choice.innerText
 		}
 
 		#processOptions() {
@@ -90,7 +103,6 @@ customElements.define("user-controls",
 			})
 
 			this.dispatchEvent(event)
-			console.log(event)
 		}
 	}
 )

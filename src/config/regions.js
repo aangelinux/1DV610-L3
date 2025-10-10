@@ -28,7 +28,7 @@ export class RegionConfig {
 
 	#ECS = [
 		"Russian Fed",
-		"Türkiye",
+		"Turkiye",
 		"Germany",
 		"United Kingdom",
 		"France",

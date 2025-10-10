@@ -48,8 +48,6 @@ export class DataParser {
 			let parsedObject = this.#match(element, data)
 			if (parsedObject) {
 				parsedData.push(parsedObject)
-			} else {
-				return
 			}
 		})
 
@@ -61,8 +59,6 @@ export class DataParser {
 			const match = JSON.stringify(dataObject).match(element)
 			if (match) {
 				return this.#parse(match)
-			} else {
-				continue
 			}
 		}
 	}
