@@ -4,9 +4,6 @@
   "description": "Application displaying global statistics.",
   "type": "module",
   "main": "src/index.js",
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "dev": "vite"

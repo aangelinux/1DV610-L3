@@ -22,12 +22,31 @@ template.innerHTML =
 	#info p {
 		margin: 5px;
 	}
-</style
+
+	#error {
+		display: none;
+	}
+
+	#error p {
+		justify-self: center;
+	}
+
+	#error img {
+		margin: auto;
+		display: block;
+		width: 70%;
+	}
+</style>
 
 <div>
-	<div id="chart"></div>
+	<div id="chart">
+		<div id="error">
+			<p>Something went wrong... Please accept this cat as a token of my regret.</p>
+			<img src="/images/cat.webp" alt="Cat"/>
+		</div>
+	</div>
 	<div id="info">
-		<p id="updated">Last updated: 2023</p>
+		<p id="updated">Last updated (data): 2023</p>
 		<p id="source">Source: World Bank Open Data</p>
 	</div>
 </div>

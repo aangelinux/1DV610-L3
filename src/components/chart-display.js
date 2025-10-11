@@ -41,25 +41,43 @@ customElements.define("chart-display",
 		}
 
 		#renderChart(options) {
-			let chart
-			switch (options.chart) {
-				default: case "Bar Chart":
-					chart = this.chart.createBarChart(options.data, this.#chartConfig.linear)
-					break
-				case "Line Graph":
-					chart = this.chart.createLineGraph(options.data, this.#chartConfig.linear)
-					break
-				case "Pie Chart":
-					chart = this.chart.createPieChart(options.data, this.#chartConfig.radial)
-					break
+			try {
+				this.#chartContainer.appendChild(this.#getChart(options))
+				this.#hideError()
+				this.#showInfo()
+			} catch (error) {
+				console.error(error.message)
+				this.#hideInfo()
+				this.#showError()
 			}
+		}
 
-			this.#chartContainer.appendChild(chart)
-			this.#addInfo()
+		#getChart(options) {
+			let chart
+			if (options.chart === "Bar Chart") {
+				chart = this.chart.createBarChart(options.data, this.#chartConfig.linear)
+			} else if (options.chart === "Line Graph") {
+				chart = this.chart.createLineGraph(options.data, this.#chartConfig.linear)
+			} else if (options.chart === "Pie Chart") {
+				chart = this.chart.createPieChart(options.data, this.#chartConfig.radial)
+			}
+			return chart
   	}
 
-		#addInfo() {
+		#showInfo() {
 			this.shadowRoot.querySelector("#info").style.display = "block"
+		}
+
+		#hideInfo() {
+			this.shadowRoot.querySelector("#info").style.display = "none"
+		}
+
+		#showError() {
+			this.shadowRoot.querySelector("#error").style.display = "block"
+		}
+
+		#hideError() {
+			this.shadowRoot.querySelector("#error").style.display = "none"
 		}
 	}
 )
