@@ -5,26 +5,25 @@
 1. User can select one of following datasets:
 	- Population
 	- GDP
-	- CO2 Emissions
+	- Emissions (CO2)
 
-2. User can select one of following filter methods:
+2. User can select one of following filters for each dataset:
 	- Global
-	- Region
-
-3. If user selects 'Region', they can select one of the following:
+	- East Asia & Pacific
+	- Europe & Central Asia
+	- Latin America & Caribbean
+	- Middle East & North Africa
 	- North America
-	- South America
-	- Europe
-	- Africa
-	- Middle East
-	- Asia
-	- Oceania
-
-4. User can select one of following chart types:
+	- South Asia
+	- Sub-Saharan Africa
+  
+3. User can select one of following chart types:
 	- Bar chart
 	- Line graph
 	- Pie chart
 
-5. If user selects a new chart type, the chart is updated with the same data
+4. If user selects a new chart type, the chart is updated with the same data
 
-6. If user selects a new dataset or filter, they need to press the chart type button to update it
+5. If user selects a new dataset or filter, the chart is updated with the new data
+
+6. Unexpected errors are handled gracefully with a user-friendly message on the page
