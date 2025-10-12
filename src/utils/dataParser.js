@@ -15,7 +15,7 @@ export class DataParser {
 		this.#pathConfig = new PathConfig()
 	}
 
-	async process(choices) {
+	async getParsedData(choices) {
 		const dataset = choices.dataset
 		const filter = choices.filter
 
@@ -70,7 +70,7 @@ export class DataParser {
 			return  // Shouldn't include countries who don't have data
 		}
 		
-		const value = parseInt(parsedInput["value"].trim().replaceAll(",", ""))
+		const value = parseInt(parsedInput["value"].trim().replaceAll(",", ""))  // TODO fix
 		const name = parsedInput["name"]
 
 		return { name, value }

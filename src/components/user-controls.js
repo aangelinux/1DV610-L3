@@ -39,20 +39,20 @@ customElements.define("user-controls",
 		connectedCallback() {
 			this.#datasets.forEach((dataset) => {
 				dataset.addEventListener("click", (event) => {
-					this.#set("dataset", event.target)
-					this.#display(event.target, this.#datasetButton)
+					this.#saveUserChoice("dataset", event.target)
+					this.#updateDisplay(this.#datasetButton, event.target)
 				}, { signal: this.abortController.signal })})
 			
 			this.#filters.forEach((filter) => { 
 				filter.addEventListener("click", (event) => {
-					this.#set("filter", event.target)
-					this.#display(event.target, this.#filterButton)
+					this.#saveUserChoice("filter", event.target)
+					this.#updateDisplay(this.#filterButton, event.target)
 				}, { signal: this.abortController.signal })})
 
 			this.#buttons.forEach((button) => {
 				button.addEventListener("click", (event) => {
-					this.#set("chart", event.target)
-					this.#processOptions()
+					this.#saveUserChoice("chart", event.target, )
+					this.#validateUserChoices()
 			}, { signal: this.abortController.signal })})
 		}
 
@@ -60,32 +60,32 @@ customElements.define("user-controls",
 			this.abortController.abort()
 		}
 
-		#set(option, choice) {
+		#saveUserChoice(option, choice) {
 			this.#options[option] = choice.innerText
 		}
 
-		#display(choice, button) {
+		#updateDisplay(button, choice) {
 			button.innerText = choice.innerText
 		}
 
-		#processOptions() {
-			if (this.#optionsAreValid()) {
-				this.#processEvent()
+		#validateUserChoices() {
+			if (this.#choicesAreValid()) {
+				this.#processChoices()
 			}
 		}
 
-		#optionsAreValid() {
+		#choicesAreValid() {
 			for (const option in this.#options) {
-				if (this.#options[option] === null) {
-					alert(`Please choose a ${option}!`)
+				if (!this.#options[option]) {
+					alert(`Please choose a ${option}.`)
 					return false
 				}
 			}
 			return true
 		}
 
-		async #processEvent() {
-			const data = await this.dataParser.process(this.#options)
+		async #processChoices() {
+			const data = await this.dataParser.getParsedData(this.#options)
 			const title = `${this.#options.dataset}: ${this.#options.filter}`
 			const chart = this.#options.chart
 
@@ -96,9 +96,9 @@ customElements.define("user-controls",
 			})
 		}
 
-		#emitEvent(details) {
-			const event = new CustomEvent("options-submitted", {
-				detail: details,
+		#emitEvent(chartData) {
+			const event = new CustomEvent("choices-submitted", {
+				detail: chartData,
 				bubbles: true
 			})
 

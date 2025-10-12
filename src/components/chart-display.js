@@ -26,9 +26,9 @@ customElements.define("chart-display",
     }
 
 		connectedCallback() {
-			document.addEventListener("options-submitted", (event) => {
+			document.addEventListener("choices-submitted", (event) => {
 				this.#setTitle(event.detail.title)
-				this.#renderChart(event.detail)
+				this.#displayChart(event.detail)
 			}, { signal: this.abortController.signal })
 		}
 
@@ -40,9 +40,9 @@ customElements.define("chart-display",
 			this.#chartConfig.title = content
 		}
 
-		#renderChart(options) {
+		#displayChart(options) {
 			try {
-				this.#chartContainer.appendChild(this.#getChart(options))
+				this.#chartContainer.appendChild(this.#createChart(options))
 				this.#hideError()
 				this.#showInfo()
 			} catch (error) {
@@ -52,7 +52,7 @@ customElements.define("chart-display",
 			}
 		}
 
-		#getChart(options) {
+		#createChart(options) {
 			let chart
 			if (options.chart === "Bar Chart") {
 				chart = this.chart.createBarChart(options.data, this.#chartConfig.linear)

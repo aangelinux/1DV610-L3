@@ -4,6 +4,7 @@
 
 import { describe, test, expect, jest } from "@jest/globals"
 import { DataParser } from "../src/utils/dataParser.js"
+
 import PopulationData from "../public/data/population.json"
 import GDPData from "../public/data/gdp.json"
 import EmissionsData from "../public/data/emissions.json"
@@ -11,21 +12,21 @@ import EmissionsData from "../public/data/emissions.json"
 async function testPopulation(region) {	
 	const dataParser = new DataParser()
 	jest.spyOn(dataParser, "_fetchDataFrom").mockResolvedValue(PopulationData)
-	const data = await dataParser.process({ dataset: "Population", filter: region })
+	const data = await dataParser.getParsedData({ dataset: "Population", filter: region })
 	validate(data)
 }
 
 async function testGDP(region) {	
 	const dataParser = new DataParser()
 	jest.spyOn(dataParser, "_fetchDataFrom").mockResolvedValue(GDPData)
-	const data = await dataParser.process({ dataset: "GDP", filter: region })
+	const data = await dataParser.getParsedData({ dataset: "GDP", filter: region })
 	validate(data)
 }
 
 async function testEmissions(region) {	
 	const dataParser = new DataParser()
 	jest.spyOn(dataParser, "_fetchDataFrom").mockResolvedValue(EmissionsData)
-	const data = await dataParser.process({ dataset: "Emissions", filter: region })
+	const data = await dataParser.getParsedData({ dataset: "Emissions", filter: region })
 	validate(data)
 }
 
