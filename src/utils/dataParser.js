@@ -20,13 +20,13 @@ export class DataParser {
 		const filter = choices.filter
 
 		const filePath = this.#pathConfig.files[dataset]
-		const rawData = await this.#fetchDataFrom(filePath)
+		const rawData = await this._fetchDataFrom(filePath)
 		const parsedData = this.#filter(rawData, filter)
 
 		return parsedData
 	}
 
-	async #fetchDataFrom(url) {
+	async _fetchDataFrom(url) {
 		try {
 			const response = await fetch(url)
 			if (!response.ok) {
