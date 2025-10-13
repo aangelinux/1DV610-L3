@@ -40,43 +40,43 @@ customElements.define("chart-display",
 			this.#chartConfig.title = content
 		}
 
-		#displayChart(options) {
+		#displayChart(choices) {
 			try {
-				this.#chartContainer.appendChild(this.#createChart(options))
-				this.#hideError()
-				this.#showInfo()
+				this.#chartContainer.appendChild(this.#createChart(choices))
+				this.#removeErrorMessage()
+				this.#showChartInfo()
 			} catch (error) {
 				console.error(error.message)
-				this.#hideInfo()
-				this.#showError()
+				this.#removeChartInfo()
+				this.#showErrorMessage()
 			}
 		}
 
-		#createChart(options) {
+		#createChart(choices) {
 			let chart
-			if (options.chart === "Bar Chart") {
-				chart = this.chart.createBarChart(options.data, this.#chartConfig.linear)
-			} else if (options.chart === "Line Graph") {
-				chart = this.chart.createLineGraph(options.data, this.#chartConfig.linear)
-			} else if (options.chart === "Pie Chart") {
-				chart = this.chart.createPieChart(options.data, this.#chartConfig.radial)
+			if (choices.chartType === "Bar Chart") {
+				chart = this.chart.createBarChart(choices.data, this.#chartConfig.linear)
+			} else if (choices.chartType === "Line Graph") {
+				chart = this.chart.createLineGraph(choices.data, this.#chartConfig.linear)
+			} else if (choices.chartType === "Pie Chart") {
+				chart = this.chart.createPieChart(choices.data, this.#chartConfig.radial)
 			}
 			return chart
   	}
 
-		#showInfo() {
+		#showChartInfo() {
 			this.shadowRoot.querySelector("#info").style.display = "block"
 		}
 
-		#hideInfo() {
+		#removeChartInfo() {
 			this.shadowRoot.querySelector("#info").style.display = "none"
 		}
 
-		#showError() {
+		#showErrorMessage() {
 			this.shadowRoot.querySelector("#error").style.display = "block"
 		}
 
-		#hideError() {
+		#removeErrorMessage() {
 			this.shadowRoot.querySelector("#error").style.display = "none"
 		}
 	}

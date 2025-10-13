@@ -96,7 +96,7 @@ export class RegionConfig {
 	constructor() {
 	}
 
-	get region() {
+	get regions() {
 		return {
 			"Global": this.#GLOBAL,
 			"East Asia & Pacific": this.#EAS,

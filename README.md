@@ -8,10 +8,13 @@ Link:  ""
 ## Contributions
 Contributions are welcome:  
 - Fork the repository and create a separate branch.
-- Make your changes, write clear commit messages.
+- Make your changes, follow code style, write clear commit messages.
 - Open a pull request and describe your changes.
 - For bugfixes/requests, open an issue.
-- Run unit tests with ```npm test```.
+- Run Jest unit tests with ```npm test```.
+  
+## Dependencies
+npm @aangelinux/charts
   
 ## Version
 1.0.0

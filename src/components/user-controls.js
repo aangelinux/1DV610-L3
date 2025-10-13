@@ -10,7 +10,7 @@ customElements.define("user-controls",
 	class extends HTMLElement {
 		#datasets
 		#filters
-		#buttons
+		#chartButtons
 		#options = {
 			dataset: null,
 			filter: null,
@@ -27,7 +27,7 @@ customElements.define("user-controls",
 
 			this.#datasets = this.shadowRoot.querySelectorAll("#dataset p")
 			this.#filters = this.shadowRoot.querySelectorAll("#filter p")
-			this.#buttons = this.shadowRoot.querySelectorAll(".chartbtn")
+			this.#chartButtons = this.shadowRoot.querySelectorAll(".chartbtn")
 
 			this.#datasetButton = this.shadowRoot.querySelector("#datasetbtn")
 			this.#filterButton = this.shadowRoot.querySelector("#filterbtn")
@@ -49,7 +49,7 @@ customElements.define("user-controls",
 					this.#updateDisplay(this.#filterButton, event.target)
 				}, { signal: this.abortController.signal })})
 
-			this.#buttons.forEach((button) => {
+			this.#chartButtons.forEach((button) => {
 				button.addEventListener("click", (event) => {
 					this.#saveUserChoice("chart", event.target, )
 					this.#validateUserChoices()
@@ -87,18 +87,18 @@ customElements.define("user-controls",
 		async #processChoices() {
 			const data = await this.dataParser.getParsedData(this.#options)
 			const title = `${this.#options.dataset}: ${this.#options.filter}`
-			const chart = this.#options.chart
+			const chartType = this.#options.chart
 
 			this.#emitEvent({
 				data,
 				title,
-				chart
+				chartType
 			})
 		}
 
-		#emitEvent(chartData) {
+		#emitEvent(choicesData) {
 			const event = new CustomEvent("choices-submitted", {
-				detail: chartData,
+				detail: choicesData,
 				bubbles: true
 			})
 
