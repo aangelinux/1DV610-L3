@@ -9,15 +9,15 @@ import { DataParser } from "../utils/dataParser"
 customElements.define("user-controls",
 	class extends HTMLElement {
 		#datasets
+		#datasetButton
 		#filters
+		#filterButton
 		#chartButtons
 		#options = {
 			dataset: null,
 			filter: null,
 			chart: null,
 		}
-		#datasetButton
-		#filterButton
 
 		constructor() {
 			super()
@@ -26,11 +26,10 @@ customElements.define("user-controls",
 				.appendChild(template.content.cloneNode(true))
 
 			this.#datasets = this.shadowRoot.querySelectorAll("#dataset p")
-			this.#filters = this.shadowRoot.querySelectorAll("#filter p")
-			this.#chartButtons = this.shadowRoot.querySelectorAll(".chartbtn")
-
 			this.#datasetButton = this.shadowRoot.querySelector("#datasetbtn")
+			this.#filters = this.shadowRoot.querySelectorAll("#filter p")
 			this.#filterButton = this.shadowRoot.querySelector("#filterbtn")
+			this.#chartButtons = this.shadowRoot.querySelectorAll(".chartbtn")
 
 			this.dataParser = new DataParser()
 			this.abortController = new AbortController()

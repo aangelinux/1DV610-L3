@@ -97,7 +97,7 @@ template.innerHTML =
 		<div class="dropdown-content" id="dataset">
 			<p>Population</p>
 			<p>GDP</p>
-			<p>Emissions</p>
+			<p>Emissions (CO2)</p>
 		</div>
 	</div>
 
