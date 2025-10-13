@@ -22,16 +22,20 @@ Denna metod innehåller en del kommentarer eftersom logiken kan vara svår att f
 ## Kapitel 5 Formatering
 I enlighet med kapitel 5s regler för formatering har jag endast små filer, de flesta mellan 50-120 rader långa. 
   
-![C5](/images/code/chapter5.png)
+![C5](/images/code/chapter5.png)  
+  
 I den här klassen har jag placerat funktioner enligt principerna om **The Newspaper Method**, **Dependent Functions**, och **Vertical Ordering**. Den enda publika metoden ligger längst upp och dess namn berättar vad klassens huvudfunktion är. Funktioner som anropar andra metoder ligger precis ovanför de anropade metoderna, så att ordningen är logisk.
 
 ---
 ## Kapitel 6 Objekt och Data Strukturer
 Enligt kapitel 6 bör all data exponeras via data strukturer, och separata objekt utför operationer på denna data; de ska aldrig blandas enligt **Data/Object Anti-Symmetry**. I L2 lät jag klasserna hantera både deras egna data och operationer, men för att följa Clean Code's principer här separerade jag dem i olika klasser.  
-
-![C6](/images/code/chapter6.png)
-![C6](/images/code/chapter6_2.png)
   
+RegionConfig (data struktur)  
+![C6](/images/code/chapter6.png)  
+  
+DataParser (objekt)  
+![C6](/images/code/chapter6_2.png)
+   
 All data ligger i klassen RegionConfig och den innehåller inga metoder förutom en getter- det är alltså ett **Data Transfer Object**. I motsats innehåller DataParser endast operationer som kan hantera data men lagrar ingen egen data, enligt regeln **Hiding Structure**. Resultatet är att å ena sidan finns det nu fler klasser och filer att hantera, men å andra sidan är klasserna enklare att förstå och underhålla.
 
 ---
@@ -50,7 +54,8 @@ Kapitel 8 argumenterar för att kod från en tredje part alltid ska isoleras fr�
 ## Kapitel 9 Enhetstester
 För att följa kapitel 9s principer la jag till enhetstester för all datahantering (UI hanteras av manuella tester). Jag missade dock att följa TTD eftersom jag började koda innan jag läste detta kapitel, och jag var osäker på hur jag skulle testa applikationen. De flesta metoderna är privata och kan inte anropas utifrån, och jag visste inte om jag borde testa all data som slutanvändare kan välja mellan eller endast testa att metoderna fungerar. I slutändan valde jag det första alternativet eftersom de privata metoderna ändå testas implicit. Jag skrev tester utifrån reglerna **Single Concept Per Test** och **FIRST**; alla tester är snabba, självständiga, returnerar true eller false och kan upprepas i olika miljöer.
 
-![C9](/images/code/chapter9.png)
+![C9](/images/code/chapter9.png)  
+  
 ![C9](/images/code/chapter9_2.png)
 
 ---
