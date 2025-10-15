@@ -1,5 +1,5 @@
 /**
- * @module Stores configuration rules for regions.
+ * @module Configures world regions.
  */
 
 export class RegionConfig {

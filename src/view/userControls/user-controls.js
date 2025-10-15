@@ -4,7 +4,7 @@
  */
 
 import { template } from "./user-controls-template"
-import { DataParser } from "../../utils/dataParser"
+import { DataParser } from "../../model/dataParser"
 
 customElements.define("user-controls",
 	class extends HTMLElement {

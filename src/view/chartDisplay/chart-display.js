@@ -3,7 +3,7 @@
  * @file src/components/chart-display.js
  */
 
-import { template } from "./chart-display-template"
+import { template } from "./chart-display-template.js"
 import { Chart } from "@aangelinux/charts"
 import { ChartConfig } from "../../config/charts.js"
 

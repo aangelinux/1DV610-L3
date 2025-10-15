@@ -1,2 +1,2 @@
-import "./components/user-controls/user-controls.js"
-import "./components/chart-display/chart-display.js"
+import "./view/userControls/user-controls.js"
+import "./view/chartDisplay/chart-display.js"

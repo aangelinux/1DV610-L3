@@ -1,5 +1,5 @@
 /**
- * @module Defines style configurations for the charts.
+ * @module Configures style rules for the charts.
  */
 
 export class ChartConfig {
@@ -11,7 +11,7 @@ export class ChartConfig {
 
 	#LINEAR = {
 		height: 350,
-		width: 800,
+		width: 700,
 		title: "",
 		color: "darkred",
 		font: "Monaco, monospace"
