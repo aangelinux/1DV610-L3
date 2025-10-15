@@ -24,7 +24,7 @@ I enlighet med kapitel 5s regler för formatering har jag endast små filer, de 
   
 ![C5](/images/code/chapter5.png)  
   
-I den här klassen har jag placerat funktioner enligt principerna om **The Newspaper Method**, **Dependent Functions**, och **Vertical Ordering**. Den enda publika metoden ligger längst upp och dess namn berättar vad klassens huvudfunktion är. Funktioner som anropar andra metoder ligger precis ovanför de anropade metoderna, så att ordningen är logisk.
+I den här klassen har jag placerat funktioner enligt principerna om **The Newspaper Method**, **Dependent Functions**, och **Vertical Ordering**. Den enda publika metoden ligger längst upp och dess namn berättar vad klassens huvudfunktion är. Funktioner som anropar andra metoder ligger precis ovanför de anropade metoderna, så att ordningen är logisk. I L2 hade jag dock problem med att följa principen om **Horizontal Formatting** som säger att kodrader inte ska vara långa. Genom att följa reglerna om namngivning från kap 2 hade jag fått en del långa variabel- och metodnamn, vilket ledde till att vissa kodrader blev långa.
 
 ---
 ## Kapitel 6 Objekt och Data Strukturer
@@ -36,7 +36,7 @@ RegionConfig (data struktur)
 DataParser (objekt)  
 ![C6](/images/code/chapter6_2.png)
    
-All data ligger i klassen RegionConfig och den innehåller inga metoder förutom en getter- det är alltså ett **Data Transfer Object**. I motsats innehåller DataParser endast operationer som kan hantera data men lagrar ingen egen data, enligt regeln **Hiding Structure**. Resultatet är att å ena sidan finns det nu fler klasser och filer att hantera, men å andra sidan är klasserna enklare att förstå och underhålla.
+All data ligger i klassen RegionConfig och den innehåller inga metoder förutom en getter- det är alltså ett **Data Transfer Object**. I motsats innehåller DataParser endast operationer som kan hantera data men lagrar ingen egen data, enligt regeln **Hiding Structure**. Detta följer även principen om **Separation Of Concerns** och klasserna är nu lättare att läsa och underhålla, men samtidigt innebär det fler klasser och filer att hålla reda på och kan anses vara over-engineering för ett projekt av den här storleken.
 
 ---
 ## Kapitel 7 Felhantering

@@ -62,7 +62,7 @@ export class DataParser {
 
 	#findMatch(element, rawData) {
 		for (const dataObject of rawData) {
-			// Data needs to be same type as the element (string), to match
+			// Data needs to be same type as the element (string) to match
 			const match = JSON.stringify(dataObject).match(element) 
 			if (match) {
 				return this.#parseToObject(match)

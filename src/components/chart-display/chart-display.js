@@ -5,7 +5,7 @@
 
 import { template } from "./chart-display-template"
 import { Chart } from "@aangelinux/charts"
-import { ChartConfig } from "../config/charts.js"
+import { ChartConfig } from "../../config/charts.js"
 
 customElements.define("chart-display",
   class extends HTMLElement {

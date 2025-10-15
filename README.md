@@ -8,10 +8,16 @@ Link:  ""
 ## Contributions
 Contributions are welcome:  
 - Fork the repository and create a separate branch.
-- Make your changes, follow code style, write clear commit messages.
+- Don't modify existing code unless to fix bugs.
+- Follow the code style, write clear commit messages.
 - Open a pull request and describe your changes.
 - For bugfixes/requests, open an issue.
 - Run Jest unit tests with ```npm test```.
+  
+## Documentation
+[Requirements Spec](/docs/requirements.md)
+[Test Report](/docs/testReport.md)
+[Open Issues](/docs/issues.md)
   
 ## Dependencies
 npm @aangelinux/charts

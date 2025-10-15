@@ -12,7 +12,6 @@ template.innerHTML =
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-		width: 800px;
 	}
 
 	.dropdown {
@@ -66,7 +65,6 @@ template.innerHTML =
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		width: 800px;
 		gap: 15px;
 		justify-content: center;
 	}
@@ -86,6 +84,25 @@ template.innerHTML =
 	.chartbtn:hover {
 		background-color: #3F5734;
 		color: white;
+	}
+
+	/* -------------- Errors --------------- */
+
+	#error {
+		max-width: 700px;
+		display: none;
+		margin-top: 40px;
+		justify-self: center;
+	}
+
+	#error p {
+		justify-self: center;
+	}
+
+	#error img {
+		margin: auto;
+		display: block;
+		width: 50%;
 	}
 </style>
 
@@ -117,10 +134,14 @@ template.innerHTML =
 	</div>
 </div>
 
-
 <div class="button-container">
 	<button class="chartbtn" id="bar">Bar Chart</button>
 	<button class="chartbtn" id="line">Line Graph</button>
 	<button class="chartbtn" id="pie">Pie Chart</button>
+</div>
+
+<div id="error">
+	<p>Something went wrong... Please accept this cat as a token of my regret.</p>
+	<img src="/images/cat.webp" alt="Cat"/>
 </div>
 `

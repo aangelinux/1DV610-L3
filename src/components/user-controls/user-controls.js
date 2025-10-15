@@ -4,7 +4,7 @@
  */
 
 import { template } from "./user-controls-template"
-import { DataParser } from "../utils/dataParser"
+import { DataParser } from "../../utils/dataParser"
 
 customElements.define("user-controls",
 	class extends HTMLElement {
@@ -69,7 +69,8 @@ customElements.define("user-controls",
 
 		#validateUserChoices() {
 			if (this.#choicesAreValid()) {
-				this.#processChoices()
+				this.#getData()
+				this.#removeErrorMessage()
 			}
 		}
 
@@ -83,8 +84,17 @@ customElements.define("user-controls",
 			return true
 		}
 
-		async #processChoices() {
-			const data = await this.dataParser.getParsedData(this.#options)
+		async #getData() {
+			try {
+				const data = await this.dataParser.getParsedData(this.#options)
+				this.#processChoices(data)
+			} catch (e) {
+				this.#showErrorMessage()
+				return console.error(e.message)
+			}
+		}
+
+		async #processChoices(data) {
 			const title = `${this.#options.dataset}: ${this.#options.filter}`
 			const chartType = this.#options.chart
 
@@ -102,6 +112,14 @@ customElements.define("user-controls",
 			})
 
 			this.dispatchEvent(event)
+		}
+
+		#showErrorMessage() {
+			this.shadowRoot.querySelector("#error").style.display = "block"
+		}
+
+		#removeErrorMessage() {
+			this.shadowRoot.querySelector("#error").style.display = "none"
 		}
 	}
 )
