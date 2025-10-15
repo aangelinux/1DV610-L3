@@ -17,17 +17,15 @@ customElements.define("error-display",
 		}
 
 		connectedCallback() {
-			document.addEventListener("error", (event) => {
-				this.#displayError(event.detail)
-			}, { signal: this.abortController.signal })
 		}
 
 		disconnectedCallback() {
 			this.abortController.abort()
 		}
 
-		#displayError(message) {
-			
+		show(message) {
+			this.shadowRoot.querySelector("#error").style.display = "block"
+			this.shadowRoot.querySelector("p").innerHTML = message
 		}
 	}
 )
