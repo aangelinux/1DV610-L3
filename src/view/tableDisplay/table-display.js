@@ -55,7 +55,6 @@ customElements.define("table-display",
 			const children = Array.from(this.#tbody.childNodes)
 			for (const child of children) {
 				if (child != this.#tbody.firstChild) { // don't remove table header
-					console.log(child)
 					child.remove()
 				}
 			}

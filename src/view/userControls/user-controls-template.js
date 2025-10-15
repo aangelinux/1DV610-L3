@@ -104,6 +104,12 @@ template.innerHTML =
 		display: block;
 		width: 50%;
 	}
+
+	hr {
+		width: 100%;
+		border: 1.5px solid #3F5734;
+		margin-top: 40px;
+	}
 </style>
 
 
@@ -144,4 +150,6 @@ template.innerHTML =
 	<p>Something went wrong... Please accept this cat as a token of my regret.</p>
 	<img src="/images/cat.webp" alt="Cat"/>
 </div>
+
+<hr>
 `
