@@ -86,25 +86,6 @@ template.innerHTML =
 		color: white;
 	}
 
-	/* -------------- Errors --------------- */
-
-	#error {
-		max-width: 700px;
-		display: none;
-		margin-top: 40px;
-		justify-self: center;
-	}
-
-	#error p {
-		justify-self: center;
-	}
-
-	#error img {
-		margin: auto;
-		display: block;
-		width: 50%;
-	}
-
 	hr {
 		width: 100%;
 		border: 1.5px solid #3F5734;
@@ -144,11 +125,6 @@ template.innerHTML =
 	<button class="chartbtn" id="bar">Bar Chart</button>
 	<button class="chartbtn" id="line">Line Graph</button>
 	<button class="chartbtn" id="pie">Pie Chart</button>
-</div>
-
-<div id="error">
-	<p>Something went wrong... Please accept this cat as a token of my regret.</p>
-	<img src="/images/cat.webp" alt="Cat"/>
 </div>
 
 <hr>

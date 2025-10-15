@@ -1,4 +1,11 @@
-import "./view/userControls/user-controls.js"
-import "./view/chartDisplay/chart-display.js"
-import "./view/tableDisplay/table-display.js"
-import "./view/errorDisplay/error-display.js"
+/**
+ * @module Starts the application.
+ */
+
+import { WorldExplorer } from "./controller/worldExplorer"
+
+function start() {
+	new WorldExplorer()
+}
+
+start()

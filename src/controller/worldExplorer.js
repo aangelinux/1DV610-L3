@@ -2,10 +2,15 @@
  * @module Orchestrates application flow and delegates actions.
  */
 
-import "../index.js"
-import { DataParser } from "../model/dataParser.js"
+import "../view/userControls/user-controls.js"
+import "../view/chartDisplay/chart-display.js"
+import "../view/tableDisplay/table-display.js"
+import "../view/errorDisplay/error-display.js"
 
-class WorldExplorer extends EventTarget {
+import { DataParser } from "../model/dataParser.js"
+import { DataExtractor } from "../model/dataExtractor.js"
+
+export class WorldExplorer extends EventTarget {
 	// TODO need to write out that population values are in thousands
 	// and GDP in billions
 	// and emissions in .. something
@@ -13,40 +18,41 @@ class WorldExplorer extends EventTarget {
 	constructor() {
 		super()
 
+		this.dataExtractor = new DataExtractor()
 		this.dataParser = new DataParser()
+		this.container = document.querySelector("#container")
 
-		this.container = document.body.querySelector("div")
 		this.init()
 	}
 
 	init() {
-		this.#displayControls()
-		this.#displayChart()
-		this.#displayTable()
+		this.#addControls()
+		this.#addChart()
+		this.#addTable()
 
 		document.addEventListener("choices-submitted", (event) => this.#choicesUpdated(event.detail))
 		document.addEventListener("error", (event) => this.#displayError(event.detail))
 	}
 
-	#displayControls() {
+	#addControls() {
 		const controls = document.createElement("user-controls")
 		this.container.appendChild(controls)
 	}
 
-	#displayChart() {
+	#addChart() {
 		const chart = document.createElement("chart-display")
 		this.container.appendChild(chart)
 	}
 
-	#displayTable() {
+	#addTable() {
 		const table = document.createElement("table-display")
 		this.container.appendChild(table)
 	}
 
-	#choicesUpdated(choices) {
+	async #choicesUpdated(choices) {
 		this.#removeError()
 		
-		const parsedData = this.#getData(choices)
+		const parsedData = await this.#getData(choices)
 		this.#emitDataEvent({
 			data: parsedData,
 			title: choices.title,
@@ -55,11 +61,11 @@ class WorldExplorer extends EventTarget {
 		})
 	}
 
-	#getData(choices) {
+	async #getData(choices) {
 		try {
-			return this.dataParser.getParsedData(choices)
+			return await this.dataParser.getParsedData(choices)
 		} catch (e) {
-			return this.#displayError()
+			this.#displayError(e.message)
 		}
 	}
 
@@ -68,21 +74,19 @@ class WorldExplorer extends EventTarget {
 			detail: choicesData,
 			bubbles: true
 		})
-
-		this.dispatchEvent(event)
+		document.dispatchEvent(event)
 	}
 
 	#displayError(message) {
 		const error = document.createElement("error-display")
-		this.container.appendChild(error)
-		
+		this.container.children[1].before(error) // Below user controls
 		error.show(message)
 	}
 
 	#removeError() {
-		const error = this.container.getElementsByTagName("error-display")
-		error.remove()
+		const error = this.container.querySelector("error-display")
+		if (error) {
+			error.remove()
+		}
 	}
 }
-
-new WorldExplorer()

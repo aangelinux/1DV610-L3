@@ -26,7 +26,7 @@ customElements.define("chart-display",
     }
 
 		connectedCallback() {
-			document.addEventListener("choices-submitted", (event) => {
+			document.addEventListener("data-parsed", (event) => {
 				this.#setTitle(event.detail.title)
 				this.#displayChart(event.detail)
 			}, { signal: this.abortController.signal })
@@ -40,15 +40,13 @@ customElements.define("chart-display",
 			this.#chartConfig.title = content
 		}
 
-		#displayChart(choices) {
+		#displayChart(choices) { //Change name
 			try {
-				this.#chartContainer.appendChild(this.#createChart(choices))
-				this.#removeErrorMessage()
+				this.#chartContainer.appendChild(this.#createChart(choices)) //Fix
 				this.#showChartInfo()
 			} catch (error) {
-				console.error(error.message)
-				this.#removeChartInfo()
-				this.#showErrorMessage()
+				this.#chartContainer.style.display = "none"
+				this.#emitErrorEvent()
 			}
 		}
 
@@ -64,20 +62,29 @@ customElements.define("chart-display",
 			return chart
   	}
 
+		#showChart() {
+
+		}
+
 		#showChartInfo() {
 			this.shadowRoot.querySelector("#info").style.display = "block"
 		}
 
-		#removeChartInfo() {
-			this.shadowRoot.querySelector("#info").style.display = "none"
+		#hideChart() {
+
 		}
 
-		#showErrorMessage() {
-			this.shadowRoot.querySelector("#error").style.display = "block"
+		#hideChartInfo() {
+			
 		}
 
-		#removeErrorMessage() {
-			this.shadowRoot.querySelector("#error").style.display = "none"
+		#emitErrorEvent() {
+			const event = new CustomEvent("error", {
+				detail: "Chart could not be rendered.",
+				bubbles: true
+			})
+
+			this.dispatchEvent(event)
 		}
 	}
 )

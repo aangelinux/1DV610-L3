@@ -4,6 +4,7 @@ template.innerHTML =
 <style>
 	#error {
 		display: none;
+		width: 700px;
 	}
 
 	#error p {
@@ -13,7 +14,7 @@ template.innerHTML =
 	#error img {
 		margin: auto;
 		display: block;
-		width: 70%;
+		width: 40%;
 	}
 </style>
 

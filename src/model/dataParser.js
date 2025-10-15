@@ -1,5 +1,5 @@
 /**
- * @module Defines logic for extracting and parsing data into usable objects.
+ * @module Defines logic for parsing data into usable objects.
  */
 
 import { RegionConfig } from "../config/regions"

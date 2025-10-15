@@ -4,7 +4,6 @@
  */
 
 import { template } from "./user-controls-template"
-import { DataParser } from "../../model/dataParser"
 
 customElements.define("user-controls",
 	class extends HTMLElement {
@@ -31,7 +30,6 @@ customElements.define("user-controls",
 			this.#filterButton = this.shadowRoot.querySelector("#filterbtn")
 			this.#chartButtons = this.shadowRoot.querySelectorAll(".chartbtn")
 
-			this.dataParser = new DataParser()
 			this.abortController = new AbortController()
 		}
 
@@ -69,8 +67,7 @@ customElements.define("user-controls",
 
 		#validateUserChoices() {
 			if (this.#choicesAreValid()) {
-				this.#getData()
-				this.#removeErrorMessage()
+				this.#processChoices()
 			}
 		}
 
@@ -84,44 +81,24 @@ customElements.define("user-controls",
 			return true
 		}
 
-		async #getData() {
-			try {
-				const data = await this.dataParser.getParsedData(this.#options)
-				this.#processChoices(data)
-			} catch (e) {
-				this.#showErrorMessage()
-				return console.error(e.message)
-			}
-		}
-
-		async #processChoices(data) {
+		#processChoices() {
 			const title = `${this.#options.dataset}: ${this.#options.filter}`
-			const chartType = this.#options.chart
-			const dataset = this.#options.dataset
 
-			this.#emitEvent({
-				data,
-				title,
-				chartType,
-				dataset
+			this.#emitChoicesEvent({
+				dataset: this.#options.dataset,
+				filter: this.#options.filter,
+				chartType: this.#options.chart,
+				title
 			})
 		}
 
-		#emitEvent(choicesData) {
+		#emitChoicesEvent(choicesData) {
 			const event = new CustomEvent("choices-submitted", {
 				detail: choicesData,
 				bubbles: true
 			})
 
 			this.dispatchEvent(event)
-		}
-
-		#showErrorMessage() {
-			this.shadowRoot.querySelector("#error").style.display = "block"
-		}
-
-		#removeErrorMessage() {
-			this.shadowRoot.querySelector("#error").style.display = "none"
 		}
 	}
 )

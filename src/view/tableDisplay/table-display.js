@@ -22,7 +22,7 @@ customElements.define("table-display",
 		}
 
 		connectedCallback() {
-			document.addEventListener("choices-submitted", (event) => {
+			document.addEventListener("data-parsed", (event) => {
 				this.#showTable()
 				this.#renderTable(event.detail)
 			}, { signal: this.abortController.signal })
