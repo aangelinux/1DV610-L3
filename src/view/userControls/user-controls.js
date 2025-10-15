@@ -97,11 +97,13 @@ customElements.define("user-controls",
 		async #processChoices(data) {
 			const title = `${this.#options.dataset}: ${this.#options.filter}`
 			const chartType = this.#options.chart
+			const dataset = this.#options.dataset
 
 			this.#emitEvent({
 				data,
 				title,
-				chartType
+				chartType,
+				dataset
 			})
 		}
 

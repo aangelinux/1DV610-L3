@@ -1,5 +1,5 @@
 /**
- * @module Configures world regions.
+ * @module Configures regions the user can filter by.
  */
 
 export class RegionConfig {

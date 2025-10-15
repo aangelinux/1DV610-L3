@@ -5,4 +5,8 @@
 export class WorldExplorer {
 	constructor() {
 	}
+
+	// TODO need to write out that population values are in thousands
+	// and GDP in billions
+	// and emissions in .. something
 }
