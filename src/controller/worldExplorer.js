@@ -14,7 +14,6 @@ export class WorldExplorer extends EventTarget {
 	// TODO need to write out that population values are in thousands
 	// and GDP in billions
 	// and emissions in .. something
-	// Also need to match data from static calls to API calls
 	// And fix issue with lists appearing behind charts
 
 	constructor() {
@@ -78,7 +77,7 @@ export class WorldExplorer extends EventTarget {
 
 	#showError(message) {
 		const error = document.createElement("error-display")
-		this.container.children[1].before(error) // Display below user controls
+		this.container.children[1].before(error) // TODO fix
 		error.show(message)
 	}
 

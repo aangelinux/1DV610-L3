@@ -12,7 +12,7 @@ export class DataExtractor {
 	}
 
 	async extract(dataset) {
-		const path = this.#datasetConfig.api[dataset]
+		const path = this.#datasetConfig.api[dataset]  // add try-catch. if it doesn't work, use files
 		const data = await this.#fetchDataFrom(path)
 		return data
 	}

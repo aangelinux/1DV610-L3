@@ -48,12 +48,15 @@ export class DataParser {
 		for (const dataObject of rawData) {
 			// Data needs to be same type as the element (string) to match
 			const match = JSON.stringify(dataObject).match(element)
-			if (match) {
+			
+			if (match) {  // TODO fix this shit
 				const object = this.#parseToObject(match)
 				const name = this.#getName(object)
 				if (this.#isMatch(name, element)) {
 					const value = this.#parseValue(object)
-					return this.#createObject(name, value)
+					if (value) {
+						return this.#createObject(name, value)
+					}
 				}
 			}
 		}
@@ -74,7 +77,7 @@ export class DataParser {
 	#isMatch(name, element) { 
 		// Check if match is the exact one before proceeding
 		// because some region names include countries
-		// ie "Middle East, North Africa, Afghanistan & Pakistan"
+		// eg "Middle East, North Africa, Afghanistan & Pakistan"
 		if (name !== element) {
 			return false
 		}
@@ -83,7 +86,7 @@ export class DataParser {
 
 	#parseValue(object) {
 		const value = object["value"]
-		if (value === "NA") {
+		if (value === null) {
 			return  // Don't include countries without data
 		}
 		const scale = this.#datasetConfig.scales[this.#currentDataset]

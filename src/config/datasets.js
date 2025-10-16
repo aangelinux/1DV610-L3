@@ -17,7 +17,7 @@ export class DatasetConfig {
 
 	#SCALES = {
 		"Population": 1000,
-		"GDP": 10000000,  // 10 million
+		"GDP": 1000000000,  // 1 billion
 		"Emissions (CO2)": 1
 	}
 

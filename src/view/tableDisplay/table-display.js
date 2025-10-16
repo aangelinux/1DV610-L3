@@ -35,7 +35,7 @@ customElements.define("table-display",
 			this.#clear()
 			this.#setHeader(choices.dataset)
 
-			choices.data.forEach((object) => {
+			choices.data.forEach((object) => {  // Fix
 				const row = this.#createRow()
 				const nameCell = this.#createNameCell(object.name)
 				const valueCell = this.#createValueCell(object.value)
