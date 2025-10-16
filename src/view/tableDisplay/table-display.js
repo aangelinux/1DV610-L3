@@ -58,7 +58,7 @@ customElements.define("table-display",
 		}
 
 		#setHeader(dataset) {
-			this.#table.querySelector("#dataset").innerHTML = dataset
+			this.#table.querySelector("#dataset").textContent = dataset
 		}
 
 		#createRow() {
@@ -68,13 +68,13 @@ customElements.define("table-display",
 
 		#createNameCell(name) {
 			const nameCell = document.createElement("td")
-			nameCell.innerHTML = name
+			nameCell.textContent = name
 			return nameCell
 		}
 
 		#createValueCell(value) {
 			const valueCell = document.createElement("td")
-			valueCell.innerHTML = value
+			valueCell.textContent = value
 			return valueCell
 		}
 

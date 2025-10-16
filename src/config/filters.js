@@ -27,7 +27,7 @@ export class FilterConfig {
 	]
 
 	#ECS = [
-		"Russian Fed",
+		"Russian Federation",
 		"Turkiye",
 		"Germany",
 		"United Kingdom",
@@ -45,7 +45,7 @@ export class FilterConfig {
 		"Colombia",
 		"Argentina",
 		"Peru",
-		"Venezuela",
+		"Venezuela, RB",
 		"Chile",
 		"Guatemala",
 		"Ecuador",
@@ -54,15 +54,15 @@ export class FilterConfig {
 
 	#MEA = [
 		"Pakistan",
-		"Egypt",
-		"Iran",
+		"Egypt, Arab Rep.",
+		"Iran, Islamic Rep.",
 		"Algeria",
 		"Iraq",
 		"Afghanistan",
 		"Yemen, Rep.",
 		"Morocco",
 		"Saudi Arabia",
-		"Syria"
+		"Syrian Arab Republic"
 	]
 
 	#NAC = [
@@ -83,7 +83,7 @@ export class FilterConfig {
 	#SSF = [
 		"Nigeria",
 		"Ethiopia",
-		"Congo, Dem.",
+		"Congo, Dem. Rep.",
 		"Tanzania",
 		"South Africa",
 		"Kenya",
