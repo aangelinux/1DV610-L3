@@ -14,6 +14,8 @@ export class WorldExplorer extends EventTarget {
 	// TODO need to write out that population values are in thousands
 	// and GDP in billions
 	// and emissions in .. something
+	// Also need to match data from static calls to API calls
+	// And fix issue with lists appearing behind charts
 
 	constructor() {
 		super()

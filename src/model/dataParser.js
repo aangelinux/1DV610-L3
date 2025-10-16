@@ -5,8 +5,8 @@
 import { RegionConfig } from "../config/regions"
 
 export class DataParser {
-	#regex = /[^:_"a-z][,0-9]+/gm // Matches with digits only
 	#regionConfig
+	#scale = 100000 // divide data values by
 
 	constructor() {
 		this.#regionConfig = new RegionConfig()
@@ -41,30 +41,39 @@ export class DataParser {
 	#findMatch(element, rawData) {
 		for (const dataObject of rawData) {
 			// Data needs to be same type as the element (string) to match
-			const match = JSON.stringify(dataObject).match(element) 
-			if (match) {
-				return this.#parseToObject(match)
+			const match = JSON.stringify(dataObject).match(element)
+			if (match && this.#isMatch(match, element)) {
+				return this.#parseToObject(match, element)
 			}
 		}
+	}
+
+	#isMatch(match, element) { 
+		// Check if match is the exact one before proceeding
+		// because some region names include country names (ie Middle East, North Africa, Afghanistan)
+		const input = match.input
+		const parsedInput = JSON.parse(input)
+		const country = parsedInput["country"]
+		const name = country["value"]
+		if (name !== element) {
+			return false
+		}
+		return true
 	}
 
 	#parseToObject(data) {
 		const input = data.input // Contains the name and value
 		const parsedInput = JSON.parse(input)
-		const name = parsedInput["name"]
-		const stringValue = parsedInput["value"]
-		if (stringValue === "NA") {
+		const country = parsedInput["country"]
+		const name = country["value"]
+
+		const value = parsedInput["value"]		
+		if (value === "NA") {
 			return  // Don't include countries without data
 		}
 
-		// Remove everything that isn't a digit or parsing wont work
-		const trimmedValue = parsedInput["value"].trim().replaceAll(",", "")
-		const value = parseInt(trimmedValue)
-
-		return { name, value }
-	}
-
-	#sanitizeValue(stringValue) {
-		
+		console.log(parsedInput, name, value)
+		const valueInMillions = parseInt((value / this.#scale).toFixed())
+		return { name, value: valueInMillions }
 	}
 }

@@ -12,7 +12,7 @@ export class DataExtractor {
 	}
 
 	async extract(dataset) {
-		const path = this.#pathConfig.files[dataset]
+		const path = this.#pathConfig.api[dataset]
 		const data = await this.#fetchDataFrom(path)
 		return data
 	}
@@ -21,11 +21,11 @@ export class DataExtractor {
 		try {
 			const response = await fetch(url)
 			if (!response.ok) {
-				throw new Error("Data couldn't be fetched", response.status)
+				throw new Error("Data couldn't be fetched.", response.status)
 			}
 
 			const result = await response.json()
-			return result
+			return result[1]  // second object in array contains the actual data
 		} catch (error) {
 			console.error(error.message)
 		}

@@ -25,7 +25,7 @@ customElements.define("error-display",
 
 		show(message) {
 			this.shadowRoot.querySelector("#error").style.display = "block"
-			this.shadowRoot.querySelector("p").innerHTML = message
+			this.shadowRoot.querySelector("#message").innerHTML = message
 		}
 	}
 )
