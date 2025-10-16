@@ -8,7 +8,7 @@ import { template } from "./table-display-template.js"
 customElements.define("table-display",
   class extends HTMLElement {
 		#table
-		#tbody
+		#tableBody
 
 		constructor() {
 			super()
@@ -17,14 +17,13 @@ customElements.define("table-display",
 				.appendChild(template.content.cloneNode(true))
 
 			this.#table = this.shadowRoot.querySelector("#table")
-			this.#tbody = this.shadowRoot.querySelector("tbody")
+			this.#tableBody = this.shadowRoot.querySelector("tbody")
 			this.abortController = new AbortController()
 		}
 
 		connectedCallback() {
 			document.addEventListener("data-parsed", (event) => {
-				this.#showTable()
-				this.#renderTable(event.detail)
+				this.#update(event.detail)
 			}, { signal: this.abortController.signal })
 		}
 
@@ -32,36 +31,34 @@ customElements.define("table-display",
 			this.abortController.abort()
 		}
 
-		#showTable() {
-			this.#table.style.display = "block"
-		}
+		#update(choices) {
+			this.#clear()
+			this.#setHeader(choices.dataset)
 
-		#renderTable(details) {
-			this.#clearTBody()
-			this.#setTableHeader(details.dataset)
-
-			details.data.forEach((object) => {
+			choices.data.forEach((object) => {
 				const row = this.#createRow()
 				const nameCell = this.#createNameCell(object.name)
 				const valueCell = this.#createValueCell(object.value)
 
 				row.appendChild(nameCell)
 				row.appendChild(valueCell)
-				this.#tbody.appendChild(row)
+				this.#tableBody.appendChild(row)
 			})
+
+			this.#show()
 		}
 
-		#clearTBody() {
-			const children = Array.from(this.#tbody.childNodes)
+		#clear() {
+			const children = Array.from(this.#tableBody.childNodes)
 			for (const child of children) {
-				if (child != this.#tbody.firstChild) { // don't remove table header
+				if (child != this.#tableBody.firstChild) { // Don't remove header
 					child.remove()
 				}
 			}
 		}
 
-		#setTableHeader(dataset) {
-			this.shadowRoot.querySelector("#dataset").innerHTML = dataset
+		#setHeader(dataset) {
+			this.#table.querySelector("#dataset").innerHTML = dataset
 		}
 
 		#createRow() {
@@ -79,6 +76,10 @@ customElements.define("table-display",
 			const valueCell = document.createElement("td")
 			valueCell.innerHTML = value
 			return valueCell
+		}
+
+		#show() {
+			this.#table.style.display = "block"
 		}
 	}
 )
