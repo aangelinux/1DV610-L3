@@ -11,6 +11,7 @@ customElements.define("chart-display",
   class extends HTMLElement {
 		#chartConfig
 		#chartContainer
+		#infoContainer
 
 		constructor() {
 			super()
@@ -18,17 +19,18 @@ customElements.define("chart-display",
 			this.attachShadow({ mode: 'open' })
 				.appendChild(template.content.cloneNode(true))
 
+			this.#chartContainer = this.shadowRoot.querySelector("#chart")
+			this.#infoContainer = this.shadowRoot.querySelector("#info")
+
 			this.#chartConfig = new ChartConfig()
 			this.chart = new Chart()
 			this.abortController = new AbortController()
-
-			this.#chartContainer = this.shadowRoot.querySelector("#chart")
     }
 
 		connectedCallback() {
 			document.addEventListener("data-parsed", (event) => {
-				this.#setTitle(event.detail.title)
-				this.#displayChart(event.detail)
+				this.#setTitle(event.detail)
+				this.#update(event.detail)
 			}, { signal: this.abortController.signal })
 		}
 
@@ -36,16 +38,18 @@ customElements.define("chart-display",
 			this.abortController.abort()
 		}
 
-		#setTitle(content) {
-			this.#chartConfig.title = content
+		#setTitle(choices) {
+			const title = `${choices.dataset}: ${choices.filter}`
+			this.#chartConfig.title = title
 		}
 
-		#displayChart(choices) { //Change name
+		#update(choices) {
 			try {
-				this.#chartContainer.appendChild(this.#createChart(choices)) //Fix
-				this.#showChartInfo()
+				this.#createChart(choices)
+				this.#show()
 			} catch (error) {
-				this.#chartContainer.style.display = "none"
+				console.error(error)
+				this.#hide()
 				this.#emitErrorEvent()
 			}
 		}
@@ -59,23 +63,17 @@ customElements.define("chart-display",
 			} else if (choices.chartType === "Pie Chart") {
 				chart = this.chart.createPieChart(choices.data, this.#chartConfig.radial)
 			}
-			return chart
+			this.#chartContainer.appendChild(chart)
   	}
 
-		#showChart() {
-
+		#show() {
+			this.#chartContainer.style.display = "block"
+			this.#infoContainer.style.display = "block"
 		}
 
-		#showChartInfo() {
-			this.shadowRoot.querySelector("#info").style.display = "block"
-		}
-
-		#hideChart() {
-
-		}
-
-		#hideChartInfo() {
-			
+		#hide() {
+			this.#chartContainer.style.display = "none"
+			this.#infoContainer.style.display = "none"
 		}
 
 		#emitErrorEvent() {
@@ -83,7 +81,6 @@ customElements.define("chart-display",
 				detail: "Chart could not be rendered.",
 				bubbles: true
 			})
-
 			this.dispatchEvent(event)
 		}
 	}

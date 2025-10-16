@@ -1,49 +1,27 @@
 /**
- * @module Defines logic for parsing data into usable objects.
+ * @module Defines logic for parsing raw data into usable objects.
  */
 
 import { RegionConfig } from "../config/regions"
-import { PathConfig } from "../config/paths"
 
 export class DataParser {
 	#regex = /[^:_"a-z][,0-9]+/gm // Matches with digits only
 	#regionConfig
-	#pathConfig
 
 	constructor() {
 		this.#regionConfig = new RegionConfig()
-		this.#pathConfig = new PathConfig()
 	}
 
 	/**
-	 * Gets the user's choices and returns an array of parsed data.
+	 * Parses raw datasets into usable data objects.
 	 * 
-	 * @param {object} userChoices for dataset and filter.
+	 * @param {object} data containing the dataset.
+	 * @param {string} filter the region to filter the data by. 
 	 * @returns {Array} containing data objects with name and value.
 	 */
-	async getParsedData(userChoices) {
-		const dataset = userChoices.dataset
-		const filter = userChoices.filter
-
-		const filePath = this.#pathConfig.files[dataset]
-		const rawData = await this._fetchDataFrom(filePath)
-		const parsedData = this.#createArrayOf(rawData, filter)
-
+	parse(data, filter) {
+		const parsedData = this.#createArrayOf(data, filter)
 		return parsedData
-	}
-
-	async _fetchDataFrom(url) {
-		try {
-			const response = await fetch(url)
-			if (!response.ok) {
-				throw new Error("Data couldn't be fetched", response.status)
-			}
-
-			const result = await response.json()
-			return result
-		} catch (error) {
-			console.error(error.message)
-		}
 	}
 
 	#createArrayOf(data, filter) {

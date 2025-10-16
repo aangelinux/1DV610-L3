@@ -26,9 +26,10 @@ template.innerHTML =
 
 <div>
 	<div id="chart"></div>
+
 	<div id="info">
 		<p id="updated">Last updated (data): 2023</p>
-		<p id="source">Source: World Bank Open Data</p>
+		<p id="source">Source: World Bank</p>
 	</div>
 </div>
 `

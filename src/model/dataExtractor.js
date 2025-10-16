@@ -11,9 +11,9 @@ export class DataExtractor {
 		this.#pathConfig = new PathConfig()
 	}
 
-	extractData(dataset) {
+	async extract(dataset) {
 		const path = this.#pathConfig.files[dataset]
-		const data = this.#fetchDataFrom(path)
+		const data = await this.#fetchDataFrom(path)
 		return data
 	}
 

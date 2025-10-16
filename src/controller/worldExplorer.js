@@ -1,5 +1,5 @@
 /**
- * @module Orchestrates application flow and delegates actions.
+ * @module Orchestrates application flow via events.
  */
 
 import "../view/userControls/user-controls.js"
@@ -30,8 +30,8 @@ export class WorldExplorer extends EventTarget {
 		this.#addChart()
 		this.#addTable()
 
-		document.addEventListener("choices-submitted", (event) => this.#choicesUpdated(event.detail))
-		document.addEventListener("error", (event) => this.#displayError(event.detail))
+		document.addEventListener("choices-submitted", (event) => this.#update(event.detail))
+		document.addEventListener("error", (event) => this.#showError(event.detail))
 	}
 
 	#addControls() {
@@ -49,37 +49,34 @@ export class WorldExplorer extends EventTarget {
 		this.container.appendChild(table)
 	}
 
-	async #choicesUpdated(choices) {
+	async #update(choices) {
+		const { dataset, filter, chartType } = choices
+
 		this.#removeError()
-		
-		const parsedData = await this.#getData(choices)
-		this.#emitDataEvent({
-			data: parsedData,
-			title: choices.title,
-			chartType: choices.chartType,
-			dataset: choices.dataset
-		})
+		const rawData = await this.#tryToExtract(dataset)
+		const data = this.dataParser.parse(rawData, filter)
+		this.#emitParsedData({ data, dataset, filter, chartType })
 	}
 
-	async #getData(choices) {
+	async #tryToExtract(dataset) {
 		try {
-			return await this.dataParser.getParsedData(choices)
+			return await this.dataExtractor.extract(dataset)
 		} catch (e) {
-			this.#displayError(e.message)
+			this.#showError(e.message)
 		}
 	}
 
-	#emitDataEvent(choicesData) {
+	#emitParsedData(data) {
 		const event = new CustomEvent("data-parsed", {
-			detail: choicesData,
+			detail: data,
 			bubbles: true
 		})
 		document.dispatchEvent(event)
 	}
 
-	#displayError(message) {
+	#showError(message) {
 		const error = document.createElement("error-display")
-		this.container.children[1].before(error) // Below user controls
+		this.container.children[1].before(error) // Display below user controls
 		error.show(message)
 	}
 
