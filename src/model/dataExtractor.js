@@ -2,17 +2,17 @@
  * @module Defines logic for extracting data.
  */
 
-import { PathConfig } from "../config/paths"
+import { DatasetConfig } from "../config/datasets.js"
 
 export class DataExtractor {
-	#pathConfig
+	#datasetConfig
 
 	constructor() {
-		this.#pathConfig = new PathConfig()
+		this.#datasetConfig = new DatasetConfig()
 	}
 
 	async extract(dataset) {
-		const path = this.#pathConfig.api[dataset]
+		const path = this.#datasetConfig.api[dataset]
 		const data = await this.#fetchDataFrom(path)
 		return data
 	}

@@ -2,14 +2,17 @@
  * @module Defines logic for parsing raw data into usable objects.
  */
 
-import { RegionConfig } from "../config/regions"
+import { FilterConfig } from "../config/filters.js"
+import { DatasetConfig } from "../config/datasets.js"
 
 export class DataParser {
-	#regionConfig
-	#scale = 100000 // divide data values by
+	#filterConfig
+	#datasetConfig
+	#currentDataset
 
 	constructor() {
-		this.#regionConfig = new RegionConfig()
+		this.#filterConfig = new FilterConfig()
+		this.#datasetConfig = new DatasetConfig()
 	}
 
 	/**
@@ -19,14 +22,17 @@ export class DataParser {
 	 * @param {string} filter the region to filter the data by. 
 	 * @returns {Array} containing data objects with name and value.
 	 */
-	parse(data, filter) {
+	parse(data, choices) {
+		this.#currentDataset = choices.dataset
+		const filter = choices.filter
+
 		const parsedData = this.#createArrayOf(data, filter)
 		return parsedData
 	}
 
 	#createArrayOf(data, filter) {
 		let dataArray = []
-		const chosenFilter = this.#regionConfig.regions[filter]
+		const chosenFilter = this.#filterConfig.regions[filter]
 
 		chosenFilter.forEach((element) => {
 			let matchingObject = this.#findMatch(element, data)
@@ -42,38 +48,51 @@ export class DataParser {
 		for (const dataObject of rawData) {
 			// Data needs to be same type as the element (string) to match
 			const match = JSON.stringify(dataObject).match(element)
-			if (match && this.#isMatch(match, element)) {
-				return this.#parseToObject(match, element)
+			if (match) {
+				const object = this.#parseToObject(match)
+				const name = this.#getName(object)
+				if (this.#isMatch(name, element)) {
+					const value = this.#parseValue(object)
+					return this.#createObject(name, value)
+				}
 			}
 		}
 	}
 
-	#isMatch(match, element) { 
-		// Check if match is the exact one before proceeding
-		// because some region names include country names (ie Middle East, North Africa, Afghanistan)
+	#parseToObject(match) {
 		const input = match.input
 		const parsedInput = JSON.parse(input)
-		const country = parsedInput["country"]
+		return parsedInput
+	}
+
+	#getName(object) {
+		const country = object["country"]
 		const name = country["value"]
+		return name
+	}
+
+	#isMatch(name, element) { 
+		// Check if match is the exact one before proceeding
+		// because some region names include countries
+		// ie "Middle East, North Africa, Afghanistan & Pakistan"
 		if (name !== element) {
 			return false
 		}
 		return true
 	}
 
-	#parseToObject(data) {
-		const input = data.input // Contains the name and value
-		const parsedInput = JSON.parse(input)
-		const country = parsedInput["country"]
-		const name = country["value"]
-
-		const value = parsedInput["value"]		
+	#parseValue(object) {
+		const value = object["value"]
 		if (value === "NA") {
 			return  // Don't include countries without data
 		}
+		const scale = this.#datasetConfig.scales[this.#currentDataset]
+		const parsedValue = parseInt((value / scale).toFixed())
 
-		console.log(parsedInput, name, value)
-		const valueInMillions = parseInt((value / this.#scale).toFixed())
-		return { name, value: valueInMillions }
+		return parsedValue
+	}
+
+	#createObject(name, value) {
+		return { name, value }
 	}
 }

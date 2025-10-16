@@ -2,7 +2,7 @@
  * @module Configures regions the user can filter by.
  */
 
-export class RegionConfig {
+export class FilterConfig {
 	#GLOBAL = [
 		"East Asia & Pacific",
 		"Europe & Central Asia",

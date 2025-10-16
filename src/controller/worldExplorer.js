@@ -56,7 +56,7 @@ export class WorldExplorer extends EventTarget {
 
 		this.#removeError()
 		const rawData = await this.#tryToExtract(dataset)
-		const data = this.dataParser.parse(rawData, filter)
+		const data = this.dataParser.parse(rawData, choices)
 		this.#emitParsedData({ data, dataset, filter, chartType })
 	}
 

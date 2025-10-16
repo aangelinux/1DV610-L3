@@ -6,15 +6,15 @@ export class ChartConfig {
 	#RADIAL = {
 		radius: 150,
 		title: "",
-		font: "Monaco, monospace"
+		font: "Lexend Light"
 	}
 
 	#LINEAR = {
 		height: 350,
 		width: 700,
 		title: "",
-		color: "darkred",
-		font: "Monaco, monospace"
+		color: "darkolivegreen",
+		font: "Lexend Light"
 	}
 
 	constructor() {
