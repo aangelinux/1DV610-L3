@@ -2,13 +2,11 @@
  * @module Defines logic for extracting data.
  */
 
-import { DatasetConfig } from "../config/datasets.js"
-
 export class DataExtractor {
 	#datasetConfig
 
-	constructor() {
-		this.#datasetConfig = new DatasetConfig()
+	constructor(datasetConfig) {
+		this.#datasetConfig = datasetConfig
 	}
 
 	async extract(dataset) {

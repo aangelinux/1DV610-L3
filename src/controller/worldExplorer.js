@@ -9,6 +9,9 @@ import "../view/errorDisplay/error-display.js"
 
 import { DataParser } from "../model/dataParser.js"
 import { DataExtractor } from "../model/dataExtractor.js"
+import { DataFilter } from "../model/dataFilter.js"
+import { DatasetConfig } from "../config/datasets.js"
+import { FilterConfig } from "../config/filters.js"
 
 export class WorldExplorer extends EventTarget {
 	// TODO fix issue with lists appearing behind charts
@@ -16,8 +19,12 @@ export class WorldExplorer extends EventTarget {
 	constructor() {
 		super()
 
-		this.dataExtractor = new DataExtractor()
-		this.dataParser = new DataParser()
+		this.datasetConfig = new DatasetConfig()
+		this.filterConfig = new FilterConfig()
+		this.dataExtractor = new DataExtractor(this.datasetConfig)
+		this.dataFilter = new DataFilter(this.filterConfig)
+		this.dataParser = new DataParser(this.datasetConfig)
+		
 		this.container = document.querySelector("#container")
 
 		this.init()
@@ -28,7 +35,9 @@ export class WorldExplorer extends EventTarget {
 		this.#addChart()
 		this.#addTable()
 
-		document.addEventListener("choices-submitted", (event) => this.#update(event.detail))
+		document.addEventListener("choices-submitted", (event) => {
+			this.#removeError() 
+			this.#update(event.detail)})
 		document.addEventListener("error", (event) => this.#showError(event.detail))
 	}
 
@@ -50,9 +59,10 @@ export class WorldExplorer extends EventTarget {
 	async #update(choices) {
 		const { dataset, filter, chartType } = choices
 
-		this.#removeError()
 		const rawData = await this.#tryToExtract(dataset)
-		const data = this.dataParser.parse(rawData, choices)
+		const filteredData = this.dataFilter.filter(rawData, filter)
+		const data = this.dataParser.parse(filteredData, dataset)
+		
 		this.#emitParsedData({ data, dataset, filter, chartType })
 	}
 
