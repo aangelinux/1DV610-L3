@@ -6,37 +6,37 @@ I klassen DataParser hade jag tidigare metodnamn som ```process, #fetch, #filter
   
 ---
 ## Kapitel 3 Funktioner
-![C3](/images/code/chapter3.png)
+Tidigare hade jag all kod från de här två metoderna i samma metod, vilket bröt mot flera regler i Clean Code, bla **Small!**, **Do One Thing**, **One Level of Abstraction per Function**, och **Extract Try/Catch Blocks**. Men kanske hade det varit bättre om #displayChart() refaktorerades till ännu mindre metoder, så att try-blocket endast anropar en metod istället för flera och catch-blocket också anropar en metod.  
   
-Tidigare hade jag all kod från de här två metoderna i samma metod, vilket bröt mot flera regler i Clean Code, bla **Small!**, **Do One Thing**, **One Level of Abstraction per Function**, och **Extract Try/Catch Blocks**. Men kanske hade det varit bättre om #displayChart() refaktorerades till ännu mindre metoder, så att try-blocket endast anropar en metod istället för flera och catch-blocket också anropar en metod.
+![C3](/images/code/chapter3.png)
 
 ---
 ## Kapitel 4 Kommentarer
-Enligt Clean Code är kommentarer nästan alltid överflödiga och behov av kommentarer är tecken på dålig kod. Så för att följa deras principer valde jag att endast lägga till kommentarer om koden fortfarande är otydlig efter refaktorering.
+Enligt Clean Code är kommentarer nästan alltid överflödiga och behov av kommentarer är tecken på dålig kod. Så för att följa deras principer valde jag att endast lägga till kommentarer om koden fortfarande är otydlig efter refaktorering.  
+  
+Denna metod innehåller en del kommentarer eftersom logiken kan vara svår att följa. Jag la till "Don't include countries without data" för **Explanation of Intent**, och "Remove everything that isn't a digit or parsing wont work" både för **Warning of Consequences** och **Amplification**. Men det var svårare att bedöma om jag skulle behålla "Contains name and value", eller istället göra koden tydligare, till exempel genom att döpa om variabeln till ```const nameAndValue```. Att ha få kommentarer gör att koden ser mer elegant ut, men det är bara bra om koden faktiskt förklarar sig själv; annars kanske man offrar tydlighet.  
   
 ![C4](/images/code/chapter4.png)
-
-Denna metod innehåller en del kommentarer eftersom logiken kan vara svår att följa. Jag la till "Don't include countries without data" för **Explanation of Intent**, och "Remove everything that isn't a digit or parsing wont work" både för **Warning of Consequences** och **Amplification**. Men det var svårare att bedöma om jag skulle behålla "Contains name and value", eller istället göra koden tydligare, till exempel genom att döpa om variabeln till ```const nameAndValue```. Att ha få kommentarer gör att koden ser mer elegant ut, men det är bara bra om koden faktiskt förklarar sig själv; annars kanske man offrar tydlighet.
 
 ---
 ## Kapitel 5 Formatering
 I enlighet med kapitel 5s regler för formatering har jag endast små filer, de flesta mellan 50-120 rader långa. 
   
-![C5](/images/code/chapter5.png)  
+I den här klassen har jag placerat funktioner enligt principerna om **The Newspaper Method**, **Dependent Functions**, och **Vertical Ordering**. Den enda publika metoden ligger längst upp och dess namn berättar vad klassens huvudfunktion är. Funktioner som anropar andra metoder ligger precis ovanför de anropade metoderna, så att ordningen är logisk. I L2 hade jag dock problem med att följa principen om **Horizontal Formatting** som säger att kodrader inte ska vara långa. Genom att följa reglerna om namngivning från kap 2 hade jag fått en del långa variabel- och metodnamn, vilket ledde till att vissa kodrader blev långa.  
   
-I den här klassen har jag placerat funktioner enligt principerna om **The Newspaper Method**, **Dependent Functions**, och **Vertical Ordering**. Den enda publika metoden ligger längst upp och dess namn berättar vad klassens huvudfunktion är. Funktioner som anropar andra metoder ligger precis ovanför de anropade metoderna, så att ordningen är logisk. I L2 hade jag dock problem med att följa principen om **Horizontal Formatting** som säger att kodrader inte ska vara långa. Genom att följa reglerna om namngivning från kap 2 hade jag fått en del långa variabel- och metodnamn, vilket ledde till att vissa kodrader blev långa.
+![C5](/images/code/chapter5.png)  
 
 ---
 ## Kapitel 6 Objekt och Data Strukturer
 Enligt kapitel 6 bör all data exponeras via data strukturer, och separata objekt utför operationer på denna data; de ska aldrig blandas enligt **Data/Object Anti-Symmetry**. I L2 lät jag klasserna hantera både deras egna data och operationer, men för att följa Clean Code's principer här separerade jag dem i olika klasser.  
+     
+All data ligger i klassen RegionConfig och den innehåller inga metoder förutom en getter- det är alltså ett **Data Transfer Object**. I motsats innehåller DataParser endast operationer som kan hantera data men lagrar ingen egen data, enligt regeln **Hiding Structure**. Detta följer även principen om **Separation Of Concerns** och klasserna är nu lättare att läsa och underhålla, men samtidigt innebär det fler klasser och filer att hålla reda på och kan anses vara over-engineering för ett projekt av den här storleken.  
   
 RegionConfig (data struktur)  
 ![C6](/images/code/chapter6.png)  
   
 DataParser (objekt)  
 ![C6](/images/code/chapter6_2.png)
-   
-All data ligger i klassen RegionConfig och den innehåller inga metoder förutom en getter- det är alltså ett **Data Transfer Object**. I motsats innehåller DataParser endast operationer som kan hantera data men lagrar ingen egen data, enligt regeln **Hiding Structure**. Detta följer även principen om **Separation Of Concerns** och klasserna är nu lättare att läsa och underhålla, men samtidigt innebär det fler klasser och filer att hålla reda på och kan anses vara over-engineering för ett projekt av den här storleken.
 
 ---
 ## Kapitel 7 Felhantering
