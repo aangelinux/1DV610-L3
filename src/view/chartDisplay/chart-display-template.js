@@ -28,7 +28,7 @@ template.innerHTML =
 	<div id="chart"></div>
 
 	<div id="info">
-		<p id="updated">Last updated (data): 2023</p>
+		<p id="updated">Year: 2023</p>
 		<p id="source">Source: World Bank</p>
 	</div>
 </div>

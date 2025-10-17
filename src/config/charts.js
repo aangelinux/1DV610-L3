@@ -19,7 +19,7 @@ export class ChartConfig {
 
 	#SCALES = {  // For the chart title
 		"Population": "(thousands)",
-		"GDP": "(billions)",
+		"GDP per capita": "",
 		"Emissions (CO2)": ""
 	}
 

@@ -5,19 +5,19 @@
 export class DatasetConfig {
 	#API = {
 		"Population": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&date=2023&per_page=300",
-		"GDP": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json&date=2023&per_page=300",
+		"GDP per capita": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&date=2023&per_page=300",
 		"Emissions (CO2)": "https://api.worldbank.org/v2/country/all/indicator/EN.GHG.CO2.MT.CE.AR5?format=json&date=2023&per_page=300"
 	}
 
 	#FILES = {
 		"Population": "/data/population.json",
-		"GDP": "/data/gdp.json",
+		"GDP per capita": "/data/gdp.json",
 		"Emissions (CO2)": "/data/emissions.json"
 	}
 
 	#SCALES = {
 		"Population": 1000,
-		"GDP": 1000000000,  // 1 billion
+		"GDP per capita": 1,
 		"Emissions (CO2)": 1
 	}
 

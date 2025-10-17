@@ -10,8 +10,8 @@
     [
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZH",
@@ -19,15 +19,15 @@
             },
             "countryiso3code": "AFE",
             "date": "2023",
-            "value": 1133818271029.39,
+            "value": 1510.74295082335,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZI",
@@ -35,15 +35,15 @@
             },
             "countryiso3code": "AFW",
             "date": "2023",
-            "value": 814728528754.188,
+            "value": 1599.39298291654,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "1A",
@@ -51,15 +51,15 @@
             },
             "countryiso3code": "ARB",
             "date": "2023",
-            "value": 3606002342262.32,
+            "value": 7479.68809103279,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "S3",
@@ -67,15 +67,15 @@
             },
             "countryiso3code": "CSS",
             "date": "2023",
-            "value": 79470143934.8758,
+            "value": 17582.2636796878,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "B8",
@@ -83,15 +83,15 @@
             },
             "countryiso3code": "CEB",
             "date": "2023",
-            "value": 2273945434904.28,
+            "value": 22699.5351734821,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "V2",
@@ -99,15 +99,15 @@
             },
             "countryiso3code": "EAR",
             "date": "2023",
-            "value": 15147839465127.3,
+            "value": 4313.64804240795,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "Z4",
@@ -115,15 +115,15 @@
             },
             "countryiso3code": "EAS",
             "date": "2023",
-            "value": 31279384293039.7,
+            "value": 13117.90954458,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "4E",
@@ -131,15 +131,15 @@
             },
             "countryiso3code": "EAP",
             "date": "2023",
-            "value": 21644107579563.1,
+            "value": 10125.7668065643,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "T4",
@@ -147,15 +147,15 @@
             },
             "countryiso3code": "TEA",
             "date": "2023",
-            "value": 21617377390319.4,
+            "value": 10239.674334039,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XC",
@@ -163,15 +163,15 @@
             },
             "countryiso3code": "EMU",
             "date": "2023",
-            "value": 15787238118091.4,
+            "value": 45068.7010930397,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "Z7",
@@ -179,15 +179,15 @@
             },
             "countryiso3code": "ECS",
             "date": "2023",
-            "value": 27617157896730.2,
+            "value": 29835.7180523654,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "7E",
@@ -195,15 +195,15 @@
             },
             "countryiso3code": "ECA",
             "date": "2023",
-            "value": 2134737666916.84,
+            "value": 8571.4101866164,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "T7",
@@ -211,15 +211,15 @@
             },
             "countryiso3code": "TEC",
             "date": "2023",
-            "value": 5556261013139.78,
+            "value": 12106.9240912296,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "EU",
@@ -227,15 +227,15 @@
             },
             "countryiso3code": "EUU",
             "date": "2023",
-            "value": 18602672971721.6,
+            "value": 41392.0743803078,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "F1",
@@ -243,15 +243,15 @@
             },
             "countryiso3code": "FCS",
             "date": "2023",
-            "value": 1820234347800.98,
+            "value": 1722.02197897444,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XE",
@@ -259,15 +259,15 @@
             },
             "countryiso3code": "HPC",
             "date": "2023",
-            "value": 1045906705389.1,
+            "value": 1140.19606998258,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XD",
@@ -275,15 +275,15 @@
             },
             "countryiso3code": "",
             "date": "2023",
-            "value": 68618756866831.8,
+            "value": 48708.4624685822,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XF",
@@ -291,15 +291,15 @@
             },
             "countryiso3code": "IBD",
             "date": "2023",
-            "value": 39445795860390.1,
+            "value": 7964.73675347128,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZT",
@@ -307,15 +307,15 @@
             },
             "countryiso3code": "IBT",
             "date": "2023",
-            "value": 42232758175761.5,
+            "value": 6157.39821498709,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XH",
@@ -323,15 +323,15 @@
             },
             "countryiso3code": "IDB",
             "date": "2023",
-            "value": 1149351628081.53,
+            "value": 1729.91982930792,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XI",
@@ -339,15 +339,15 @@
             },
             "countryiso3code": "IDX",
             "date": "2023",
-            "value": 1638623353905.75,
+            "value": 1319.43444336952,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XG",
@@ -355,15 +355,15 @@
             },
             "countryiso3code": "IDA",
             "date": "2023",
-            "value": 2781199862737.98,
+            "value": 1458.94469071737,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "V3",
@@ -371,15 +371,15 @@
             },
             "countryiso3code": "LTE",
             "date": "2023",
-            "value": 28903171309924.7,
+            "value": 12422.7253981593,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZJ",
@@ -387,15 +387,15 @@
             },
             "countryiso3code": "LCN",
             "date": "2023",
-            "value": 7127804705256.22,
+            "value": 10838.827948659,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XJ",
@@ -403,15 +403,15 @@
             },
             "countryiso3code": "LAC",
             "date": "2023",
-            "value": 5997364907507.01,
+            "value": 10166.928671097,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "T2",
@@ -419,15 +419,15 @@
             },
             "countryiso3code": "TLA",
             "date": "2023",
-            "value": 6804996162368.3,
+            "value": 10593.1164302324,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XL",
@@ -435,15 +435,15 @@
             },
             "countryiso3code": "LDC",
             "date": "2023",
-            "value": 1416482888487.06,
+            "value": 1220.23843928653,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XO",
@@ -451,15 +451,15 @@
             },
             "countryiso3code": "LMY",
             "date": "2023",
-            "value": 37824423052000.7,
+            "value": 5819.84086254913,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XM",
@@ -467,15 +467,15 @@
             },
             "countryiso3code": "",
             "date": "2023",
-            "value": 423723013875.631,
+            "value": 697.171191535478,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XN",
@@ -483,15 +483,15 @@
             },
             "countryiso3code": "",
             "date": "2023",
-            "value": 7530591347605.22,
+            "value": 2443.40827649123,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZQ",
@@ -499,15 +499,15 @@
             },
             "countryiso3code": "MEA",
             "date": "2023",
-            "value": 4837112081492.74,
+            "value": 6063.05247657864,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XQ",
@@ -515,15 +515,15 @@
             },
             "countryiso3code": "MNA",
             "date": "2023",
-            "value": 2039526572152.72,
+            "value": 2797.40730719316,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "T3",
@@ -531,15 +531,15 @@
             },
             "countryiso3code": "TMN",
             "date": "2023",
-            "value": 2021678672152.72,
+            "value": 2792.71457545742,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XP",
@@ -547,15 +547,15 @@
             },
             "countryiso3code": "MIC",
             "date": "2023",
-            "value": 37397441616315.5,
+            "value": 6347.75391928371,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XU",
@@ -563,15 +563,15 @@
             },
             "countryiso3code": "NAC",
             "date": "2023",
-            "value": 29902627912064.3,
+            "value": 79326.9076599571,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XY",
@@ -582,12 +582,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "OE",
@@ -595,15 +595,15 @@
             },
             "countryiso3code": "OED",
             "date": "2023",
-            "value": 64803502836722.8,
+            "value": 46672.5139916762,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "S4",
@@ -611,15 +611,15 @@
             },
             "countryiso3code": "OSS",
             "date": "2023",
-            "value": 194578375098.132,
+            "value": 15151.4664915358,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "S2",
@@ -627,15 +627,15 @@
             },
             "countryiso3code": "PSS",
             "date": "2023",
-            "value": 11168877227.3837,
+            "value": 4153.19706628517,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "V4",
@@ -643,15 +643,15 @@
             },
             "countryiso3code": "PST",
             "date": "2023",
-            "value": 60538844740701.7,
+            "value": 53961.341810452,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "V1",
@@ -659,15 +659,15 @@
             },
             "countryiso3code": "PRE",
             "date": "2023",
-            "value": 1527124866810.94,
+            "value": 1416.33353040951,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "S1",
@@ -675,15 +675,15 @@
             },
             "countryiso3code": "SST",
             "date": "2023",
-            "value": 285189556483.076,
+            "value": 14222.966048012,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "8S",
@@ -691,15 +691,15 @@
             },
             "countryiso3code": "SAS",
             "date": "2023",
-            "value": 4210278492152.87,
+            "value": 2532.37560051691,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "T5",
@@ -707,15 +707,15 @@
             },
             "countryiso3code": "TSA",
             "date": "2023",
-            "value": 4210278492152.87,
+            "value": 2532.37560051691,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZG",
@@ -723,15 +723,15 @@
             },
             "countryiso3code": "SSF",
             "date": "2023",
-            "value": 1946245643472.37,
+            "value": 1544.75911473464,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZF",
@@ -739,15 +739,15 @@
             },
             "countryiso3code": "SSA",
             "date": "2023",
-            "value": 1825737943161.89,
+            "value": 1614.13902501696,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "T6",
@@ -755,15 +755,15 @@
             },
             "countryiso3code": "TSS",
             "date": "2023",
-            "value": 1946245643472.37,
+            "value": 1544.75911473464,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XT",
@@ -771,15 +771,15 @@
             },
             "countryiso3code": "",
             "date": "2023",
-            "value": 29868066574997.4,
+            "value": 10631.3167441564,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "1W",
@@ -787,15 +787,15 @@
             },
             "countryiso3code": "WLD",
             "date": "2023",
-            "value": 106939249843452,
+            "value": 13259.7098707258,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AF",
@@ -803,15 +803,15 @@
             },
             "countryiso3code": "AFG",
             "date": "2023",
-            "value": 17152234636.8715,
+            "value": 413.757894705303,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AL",
@@ -819,15 +819,15 @@
             },
             "countryiso3code": "ALB",
             "date": "2023",
-            "value": 23547180412.3404,
+            "value": 8575.17134637222,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "DZ",
@@ -835,15 +835,15 @@
             },
             "countryiso3code": "DZA",
             "date": "2023",
-            "value": 247626161016.414,
+            "value": 5364.02795022731,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AS",
@@ -854,12 +854,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AD",
@@ -867,15 +867,15 @@
             },
             "countryiso3code": "AND",
             "date": "2023",
-            "value": 3785067331.7625,
+            "value": 46812.4484486309,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AO",
@@ -883,15 +883,15 @@
             },
             "countryiso3code": "AGO",
             "date": "2023",
-            "value": 84875162197.0107,
+            "value": 2309.53413042773,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AG",
@@ -899,15 +899,15 @@
             },
             "countryiso3code": "ATG",
             "date": "2023",
-            "value": 2005785185.18518,
+            "value": 21494.5474000727,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AR",
@@ -915,15 +915,15 @@
             },
             "countryiso3code": "ARG",
             "date": "2023",
-            "value": 646075277525.125,
+            "value": 14187.4827252965,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AM",
@@ -931,15 +931,15 @@
             },
             "countryiso3code": "ARM",
             "date": "2023",
-            "value": 24085749592.3359,
+            "value": 8125.27395754003,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AW",
@@ -947,15 +947,15 @@
             },
             "countryiso3code": "ABW",
             "date": "2023",
-            "value": 3648573136.15155,
+            "value": 33984.7906198041,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AU",
@@ -963,15 +963,15 @@
             },
             "countryiso3code": "AUS",
             "date": "2023",
-            "value": 1728057316695.61,
+            "value": 64835.9199754535,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AT",
@@ -979,15 +979,15 @@
             },
             "countryiso3code": "AUT",
             "date": "2023",
-            "value": 511685203845.001,
+            "value": 56033.573792065,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AZ",
@@ -995,15 +995,15 @@
             },
             "countryiso3code": "AZE",
             "date": "2023",
-            "value": 72428470588.2353,
+            "value": 7133.02838048328,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BS",
@@ -1011,15 +1011,15 @@
             },
             "countryiso3code": "BHS",
             "date": "2023",
-            "value": 15271300000,
+            "value": 38231.774484278,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BH",
@@ -1027,15 +1027,15 @@
             },
             "countryiso3code": "BHR",
             "date": "2023",
-            "value": 46192260638.2979,
+            "value": 29290.1284215098,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BD",
@@ -1043,15 +1043,15 @@
             },
             "countryiso3code": "BGD",
             "date": "2023",
-            "value": 437415333018.291,
+            "value": 2551.01773827307,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BB",
@@ -1059,15 +1059,15 @@
             },
             "countryiso3code": "BRB",
             "date": "2023",
-            "value": 6720733200,
+            "value": 23804.0249914995,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BY",
@@ -1075,15 +1075,15 @@
             },
             "countryiso3code": "BLR",
             "date": "2023",
-            "value": 72478760370.4258,
+            "value": 7896.75388295584,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BE",
@@ -1091,15 +1091,15 @@
             },
             "countryiso3code": "BEL",
             "date": "2023",
-            "value": 644655275111.58,
+            "value": 54690.0942734964,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BZ",
@@ -1107,15 +1107,15 @@
             },
             "countryiso3code": "BLZ",
             "date": "2023",
-            "value": 3066850000,
+            "value": 7459.99815132837,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BJ",
@@ -1123,15 +1123,15 @@
             },
             "countryiso3code": "BEN",
             "date": "2023",
-            "value": 19673290995.8491,
+            "value": 1394.17784663045,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BM",
@@ -1139,15 +1139,15 @@
             },
             "countryiso3code": "BMU",
             "date": "2023",
-            "value": 8579242000,
+            "value": 132604.439086216,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BT",
@@ -1155,15 +1155,15 @@
             },
             "countryiso3code": "BTN",
             "date": "2023",
-            "value": 3019253885.46989,
+            "value": 3839.4093039286,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BO",
@@ -1171,15 +1171,15 @@
             },
             "countryiso3code": "BOL",
             "date": "2023",
-            "value": 45135398002.8944,
+            "value": 3686.27996442176,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BA",
@@ -1187,15 +1187,15 @@
             },
             "countryiso3code": "BIH",
             "date": "2023",
-            "value": 27592361387.8597,
+            "value": 8663.02322987879,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BW",
@@ -1203,15 +1203,15 @@
             },
             "countryiso3code": "BWA",
             "date": "2023",
-            "value": 19411266967.1044,
+            "value": 7826.35376483298,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BR",
@@ -1219,15 +1219,15 @@
             },
             "countryiso3code": "BRA",
             "date": "2023",
-            "value": 2191131765684.63,
+            "value": 10377.5892792557,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "VG",
@@ -1238,12 +1238,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BN",
@@ -1251,15 +1251,15 @@
             },
             "countryiso3code": "BRN",
             "date": "2023",
-            "value": 15095084686.1651,
+            "value": 32890.5492465722,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BG",
@@ -1267,15 +1267,15 @@
             },
             "countryiso3code": "BGR",
             "date": "2023",
-            "value": 102396840296.147,
+            "value": 15883.8618545581,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BF",
@@ -1283,15 +1283,15 @@
             },
             "countryiso3code": "BFA",
             "date": "2023",
-            "value": 20324617844.5265,
+            "value": 882.689810086163,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "BI",
@@ -1299,15 +1299,15 @@
             },
             "countryiso3code": "BDI",
             "date": "2023",
-            "value": 2629391599.50157,
+            "value": 192.074305359351,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CV",
@@ -1315,15 +1315,15 @@
             },
             "countryiso3code": "CPV",
             "date": "2023",
-            "value": 2539203428.73837,
+            "value": 4861.29184126229,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KH",
@@ -1331,15 +1331,15 @@
             },
             "countryiso3code": "KHM",
             "date": "2023",
-            "value": 42335646895.7984,
+            "value": 2429.74853452838,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CM",
@@ -1347,15 +1347,15 @@
             },
             "countryiso3code": "CMR",
             "date": "2023",
-            "value": 49279410982.826,
+            "value": 1736.86091073524,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CA",
@@ -1363,15 +1363,15 @@
             },
             "countryiso3code": "CAN",
             "date": "2023",
-            "value": 2173339670064.33,
+            "value": 54220.3285039875,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KY",
@@ -1379,15 +1379,15 @@
             },
             "countryiso3code": "CYM",
             "date": "2023",
-            "value": 7139428557.71423,
+            "value": 97749.5078960846,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CF",
@@ -1395,15 +1395,15 @@
             },
             "countryiso3code": "CAF",
             "date": "2023",
-            "value": 2555492085.94725,
+            "value": 495.978897288721,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TD",
@@ -1411,15 +1411,15 @@
             },
             "countryiso3code": "TCD",
             "date": "2023",
-            "value": 19107685020.89,
+            "value": 989.058528968588,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "JG",
@@ -1427,15 +1427,15 @@
             },
             "countryiso3code": "CHI",
             "date": "2023",
-            "value": 12507927159.7265,
+            "value": 74589.1381155014,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CL",
@@ -1443,15 +1443,15 @@
             },
             "countryiso3code": "CHL",
             "date": "2023",
-            "value": 335518054097.637,
+            "value": 17067.0364799154,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CN",
@@ -1459,15 +1459,15 @@
             },
             "countryiso3code": "CHN",
             "date": "2023",
-            "value": 18270356654533.2,
+            "value": 12951.1782397043,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CO",
@@ -1475,15 +1475,15 @@
             },
             "countryiso3code": "COL",
             "date": "2023",
-            "value": 366291836137.916,
+            "value": 7000.83660501046,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KM",
@@ -1491,15 +1491,15 @@
             },
             "countryiso3code": "COM",
             "date": "2023",
-            "value": 1430523435.81695,
+            "value": 1682.20285095721,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CD",
@@ -1507,15 +1507,15 @@
             },
             "countryiso3code": "COD",
             "date": "2023",
-            "value": 67006756666.3604,
+            "value": 633.395661686298,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CG",
@@ -1523,15 +1523,15 @@
             },
             "countryiso3code": "COG",
             "date": "2023",
-            "value": 15321055818.3263,
+            "value": 2477.97845477092,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CR",
@@ -1539,15 +1539,15 @@
             },
             "countryiso3code": "CRI",
             "date": "2023",
-            "value": 86497941438.9809,
+            "value": 16942.0268119304,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CI",
@@ -1555,15 +1555,15 @@
             },
             "countryiso3code": "CIV",
             "date": "2023",
-            "value": 79618056323.7639,
+            "value": 2554.67304885576,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "HR",
@@ -1571,15 +1571,15 @@
             },
             "countryiso3code": "HRV",
             "date": "2023",
-            "value": 84393795502.4421,
+            "value": 21865.4562838641,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CU",
@@ -1590,12 +1590,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CW",
@@ -1603,15 +1603,15 @@
             },
             "countryiso3code": "CUW",
             "date": "2023",
-            "value": 3281419347.37053,
+            "value": 21061.741639092,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CY",
@@ -1619,15 +1619,15 @@
             },
             "countryiso3code": "CYP",
             "date": "2023",
-            "value": 33886930712.3394,
+            "value": 36551.41796875,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CZ",
@@ -1635,15 +1635,15 @@
             },
             "countryiso3code": "CZE",
             "date": "2023",
-            "value": 343206568134.637,
+            "value": 31591.0568216357,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "DK",
@@ -1651,15 +1651,15 @@
             },
             "countryiso3code": "DNK",
             "date": "2023",
-            "value": 407091920305.404,
+            "value": 68453.8769281145,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "DJ",
@@ -1667,15 +1667,15 @@
             },
             "countryiso3code": "DJI",
             "date": "2023",
-            "value": 3917150480.80981,
+            "value": 3397.52015779588,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "DM",
@@ -1683,15 +1683,15 @@
             },
             "countryiso3code": "DMA",
             "date": "2023",
-            "value": 659311111.111111,
+            "value": 9912.96212766668,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "DO",
@@ -1699,15 +1699,15 @@
             },
             "countryiso3code": "DOM",
             "date": "2023",
-            "value": 120456239153.739,
+            "value": 10630.431743829,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "EC",
@@ -1715,15 +1715,15 @@
             },
             "countryiso3code": "ECU",
             "date": "2023",
-            "value": 121147057000,
+            "value": 6737.84748379638,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "EG",
@@ -1731,15 +1731,15 @@
             },
             "countryiso3code": "EGY",
             "date": "2023",
-            "value": 395926075163.006,
+            "value": 3456.78968456253,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SV",
@@ -1747,15 +1747,15 @@
             },
             "countryiso3code": "SLV",
             "date": "2023",
-            "value": 33853940000,
+            "value": 5365.44491399171,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GQ",
@@ -1763,15 +1763,15 @@
             },
             "countryiso3code": "GNQ",
             "date": "2023",
-            "value": 12337550583.754,
+            "value": 6677.793435386,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ER",
@@ -1782,12 +1782,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "EE",
@@ -1795,15 +1795,15 @@
             },
             "countryiso3code": "EST",
             "date": "2023",
-            "value": 41291245222.1948,
+            "value": 30133.304450454,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SZ",
@@ -1811,15 +1811,15 @@
             },
             "countryiso3code": "SWZ",
             "date": "2023",
-            "value": 4604172127.36299,
+            "value": 3741.69010745416,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ET",
@@ -1830,12 +1830,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "FO",
@@ -1843,15 +1843,15 @@
             },
             "countryiso3code": "FRO",
             "date": "2023",
-            "value": 3907323961.33964,
+            "value": 71774.3522353393,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "FJ",
@@ -1859,15 +1859,15 @@
             },
             "countryiso3code": "FJI",
             "date": "2023",
-            "value": 5442046552.96928,
+            "value": 5888.73667332429,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "FI",
@@ -1875,15 +1875,15 @@
             },
             "countryiso3code": "FIN",
             "date": "2023",
-            "value": 294950618733.339,
+            "value": 52821.5114340717,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "FR",
@@ -1891,15 +1891,15 @@
             },
             "countryiso3code": "FRA",
             "date": "2023",
-            "value": 3051831611384.76,
+            "value": 44690.9345395117,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PF",
@@ -1907,15 +1907,15 @@
             },
             "countryiso3code": "PYF",
             "date": "2023",
-            "value": 6402221222.32749,
+            "value": 22774.1418988734,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GA",
@@ -1923,15 +1923,15 @@
             },
             "countryiso3code": "GAB",
             "date": "2023",
-            "value": 20055720403.471,
+            "value": 8071.39777400455,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GM",
@@ -1939,15 +1939,15 @@
             },
             "countryiso3code": "GMB",
             "date": "2023",
-            "value": 2396111020.8801,
+            "value": 888.157407441902,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GE",
@@ -1955,15 +1955,15 @@
             },
             "countryiso3code": "GEO",
             "date": "2023",
-            "value": 30777833600.6515,
+            "value": 8283.66960652261,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "DE",
@@ -1971,15 +1971,15 @@
             },
             "countryiso3code": "DEU",
             "date": "2023",
-            "value": 4525703903627.53,
+            "value": 53940.4073447462,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GH",
@@ -1987,15 +1987,15 @@
             },
             "countryiso3code": "GHA",
             "date": "2023",
-            "value": 80547146878.3843,
+            "value": 2383.90410483418,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GI",
@@ -2006,12 +2006,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GR",
@@ -2019,15 +2019,15 @@
             },
             "countryiso3code": "GRC",
             "date": "2023",
-            "value": 243498333237.802,
+            "value": 23400.7278817691,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GL",
@@ -2035,15 +2035,15 @@
             },
             "countryiso3code": "GRL",
             "date": "2023",
-            "value": 3326544174.37945,
+            "value": 58498.9743142433,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GD",
@@ -2051,15 +2051,15 @@
             },
             "countryiso3code": "GRD",
             "date": "2023",
-            "value": 1323985600,
+            "value": 11308.2874249451,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GU",
@@ -2070,12 +2070,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GT",
@@ -2083,15 +2083,15 @@
             },
             "countryiso3code": "GTM",
             "date": "2023",
-            "value": 104368413483.146,
+            "value": 5758.30876298845,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GN",
@@ -2099,15 +2099,15 @@
             },
             "countryiso3code": "GIN",
             "date": "2023",
-            "value": 22407615556.0571,
+            "value": 1555.49375806861,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GW",
@@ -2115,15 +2115,15 @@
             },
             "countryiso3code": "GNB",
             "date": "2023",
-            "value": 2077816134.67419,
+            "value": 964.927554218909,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GY",
@@ -2131,15 +2131,15 @@
             },
             "countryiso3code": "GUY",
             "date": "2023",
-            "value": 16918503597.1223,
+            "value": 20473.7002190617,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "HT",
@@ -2147,15 +2147,15 @@
             },
             "countryiso3code": "HTI",
             "date": "2023",
-            "value": 19850585722.3241,
+            "value": 1705.75808460999,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "HN",
@@ -2163,15 +2163,15 @@
             },
             "countryiso3code": "HND",
             "date": "2023",
-            "value": 34355805527.9795,
+            "value": 3227.45762509776,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "HK",
@@ -2179,15 +2179,15 @@
             },
             "countryiso3code": "HKG",
             "date": "2023",
-            "value": 381066399066.208,
+            "value": 50565.4647717265,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "HU",
@@ -2195,15 +2195,15 @@
             },
             "countryiso3code": "HUN",
             "date": "2023",
-            "value": 214022571311.24,
+            "value": 22312.1790289763,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "IS",
@@ -2211,15 +2211,15 @@
             },
             "countryiso3code": "ISL",
             "date": "2023",
-            "value": 31452223861.9091,
+            "value": 79960.0961535662,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "IN",
@@ -2227,15 +2227,15 @@
             },
             "countryiso3code": "IND",
             "date": "2023",
-            "value": 3638489096033.86,
+            "value": 2530.12031278204,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ID",
@@ -2243,15 +2243,15 @@
             },
             "countryiso3code": "IDN",
             "date": "2023",
-            "value": 1371169301563.62,
+            "value": 4876.30774512252,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "IR",
@@ -2259,15 +2259,15 @@
             },
             "countryiso3code": "IRN",
             "date": "2023",
-            "value": 404625655076.275,
+            "value": 4465.63766853306,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "IQ",
@@ -2275,15 +2275,15 @@
             },
             "countryiso3code": "IRQ",
             "date": "2023",
-            "value": 268881051643.549,
+            "value": 5965.31835077761,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "IE",
@@ -2291,15 +2291,15 @@
             },
             "countryiso3code": "IRL",
             "date": "2023",
-            "value": 551394889339.778,
+            "value": 103887.800388081,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "IM",
@@ -2310,12 +2310,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "IL",
@@ -2323,15 +2323,15 @@
             },
             "countryiso3code": "ISR",
             "date": "2023",
-            "value": 512184638998.974,
+            "value": 52003.7200729997,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "IT",
@@ -2339,15 +2339,15 @@
             },
             "countryiso3code": "ITA",
             "date": "2023",
-            "value": 2304605139862.79,
+            "value": 39065.4244365633,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "JM",
@@ -2355,15 +2355,15 @@
             },
             "countryiso3code": "JAM",
             "date": "2023",
-            "value": 19423355367.2372,
+            "value": 6839.72502408181,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "JP",
@@ -2371,15 +2371,15 @@
             },
             "countryiso3code": "JPN",
             "date": "2023",
-            "value": 4213167237905.83,
+            "value": 33836.1756271617,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "JO",
@@ -2387,15 +2387,15 @@
             },
             "countryiso3code": "JOR",
             "date": "2023",
-            "value": 51088476338.0282,
+            "value": 4466.08314208575,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KZ",
@@ -2403,15 +2403,15 @@
             },
             "countryiso3code": "KAZ",
             "date": "2023",
-            "value": 261840101059.923,
+            "value": 12879.4275257974,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KE",
@@ -2419,15 +2419,15 @@
             },
             "countryiso3code": "KEN",
             "date": "2023",
-            "value": 108038588970.595,
+            "value": 1952.30457929636,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KI",
@@ -2435,15 +2435,15 @@
             },
             "countryiso3code": "KIR",
             "date": "2023",
-            "value": 288610732.190775,
+            "value": 2177.70114080416,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KP",
@@ -2454,12 +2454,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KR",
@@ -2467,15 +2467,15 @@
             },
             "countryiso3code": "KOR",
             "date": "2023",
-            "value": 1712792854202.37,
+            "value": 33121.3712885508,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "XK",
@@ -2483,15 +2483,15 @@
             },
             "countryiso3code": "XKX",
             "date": "2023",
-            "value": 10468220306.907,
+            "value": 6221.20365212094,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KW",
@@ -2499,15 +2499,15 @@
             },
             "countryiso3code": "KWT",
             "date": "2023",
-            "value": 165384407267.056,
+            "value": 34075.8490439847,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KG",
@@ -2515,15 +2515,15 @@
             },
             "countryiso3code": "KGZ",
             "date": "2023",
-            "value": 15180842369.4894,
+            "value": 2138.22210211478,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LA",
@@ -2531,15 +2531,15 @@
             },
             "countryiso3code": "LAO",
             "date": "2023",
-            "value": 15843155731.2552,
+            "value": 2066.94979776957,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LV",
@@ -2547,15 +2547,15 @@
             },
             "countryiso3code": "LVA",
             "date": "2023",
-            "value": 42572151720.138,
+            "value": 22675.5786295407,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LB",
@@ -2563,15 +2563,15 @@
             },
             "countryiso3code": "LBN",
             "date": "2023",
-            "value": 20078620356.9931,
+            "value": 3477.72489842684,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LS",
@@ -2579,15 +2579,15 @@
             },
             "countryiso3code": "LSO",
             "date": "2023",
-            "value": 2117962430.3041,
+            "value": 916.282970463888,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LR",
@@ -2595,15 +2595,15 @@
             },
             "countryiso3code": "LBR",
             "date": "2023",
-            "value": 4390000000,
+            "value": 799.194470229642,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LY",
@@ -2611,15 +2611,15 @@
             },
             "countryiso3code": "LBY",
             "date": "2023",
-            "value": 45096462972.4014,
+            "value": 6172.81246940233,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LI",
@@ -2627,15 +2627,15 @@
             },
             "countryiso3code": "LIE",
             "date": "2023",
-            "value": 8287748667.20832,
+            "value": 207973.617746758,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LT",
@@ -2643,15 +2643,15 @@
             },
             "countryiso3code": "LTU",
             "date": "2023",
-            "value": 79789877416.1681,
+            "value": 27786.0057829276,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LU",
@@ -2659,15 +2659,15 @@
             },
             "countryiso3code": "LUX",
             "date": "2023",
-            "value": 87574021091.7525,
+            "value": 131407.681364513,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MO",
@@ -2675,15 +2675,15 @@
             },
             "countryiso3code": "MAC",
             "date": "2023",
-            "value": 45803067940.4072,
+            "value": 67476.5290813306,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MG",
@@ -2691,15 +2691,15 @@
             },
             "countryiso3code": "MDG",
             "date": "2023",
-            "value": 15869945477.855,
+            "value": 508.718427705736,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MW",
@@ -2707,15 +2707,15 @@
             },
             "countryiso3code": "MWI",
             "date": "2023",
-            "value": 12712150082.0792,
+            "value": 602.343619809252,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MY",
@@ -2723,15 +2723,15 @@
             },
             "countryiso3code": "MYS",
             "date": "2023",
-            "value": 399705137434.074,
+            "value": 11379.0851923557,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MV",
@@ -2739,15 +2739,15 @@
             },
             "countryiso3code": "MDV",
             "date": "2023",
-            "value": 6590894301.9579,
+            "value": 12530.3602359683,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ML",
@@ -2755,15 +2755,15 @@
             },
             "countryiso3code": "MLI",
             "date": "2023",
-            "value": 24621545564.8753,
+            "value": 1035.86242628411,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MT",
@@ -2771,15 +2771,15 @@
             },
             "countryiso3code": "MLT",
             "date": "2023",
-            "value": 22210718401.0207,
+            "value": 40182.4313854634,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MH",
@@ -2787,15 +2787,15 @@
             },
             "countryiso3code": "MHL",
             "date": "2023",
-            "value": 259300000,
+            "value": 6678.34239060448,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MR",
@@ -2803,15 +2803,15 @@
             },
             "countryiso3code": "MRT",
             "date": "2023",
-            "value": 10651709314.1644,
+            "value": 2120.82318421747,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MU",
@@ -2819,15 +2819,15 @@
             },
             "countryiso3code": "MUS",
             "date": "2023",
-            "value": 14101195732.6741,
+            "value": 11182.186568616,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MX",
@@ -2835,15 +2835,15 @@
             },
             "countryiso3code": "MEX",
             "date": "2023",
-            "value": 1793798859343.27,
+            "value": 13826.1306570122,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "FM",
@@ -2851,15 +2851,15 @@
             },
             "countryiso3code": "FSM",
             "date": "2023",
-            "value": 443916782.295594,
+            "value": 3941.37247887414,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MD",
@@ -2867,15 +2867,15 @@
             },
             "countryiso3code": "MDA",
             "date": "2023",
-            "value": 16711906746.2133,
+            "value": 6799.58594644576,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MC",
@@ -2883,15 +2883,15 @@
             },
             "countryiso3code": "MCO",
             "date": "2023",
-            "value": 9995350547.12166,
+            "value": 256580.515122745,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MN",
@@ -2899,15 +2899,15 @@
             },
             "countryiso3code": "MNG",
             "date": "2023",
-            "value": 20325121393.9074,
+            "value": 5838.63108083902,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ME",
@@ -2915,15 +2915,15 @@
             },
             "countryiso3code": "MNE",
             "date": "2023",
-            "value": 7530593375.22034,
+            "value": 12077.3747094687,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MA",
@@ -2931,15 +2931,15 @@
             },
             "countryiso3code": "MAR",
             "date": "2023",
-            "value": 144417103249.646,
+            "value": 3771.4462890625,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MZ",
@@ -2947,15 +2947,15 @@
             },
             "countryiso3code": "MOZ",
             "date": "2023",
-            "value": 20954220983.5473,
+            "value": 622.985619320596,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MM",
@@ -2963,15 +2963,15 @@
             },
             "countryiso3code": "MMR",
             "date": "2023",
-            "value": 66757619000,
+            "value": 1233.19666209269,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NA",
@@ -2979,15 +2979,15 @@
             },
             "countryiso3code": "NAM",
             "date": "2023",
-            "value": 12408271447.8691,
+            "value": 4187.60500350786,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NR",
@@ -2995,15 +2995,15 @@
             },
             "countryiso3code": "NRU",
             "date": "2023",
-            "value": 151455967.735319,
+            "value": 12754.1867566585,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NP",
@@ -3011,15 +3011,15 @@
             },
             "countryiso3code": "NPL",
             "date": "2023",
-            "value": 41047772331.0994,
+            "value": 1382.33055769304,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NL",
@@ -3027,15 +3027,15 @@
             },
             "countryiso3code": "NLD",
             "date": "2023",
-            "value": 1154361305398.06,
+            "value": 64572.0059558854,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NC",
@@ -3046,12 +3046,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NZ",
@@ -3059,15 +3059,15 @@
             },
             "countryiso3code": "NZL",
             "date": "2023",
-            "value": 255194972673.122,
+            "value": 48654.904227478,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NI",
@@ -3075,15 +3075,15 @@
             },
             "countryiso3code": "NIC",
             "date": "2023",
-            "value": 17805842283.8725,
+            "value": 2609.44492072931,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NE",
@@ -3091,15 +3091,15 @@
             },
             "countryiso3code": "NER",
             "date": "2023",
-            "value": 16698786973.0228,
+            "value": 638.336080723299,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NG",
@@ -3107,15 +3107,15 @@
             },
             "countryiso3code": "NGA",
             "date": "2023",
-            "value": 363846332834.618,
+            "value": 1596.63696129001,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MK",
@@ -3123,15 +3123,15 @@
             },
             "countryiso3code": "MKD",
             "date": "2023",
-            "value": 15763604287.9867,
+            "value": 8624.28400232117,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MP",
@@ -3142,12 +3142,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "NO",
@@ -3155,15 +3155,15 @@
             },
             "countryiso3code": "NOR",
             "date": "2023",
-            "value": 482949731776.587,
+            "value": 87497.3289297342,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "OM",
@@ -3171,15 +3171,15 @@
             },
             "countryiso3code": "OMN",
             "date": "2023",
-            "value": 105895708712.614,
+            "value": 20972.4830886637,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PK",
@@ -3187,15 +3187,15 @@
             },
             "countryiso3code": "PAK",
             "date": "2023",
-            "value": 337885531778.052,
+            "value": 1365.16927410976,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PW",
@@ -3203,15 +3203,15 @@
             },
             "countryiso3code": "PLW",
             "date": "2023",
-            "value": 281849100,
+            "value": 15899.4246065324,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PA",
@@ -3219,15 +3219,15 @@
             },
             "countryiso3code": "PAN",
             "date": "2023",
-            "value": 83318176900,
+            "value": 18686.4050961265,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PG",
@@ -3235,15 +3235,15 @@
             },
             "countryiso3code": "PNG",
             "date": "2023",
-            "value": 30816367066.9594,
+            "value": 2966.06830432055,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PY",
@@ -3251,15 +3251,15 @@
             },
             "countryiso3code": "PRY",
             "date": "2023",
-            "value": 43118053174.5413,
+            "value": 6299.99026533643,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PE",
@@ -3267,15 +3267,15 @@
             },
             "countryiso3code": "PER",
             "date": "2023",
-            "value": 266958720837.988,
+            "value": 7887.54185920108,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PH",
@@ -3283,15 +3283,15 @@
             },
             "countryiso3code": "PHL",
             "date": "2023",
-            "value": 437055627244.424,
+            "value": 3804.08274131097,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PL",
@@ -3299,15 +3299,15 @@
             },
             "countryiso3code": "POL",
             "date": "2023",
-            "value": 812451128978.58,
+            "value": 22145.2643088909,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PT",
@@ -3315,15 +3315,15 @@
             },
             "countryiso3code": "PRT",
             "date": "2023",
-            "value": 289696962620.235,
+            "value": 27386.2920595024,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PR",
@@ -3331,15 +3331,15 @@
             },
             "countryiso3code": "PRI",
             "date": "2023",
-            "value": 118375000000,
+            "value": 36948.4036416846,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "QA",
@@ -3347,15 +3347,15 @@
             },
             "countryiso3code": "QAT",
             "date": "2023",
-            "value": 213002809340.659,
+            "value": 80195.8746508549,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "RO",
@@ -3363,15 +3363,15 @@
             },
             "countryiso3code": "ROU",
             "date": "2023",
-            "value": 350775856415.189,
+            "value": 18404.2730871704,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "RU",
@@ -3379,15 +3379,15 @@
             },
             "countryiso3code": "RUS",
             "date": "2023",
-            "value": 2071505725030.58,
+            "value": 14159.3876953125,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "RW",
@@ -3395,15 +3395,15 @@
             },
             "countryiso3code": "RWA",
             "date": "2023",
-            "value": 14331722700.3249,
+            "value": 1027.03446804432,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "WS",
@@ -3411,15 +3411,15 @@
             },
             "countryiso3code": "WSM",
             "date": "2023",
-            "value": 938189443.830393,
+            "value": 4330.17840531329,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SM",
@@ -3430,12 +3430,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ST",
@@ -3443,15 +3443,15 @@
             },
             "countryiso3code": "STP",
             "date": "2023",
-            "value": 678976264.835436,
+            "value": 2940.93352926715,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SA",
@@ -3459,15 +3459,15 @@
             },
             "countryiso3code": "SAU",
             "date": "2023",
-            "value": 1218584533333.33,
+            "value": 36156.848337701,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SN",
@@ -3475,15 +3475,15 @@
             },
             "countryiso3code": "SEN",
             "date": "2023",
-            "value": 30696331295.7826,
+            "value": 1698.03387300843,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "RS",
@@ -3491,15 +3491,15 @@
             },
             "countryiso3code": "SRB",
             "date": "2023",
-            "value": 81342660752.3732,
+            "value": 12281.5058488303,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SC",
@@ -3507,15 +3507,15 @@
             },
             "countryiso3code": "SYC",
             "date": "2023",
-            "value": 2187379754.66167,
+            "value": 18262.7115849287,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SL",
@@ -3523,15 +3523,15 @@
             },
             "countryiso3code": "SLE",
             "date": "2023",
-            "value": 6411787856.06581,
+            "value": 757.848680560444,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SG",
@@ -3539,15 +3539,15 @@
             },
             "countryiso3code": "SGP",
             "date": "2023",
-            "value": 505439514078.019,
+            "value": 85412.230345235,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SX",
@@ -3555,15 +3555,15 @@
             },
             "countryiso3code": "SXM",
             "date": "2023",
-            "value": 1627776949.27374,
+            "value": 38077.5444869761,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SK",
@@ -3571,15 +3571,15 @@
             },
             "countryiso3code": "SVK",
             "date": "2023",
-            "value": 133896931490.224,
+            "value": 24673.5482979144,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SI",
@@ -3587,15 +3587,15 @@
             },
             "countryiso3code": "SVN",
             "date": "2023",
-            "value": 69148468417.3208,
+            "value": 32610.110922729,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SB",
@@ -3603,15 +3603,15 @@
             },
             "countryiso3code": "SLB",
             "date": "2023",
-            "value": 1660896530.71894,
+            "value": 2076.10768772563,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SO",
@@ -3619,15 +3619,15 @@
             },
             "countryiso3code": "SOM",
             "date": "2023",
-            "value": 10968517089.9982,
+            "value": 597.458854603043,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZA",
@@ -3635,15 +3635,15 @@
             },
             "countryiso3code": "ZAF",
             "date": "2023",
-            "value": 380699271816.395,
+            "value": 6022.54254192335,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SS",
@@ -3654,12 +3654,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ES",
@@ -3667,15 +3667,15 @@
             },
             "countryiso3code": "ESP",
             "date": "2023",
-            "value": 1620090734956.89,
+            "value": 33509.0127982139,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LK",
@@ -3683,15 +3683,15 @@
             },
             "countryiso3code": "LKA",
             "date": "2023",
-            "value": 83716142582.1945,
+            "value": 3798.89016573011,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "KN",
@@ -3699,15 +3699,15 @@
             },
             "countryiso3code": "KNA",
             "date": "2023",
-            "value": 1056751851.85185,
+            "value": 22600.4502299468,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "LC",
@@ -3715,15 +3715,15 @@
             },
             "countryiso3code": "LCA",
             "date": "2023",
-            "value": 2430166666.66667,
+            "value": 13554.7684784933,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "MF",
@@ -3734,12 +3734,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "VC",
@@ -3747,15 +3747,15 @@
             },
             "countryiso3code": "VCT",
             "date": "2023",
-            "value": 1072237037.03704,
+            "value": 10582.3656725229,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SD",
@@ -3763,15 +3763,15 @@
             },
             "countryiso3code": "SDN",
             "date": "2023",
-            "value": 39898289820.7951,
+            "value": 797.283447265625,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SR",
@@ -3779,15 +3779,15 @@
             },
             "countryiso3code": "SUR",
             "date": "2023",
-            "value": 3455146280.83975,
+            "value": 5494.07409425517,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SE",
@@ -3795,15 +3795,15 @@
             },
             "countryiso3code": "SWE",
             "date": "2023",
-            "value": 585489968189.064,
+            "value": 55567.0890080496,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "CH",
@@ -3811,15 +3811,15 @@
             },
             "countryiso3code": "CHE",
             "date": "2023",
-            "value": 894424821645.205,
+            "value": 100631.802755125,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "SY",
@@ -3827,15 +3827,15 @@
             },
             "countryiso3code": "SYR",
             "date": "2023",
-            "value": 19993439949.5435,
+            "value": 847.372723418531,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TJ",
@@ -3843,15 +3843,15 @@
             },
             "countryiso3code": "TJK",
             "date": "2023",
-            "value": 12244169292.7998,
+            "value": 1178.47990060249,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TZ",
@@ -3859,15 +3859,15 @@
             },
             "countryiso3code": "TZA",
             "date": "2023",
-            "value": 79062403836.8432,
+            "value": 1224.48962402344,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TH",
@@ -3875,15 +3875,15 @@
             },
             "countryiso3code": "THA",
             "date": "2023",
-            "value": 515906283940.933,
+            "value": 7195.10130919449,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TL",
@@ -3891,15 +3891,15 @@
             },
             "countryiso3code": "TLS",
             "date": "2023",
-            "value": 2079916909.49485,
+            "value": 1502.51964514186,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TG",
@@ -3907,15 +3907,15 @@
             },
             "countryiso3code": "TGO",
             "date": "2023",
-            "value": 9171261837.57103,
+            "value": 985.697512629974,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TO",
@@ -3923,15 +3923,15 @@
             },
             "countryiso3code": "TON",
             "date": "2023",
-            "value": 508735107.033734,
+            "value": 4863.76384632192,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TT",
@@ -3939,15 +3939,15 @@
             },
             "countryiso3code": "TTO",
             "date": "2023",
-            "value": 25489373405.0619,
+            "value": 18639.259241294,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TN",
@@ -3955,15 +3955,15 @@
             },
             "countryiso3code": "TUN",
             "date": "2023",
-            "value": 48196281783.9479,
+            "value": 3950.3753419816,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TR",
@@ -3971,15 +3971,15 @@
             },
             "countryiso3code": "TUR",
             "date": "2023",
-            "value": 1118252958513.72,
+            "value": 13105.6585004778,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TM",
@@ -3987,15 +3987,15 @@
             },
             "countryiso3code": "TKM",
             "date": "2023",
-            "value": 60628857142.8571,
+            "value": 8232.65225980002,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TC",
@@ -4003,15 +4003,15 @@
             },
             "countryiso3code": "TCA",
             "date": "2023",
-            "value": 1638653000,
+            "value": 35470.2151608295,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "TV",
@@ -4019,15 +4019,15 @@
             },
             "countryiso3code": "TUV",
             "date": "2023",
-            "value": 62280311.5852172,
+            "value": 6344.7750188689,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "UG",
@@ -4035,15 +4035,15 @@
             },
             "countryiso3code": "UGA",
             "date": "2023",
-            "value": 48768955859.2834,
+            "value": 1002.30913908852,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "UA",
@@ -4051,15 +4051,15 @@
             },
             "countryiso3code": "UKR",
             "date": "2023",
-            "value": 181221517868.744,
+            "value": 5139.59814453125,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "AE",
@@ -4067,15 +4067,15 @@
             },
             "countryiso3code": "ARE",
             "date": "2023",
-            "value": 514130432648.06,
+            "value": 49040.6947521035,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "GB",
@@ -4083,15 +4083,15 @@
             },
             "countryiso3code": "GBR",
             "date": "2023",
-            "value": 3369861888972.88,
+            "value": 49200.8101526146,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "US",
@@ -4099,15 +4099,15 @@
             },
             "countryiso3code": "USA",
             "date": "2023",
-            "value": 27720709000000,
+            "value": 82304.6204272866,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "UY",
@@ -4115,15 +4115,15 @@
             },
             "countryiso3code": "URY",
             "date": "2023",
-            "value": 77991666837.7382,
+            "value": 23019.4221560046,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "UZ",
@@ -4131,15 +4131,15 @@
             },
             "countryiso3code": "UZB",
             "date": "2023",
-            "value": 102641879248.764,
+            "value": 2878.96879292451,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "VU",
@@ -4147,15 +4147,15 @@
             },
             "countryiso3code": "VUT",
             "date": "2023",
-            "value": 1126313359.21923,
+            "value": 3515.23633611798,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "VE",
@@ -4166,12 +4166,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "VN",
@@ -4179,15 +4179,15 @@
             },
             "countryiso3code": "VNM",
             "date": "2023",
-            "value": 433857681378.291,
+            "value": 4323.35031982451,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "VI",
@@ -4198,12 +4198,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "PS",
@@ -4211,15 +4211,15 @@
             },
             "countryiso3code": "PSE",
             "date": "2023",
-            "value": 17847900000,
+            "value": 3455.02852911712,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "YE",
@@ -4230,12 +4230,12 @@
             "value": null,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZM",
@@ -4243,15 +4243,15 @@
             },
             "countryiso3code": "ZMB",
             "date": "2023",
-            "value": 27577956471.244,
+            "value": 1330.72780576709,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         },
         {
             "indicator": {
-                "id": "NY.GDP.MKTP.CD",
-                "value": "GDP (current US$)"
+                "id": "NY.GDP.PCAP.CD",
+                "value": "GDP per capita (current US$)"
             },
             "country": {
                 "id": "ZW",
@@ -4259,10 +4259,10 @@
             },
             "countryiso3code": "ZWE",
             "date": "2023",
-            "value": 35231369343.4002,
+            "value": 2156.03409322984,
             "unit": "",
             "obs_status": "",
-            "decimal": 0
+            "decimal": 1
         }
     ]
 ]

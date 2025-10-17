@@ -15,9 +15,9 @@ Contributions are welcome:
 - Run Jest unit tests with ```npm test```.
   
 ## Documentation
-[Requirements Spec](/docs/requirements.md)
-[Test Report](/docs/testReport.md)
-[Open Issues](/docs/issues.md)
+[Requirements Spec](/docs/requirements.md)  
+[Test Report](/docs/testReport.md)  
+[Open Issues](/docs/issues.md)  
   
 ## Dependencies
 npm @aangelinux/charts

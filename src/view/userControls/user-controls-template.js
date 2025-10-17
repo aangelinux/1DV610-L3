@@ -16,6 +16,7 @@ template.innerHTML =
 
 	.dropdown {
 		position: relative;
+		z-index: 2;
 	}
 
 	.dropbtn {
@@ -100,7 +101,7 @@ template.innerHTML =
 		<button class="dropbtn" id="datasetbtn">Dataset</button>
 		<div class="dropdown-content" id="dataset">
 			<p>Population</p>
-			<p>GDP</p>
+			<p>GDP per capita</p>
 			<p>Emissions (CO2)</p>
 		</div>
 	</div>
