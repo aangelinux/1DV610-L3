@@ -12,22 +12,27 @@ export class DataExtractor {
 	}
 
 	async extract(dataset) {
-		const path = this.#datasetConfig.api[dataset]  // add try-catch. if it doesn't work, use files
-		const data = await this.#fetchDataFrom(path)
+		let data
+		let path
+		
+		try {
+			path = this.#datasetConfig.api[dataset]
+			data = await this.#fetchDataFrom(path)
+		} catch (error) {
+			console.log(error.message)
+			path = this.#datasetConfig.files[dataset]
+			data = await this.#fetchDataFrom(path)
+		}
 		return data
 	}
 
 	async #fetchDataFrom(url) {
-		try {
-			const response = await fetch(url)
-			if (!response.ok) {
-				throw new Error("Data couldn't be fetched.", response.status)
-			}
-
-			const result = await response.json()
-			return result[1]  // second object in array contains the actual data
-		} catch (error) {
-			console.error(error.message)
+		const response = await fetch(url)
+		if (!response.ok) {
+			throw new Error("Data couldn't be fetched.", response.status)
 		}
+
+		const result = await response.json()
+		return result[1]  // second object in array contains the data
 	}
 }

@@ -11,10 +11,7 @@ import { DataParser } from "../model/dataParser.js"
 import { DataExtractor } from "../model/dataExtractor.js"
 
 export class WorldExplorer extends EventTarget {
-	// TODO need to write out that population values are in thousands
-	// and GDP in billions
-	// and emissions in .. something
-	// And fix issue with lists appearing behind charts
+	// TODO fix issue with lists appearing behind charts
 
 	constructor() {
 		super()

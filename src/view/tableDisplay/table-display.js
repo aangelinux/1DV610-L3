@@ -18,6 +18,8 @@ customElements.define("table-display",
 
 			this.#table = this.shadowRoot.querySelector("#table")
 			this.#tableBody = this.shadowRoot.querySelector("tbody")
+
+			this.numberFormatter = new Intl.NumberFormat()
 			this.abortController = new AbortController()
 		}
 
@@ -74,7 +76,7 @@ customElements.define("table-display",
 
 		#createValueCell(value) {
 			const valueCell = document.createElement("td")
-			valueCell.textContent = value
+			valueCell.textContent = this.numberFormatter.format(value)
 			return valueCell
 		}
 

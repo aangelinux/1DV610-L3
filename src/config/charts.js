@@ -17,6 +17,12 @@ export class ChartConfig {
 		font: "Lexend Light"
 	}
 
+	#SCALES = {  // For the chart title
+		"Population": "(thousands)",
+		"GDP": "(billions)",
+		"Emissions (CO2)": ""
+	}
+
 	constructor() {
 	}
 
@@ -26,6 +32,10 @@ export class ChartConfig {
 
 	get linear() {
 		return this.#LINEAR
+	}
+
+	get scales() {
+		return this.#SCALES
 	}
 
 	set title(content) {
