@@ -31,6 +31,14 @@ export class DataExtractor {
 		}
 
 		const result = await response.json()
+		this.#validate(result)
+		
 		return result[1]  // second object in array contains the data
+	}
+
+	#validate(result) {
+		if (!result || !Array.isArray(result) || result.length === 0) {
+			throw new Error("Data couldn't be fetched.")
+		}		
 	}
 }

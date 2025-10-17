@@ -52,15 +52,15 @@ Kapitel 8 argumenterar för att kod från en tredje part alltid ska isoleras fr�
   
 ---
 ## Kapitel 9 Enhetstester
-För att följa kapitel 9s principer la jag till enhetstester för all datahantering (UI hanteras av manuella tester). Jag missade dock att följa TTD eftersom jag började koda innan jag läste detta kapitel, och jag var osäker på hur jag skulle testa applikationen. De flesta metoderna är privata och kan inte anropas utifrån, och jag visste inte om jag borde testa all data som slutanvändare kan välja mellan eller endast testa att metoderna fungerar. I slutändan valde jag det första alternativet eftersom de privata metoderna ändå testas implicit. Jag skrev tester utifrån reglerna **Single Concept Per Test** och **FIRST**; alla tester är snabba, självständiga, returnerar true eller false och kan upprepas i olika miljöer.
-
-![C9](/images/code/chapter9.png)  
+För att följa kapitel 9s principer la jag till enhetstester för datahantering (UI hanteras av manuella tester). Jag missade dock att följa TTD eftersom jag började koda innan jag läste detta kapitel, och jag var osäker på hur jag skulle testa applikationen. De flesta metoderna är privata och kan inte anropas utifrån. Jag skrev tester utifrån reglerna **Single Concept Per Test** och **FIRST**; alla tester är snabba, självständiga, returnerar true eller false och kan upprepas i olika miljöer.  
   
-![C9](/images/code/chapter9_2.png)
+
 
 ---
 ## Kapitel 10 Klasser
-
+Initiellt hade jag bara en klass som hanterade alla data-relaterade uppgifter; den hämtade data, filtrerade, och bröt ner den till data-objekt som min L2 modul kunde hantera. Detta bröt mot flera Clean Code principer, dvs **Classes Should Be Small!**, **Single Responsibility Principle**, och **Cohesion**. Jag delade därför upp klassen i tre klasser: DataExtractor, DataFilter, och DataParser. Klasserna för datahantering är nu små och fokuserade på en specifik uppgift var.  
+  
+![C10](/images/code/chapter10.png)
 
 ---
 ## Kapitel 11 System

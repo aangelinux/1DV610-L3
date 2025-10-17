@@ -7,23 +7,14 @@ import "../view/chartDisplay/chart-display.js"
 import "../view/tableDisplay/table-display.js"
 import "../view/errorDisplay/error-display.js"
 
-import { DataParser } from "../model/dataParser.js"
-import { DataExtractor } from "../model/dataExtractor.js"
-import { DataFilter } from "../model/dataFilter.js"
-import { DatasetConfig } from "../config/datasets.js"
-import { FilterConfig } from "../config/filters.js"
-
 export class WorldExplorer extends EventTarget {
-	// TODO fix issue with lists appearing behind charts
-
-	constructor() {
+	constructor(dependencies) {
 		super()
 
-		this.datasetConfig = new DatasetConfig()
-		this.filterConfig = new FilterConfig()
-		this.dataExtractor = new DataExtractor(this.datasetConfig)
-		this.dataFilter = new DataFilter(this.filterConfig)
-		this.dataParser = new DataParser(this.datasetConfig)
+		const { extractor, filter, parser } = dependencies
+		this.dataExtractor = extractor
+		this.dataFilter = filter
+		this.dataParser = parser
 		
 		this.container = document.querySelector("#container")
 
