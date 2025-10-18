@@ -67,7 +67,7 @@ customElements.define("user-controls",
 
 		#validateUserChoices() {
 			if (this.#choicesAreValid()) {
-				this.#processChoices()
+				this.#emitChoices()
 			}
 		}
 
@@ -81,22 +81,14 @@ customElements.define("user-controls",
 			return true
 		}
 
-		#processChoices() {
-			const title = `${this.#options.dataset}: ${this.#options.filter}`
-
-			this.#emitChoicesEvent({
-				dataset: this.#options.dataset,
-				filter: this.#options.filter,
-				chartType: this.#options.chart,
-				title
-			})
-		}
-
-		#emitChoicesEvent(choicesData) {
+		#emitChoices() {
 			const event = new CustomEvent("choices-submitted", {
-				detail: choicesData,
-				bubbles: true
-			})
+				detail: {
+					dataset: this.#options.dataset,
+					filter: this.#options.filter,
+					chartType: this.#options.chart
+				},
+				bubbles: true })
 
 			this.dispatchEvent(event)
 		}

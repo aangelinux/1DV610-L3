@@ -37,13 +37,8 @@ customElements.define("table-display",
 			this.#clear()
 			this.#setHeader(choices.dataset)
 
-			choices.data.forEach((object) => {  // Fix
-				const row = this.#createRow()
-				const nameCell = this.#createNameCell(object.name)
-				const valueCell = this.#createValueCell(object.value)
-
-				row.appendChild(nameCell)
-				row.appendChild(valueCell)
+			choices.data.forEach((object) => {
+				const row = this.#createRow(object)
 				this.#tableBody.appendChild(row)
 			})
 
@@ -63,8 +58,13 @@ customElements.define("table-display",
 			this.#table.querySelector("#dataset").textContent = dataset
 		}
 
-		#createRow() {
+		#createRow(object) {
 			const row = document.createElement("tr")
+			const nameCell = this.#createNameCell(object.name)
+			const valueCell = this.#createValueCell(object.value)
+
+			row.appendChild(nameCell)
+			row.appendChild(valueCell)
 			return row
 		}
 

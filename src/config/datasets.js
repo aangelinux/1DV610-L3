@@ -3,12 +3,6 @@
  */
 
 export class DatasetConfig {
-	#DATASETS = {  // Fix
-		Population: "Population",
-		GDP: "GDP per capita",
-		Emissions: "Emissions (CO2)"
-	}
-
 	#API = {
 		"Population": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&date=2023&per_page=300",
 		"GDP per capita": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&date=2023&per_page=300",

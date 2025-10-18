@@ -35,7 +35,7 @@ export class DataExtractor {
 		this.#validateResponse(response)
 
 		const result = await response.json()
-		const data = result[1]
+		const data = result[1] // second object in array contains data
 		this.#validateData(data)
 
 		return data

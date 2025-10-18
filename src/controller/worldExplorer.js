@@ -27,7 +27,7 @@ export class WorldExplorer extends EventTarget {
 
 		document.addEventListener("choices-submitted", (event) => {
 			this.#removeError() 
-			this.#update(event.detail)})
+			this.#process(event.detail)})
 		document.addEventListener("error", () => this.#showError())
 	}
 
@@ -46,15 +46,14 @@ export class WorldExplorer extends EventTarget {
 		this.container.appendChild(table)
 	}
 
-	async #update(choices) {
+	async #process(choices) {
 		const { dataset, filter, chartType } = choices
-
+		
 		const fetchedData = await this.dataExtractor.extract(dataset)
 		if (!fetchedData) {
-			this.#showError()
-			return
+			return this.#showError()
 		}
-
+		
 		const data = this.#parse(fetchedData, choices)
 		this.#emitData({ data, dataset, filter, chartType })
 	}
@@ -74,14 +73,14 @@ export class WorldExplorer extends EventTarget {
 	}
 
 	#showError() {
-		const error = document.createElement("error-display")
-		this.container.querySelector("user-controls").after(error)
+		const errorDisplay = document.createElement("error-display")
+		this.container.querySelector("user-controls").after(errorDisplay)
 	}
 
 	#removeError() {
-		const error = this.container.querySelector("error-display")
-		if (error) {
-			error.remove()
+		const errorDisplay = this.container.querySelector("error-display")
+		if (errorDisplay) {
+			errorDisplay.remove()
 		}
 	}
 }

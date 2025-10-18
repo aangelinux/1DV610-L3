@@ -49,16 +49,16 @@ customElements.define("chart-display",
 
 		#update(choices) {
 			try {
-				this.#createChart(choices)
+				this.#renderChart(choices)
 				this.#show()
 			} catch (error) {
 				console.error(error)
 				this.#hide()
-				this.#emitErrorEvent()
+				this.#emitError()
 			}
 		}
 
-		#createChart(choices) {
+		#renderChart(choices) {
 			let chart
 			if (choices.chartType === "Bar Chart") {
 				chart = this.chart.createBarChart(choices.data, this.#chartConfig.linear)
@@ -80,7 +80,7 @@ customElements.define("chart-display",
 			this.#infoContainer.style.display = "none"
 		}
 
-		#emitErrorEvent() {
+		#emitError() {
 			const event = new CustomEvent("error", {
 				detail: "Chart could not be rendered.",
 				bubbles: true

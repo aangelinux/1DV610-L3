@@ -22,7 +22,6 @@ template.innerHTML =
 
 <div id="error">
 	<p>Something went wrong.</p>
-	<p>Please accept this cat as a token of my regret.</p>
 	<img src="/images/cat.webp" alt="Cat"/>
 </div>
 ` 
