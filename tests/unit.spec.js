@@ -1,5 +1,5 @@
 /**
- * @module Defines unit tests for DataParser.
+ * @module Defines unit tests for all data handling.
  */
 
 import { describe, test, expect, jest } from "@jest/globals"
