@@ -114,7 +114,7 @@ template.innerHTML =
 			<p>East Asia & Pacific</p>
 			<p>Europe & Central Asia</p>
 			<p>Latin America & Caribbean</p>
-			<p>Middle East & North Africa</p>
+			<p>Middle East, North Africa, Afghanistan & Pakistan</p>
 			<p>North America</p>
 			<p>South Asia</p>
 			<p>Sub-Saharan Africa</p>

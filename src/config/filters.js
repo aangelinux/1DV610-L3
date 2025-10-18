@@ -102,7 +102,7 @@ export class FilterConfig {
 			"East Asia & Pacific": this.#EAS,
 			"Europe & Central Asia": this.#ECS,
 			"Latin America & Caribbean": this.#LCN,
-			"Middle East & North Africa": this.#MEA,
+			"Middle East, North Africa, Afghanistan & Pakistan": this.#MEA,
 			"North America": this.#NAC,
 			"South Asia": this.#SAS,
 			"Sub-Saharan Africa": this.#SSF
