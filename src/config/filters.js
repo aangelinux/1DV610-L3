@@ -96,7 +96,7 @@ export class FilterConfig {
 	constructor() {
 	}
 
-	get regions() {
+	get filters() {
 		return {
 			"Global": this.#GLOBAL,
 			"East Asia & Pacific": this.#EAS,

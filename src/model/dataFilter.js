@@ -9,11 +9,11 @@ export class DataFilter {
 		this.#filterConfig = filterConfig
 	}
 
-	filter(data, filterKey) {
+	filter(data, key) {
 		let filteredData = []
-		const region = this.#filterConfig.regions[filterKey]
+		const filter = this.#filterConfig.filters[key]
 
-		region.forEach((country) => {
+		filter.forEach((country) => {
 			const match = this.#findMatch(data, country)
 			if (match) {
 				filteredData.push(match)
@@ -25,25 +25,16 @@ export class DataFilter {
 
 	#findMatch(data, country) {
 		for (const object of data) {
-			const match = JSON.stringify(object).match(country)
-			if (match && this.#isMatch(match, country)) {
-				return match
+			if (this.#isMatch(object, country)) {
+				return object
 			}
 		}
 	}
 
-	// Check if match is the correct one before proceeding
-	// because some region names include countries
-	// eg "Middle East, North Africa, Afghanistan & Pakistan"
-	#isMatch(match, country) { 
-		const input = match.input
-		const inputObject = JSON.parse(input)
-		const inputCountry = inputObject["country"]
-		const countryName = inputCountry["value"]
-
-		if (countryName === country) {
-			return true
-		}
-		return false
+	#isMatch(object, country) { 
+		const objectCountry = object["country"]
+		const countryName = objectCountry["value"]
+		
+		return countryName === country
 	}
 }

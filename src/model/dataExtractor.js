@@ -24,6 +24,7 @@ export class DataExtractor {
 			const url = this.#datasetConfig.api[dataset]
 			return await this.#fetch(url)
 		} catch (error) {
+			console.error(error)
 			const url = this.#datasetConfig.files[dataset]
 			return await this.#fetch(url)
 		}

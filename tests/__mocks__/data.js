@@ -1,4 +1,4 @@
-export const mockPopulationData = [
+export const mockFetchedData = [
 	{
 			"page": 1,
 			"pages": 1,
@@ -105,4 +105,70 @@ export const mockPopulationData = [
 				"decimal": 0
 		}
 	]
+]
+
+export const mockFilteredData = [
+	{
+			"indicator": {
+					"id": "SP.POP.TOTL",
+					"value": "Population, total"
+			},
+			"country": {
+					"id": "BI",
+					"value": "Burundi"
+			},
+			"countryiso3code": "BDI",
+			"date": "2023",
+			"value": 13689450,
+			"unit": "",
+			"obs_status": "",
+			"decimal": 0
+	},
+	{
+			"indicator": {
+					"id": "SP.POP.TOTL",
+					"value": "Population, total"
+			},
+			"country": {
+					"id": "BF",
+					"value": "Burkina Faso"
+			},
+			"countryiso3code": "BFA",
+			"date": "2023",
+			"value": 23025776,
+			"unit": "",
+			"obs_status": "",
+			"decimal": 0
+	},
+	{
+			"indicator": {
+					"id": "SP.POP.TOTL",
+					"value": "Population, total"
+			},
+			"country": {
+					"id": "CV",
+					"value": "Cabo Verde"
+			},
+			"countryiso3code": "CPV",
+			"date": "2023",
+			"value": 522331,
+			"unit": "",
+			"obs_status": "",
+			"decimal": 0
+	}
+]
+
+export const mockParsedData = [
+	{
+		name: "Burundi",
+		value: 13689
+	},
+	{
+		name: "Burkina Faso",
+		value: 23026
+	},
+	{
+		name: "Cabo Verde",
+		value: 522
+	}
 ]

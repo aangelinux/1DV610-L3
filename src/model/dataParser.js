@@ -4,61 +4,54 @@
 
 export class DataParser {
 	#datasetConfig
-	#currentDataset
+	#dataset
 
 	constructor(datasetConfig) {
 		this.#datasetConfig = datasetConfig
 	}
 
 	parse(data, dataset) {
-		this.#currentDataset = dataset
+		this.#dataset = dataset
 		const parsedData = this.#createArrayOf(data)
 		return parsedData
 	}
 
 	#createArrayOf(data) {
-		let parsedData = []
+		let dataObjects = []
 
-		data.forEach((dataElement) => {
-			const parsedObject = this.#createObject(dataElement)
-			if (parsedObject) {
-				parsedData.push(parsedObject)
+		data.forEach((element) => {
+			const object = this.#createObject(element)
+			if (object) {
+				dataObjects.push(object)
 			}
 		})
 
-		return parsedData
+		return dataObjects
 	}
 
-	#createObject(dataElement) {
-		const input = this.#parseInput(dataElement)
-		const name = this.#getName(input)
-		const value = this.#getValue(input)
+	#createObject(data) {
+		const name = this.#getName(data)
+		const value = this.#getValue(data)
 		if (!value) {
 			return
 		}
 		return { name, value }
 	}
 
-	#parseInput(dataElement) {
-		const input = dataElement.input
-		const parsedInput = JSON.parse(input)
-		return parsedInput
-	}
-
-	#getName(input) {
-		const country = input["country"]
+	#getName(data) {
+		const country = data["country"]
 		const name = country["value"]
 		return name
 	}
 
-	#getValue(input) {
-		const value = input["value"]
+	#getValue(data) {
+		const value = data["value"]
 		if (value === null) {
 			return  // Don't include countries without data
 		}
 
-		const scale = this.#datasetConfig.scales[this.#currentDataset]
-		const parsedValue = parseInt((value / scale).toFixed())
-		return parsedValue
+		const scale = this.#datasetConfig.scales[this.#dataset]
+		const scaledValue = parseInt((value / scale).toFixed())
+		return scaledValue
 	}
 }

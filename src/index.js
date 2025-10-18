@@ -9,10 +9,9 @@ import { DataFilter } from "./model/dataFilter.js"
 import { DataParser } from "./model/dataParser.js"
 import { WorldExplorer } from "./controller/worldExplorer"
 
-function start() {
+function main() {
 	const datasetConfig = new DatasetConfig()
 	const filterConfig = new FilterConfig()
-	
 	const dependencies = {
 		extractor: new DataExtractor(datasetConfig),
 		filter: new DataFilter(filterConfig),
@@ -22,4 +21,4 @@ function start() {
 	new WorldExplorer(dependencies)
 }
 
-start()
+main()

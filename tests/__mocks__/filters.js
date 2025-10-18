@@ -8,7 +8,7 @@ export class MockFilterConfig {
 	constructor() {
 	}
 
-	get regions() {
+	get filters() {
 		return {
 			"Africa": this.#AFRICA
 		}
