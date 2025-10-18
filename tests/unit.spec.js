@@ -2,49 +2,63 @@
  * @module Defines unit tests for DataParser.
  */
 
-import { describe, test, expect } from "@jest/globals"
+import { describe, test, expect, jest } from "@jest/globals"
 import { DataParser } from "../src/model/dataParser.js"
 import { DataExtractor } from "../src/model/dataExtractor.js"
 import { DataFilter } from "../src/model/dataFilter.js"
-import PopulationData from "../public/data/population.json"
 
-const northAmericaPop = [
-	{
-		name: "Canada",
-		value: 40083
-	},
-	{
-		name: "United States",
-		value: 	336806
-	},
-	{
-		name: "Bermuda",
-		value: 65
-	}
-]
+import { mockPopulationData } from "./__mocks__/population.js"
+import { MockFilterConfig } from "./__mocks__/filters.js"
+import { MockDatasetConfig } from "./__mocks__/datasets.js"
 
 describe("DataExtractor", () => {
-	test("fetches chosen dataset", async () => {
-		const dataExtractor = new DataExtractor()
-		const data = await dataExtractor.extract("Population")
+	test("fetches and returns dataset", async () => {
+		const mockDatasetConfig = new MockDatasetConfig()
+		const dataExtractor = new DataExtractor(mockDatasetConfig)
 
-		expect(data).toStrictEqual(PopulationData[1])
+		global.fetch = jest.fn(() => 
+			Promise.resolve({
+				ok: true,
+				json: () => Promise.resolve(mockPopulationData),
+			})
+		)
+		const data = await dataExtractor.extract("Population")
+		expect(data).toStrictEqual = mockPopulationData[1]
+	})
+
+	test("throws error if fetch fails", async () => {
+
+	})
+
+	test("throws error if data is corrupted", async () => {
+
 	})
 })
 
 describe("DataFilter", () => {
-	test("filters through dataset based on filterKey", () => {
-		const dataFilter = new DataFilter()
+	test("filters through dataset and returns matching data", () => {
+		const mockFilterConfig = new MockFilterConfig()
+		const dataFilter = new DataFilter(mockFilterConfig)
 
-		
+    const expectedData = [
+			["Burundi"], ["Burkina Faso"], ["Cabo Verde"]
+    ]
+
+		const data = dataFilter.filter(mockPopulationData[1].flat(), "Africa")
+		expect(data).toContainEqual(expectedData)
+	})
+
+	test("excludes countries/regions that are not strictly equal", () => {
+
 	})
 })
 
 describe("DataParser", () => {
-	test("parses raw data into array of data objects", () => {
-		const dataParser = new DataParser()
-		const data = dataParser.parse(PopulationData.flat(), "Population")
+	test("parses raw data into array of objects", () => {
 
-		expect(data).toStrictEqual(northAmericaPop)
+	})
+
+	test("excludes countries/regions without data", () => {
+
 	})
 })

@@ -17,15 +17,15 @@ customElements.define("error-display",
 		}
 
 		connectedCallback() {
+			this.#show()
 		}
 
 		disconnectedCallback() {
 			this.abortController.abort()
 		}
 
-		show(message) {
+		#show() {
 			this.shadowRoot.querySelector("#error").style.display = "block"
-			this.shadowRoot.querySelector("#message").textContent = message
 		}
 	}
 )

@@ -21,7 +21,7 @@ template.innerHTML =
 </style>
 
 <div id="error">
-	<p id="message"></p>
+	<p>Something went wrong.</p>
 	<p>Please accept this cat as a token of my regret.</p>
 	<img src="/images/cat.webp" alt="Cat"/>
 </div>

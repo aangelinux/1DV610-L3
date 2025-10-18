@@ -11,10 +11,9 @@ export class WorldExplorer extends EventTarget {
 	constructor(dependencies) {
 		super()
 
-		const { extractor, filter, parser } = dependencies
-		this.dataExtractor = extractor
-		this.dataFilter = filter
-		this.dataParser = parser
+		this.dataExtractor = dependencies.extractor
+		this.dataFilter = dependencies.filter
+		this.dataParser = dependencies.parser
 		
 		this.container = document.querySelector("#container")
 
@@ -29,7 +28,7 @@ export class WorldExplorer extends EventTarget {
 		document.addEventListener("choices-submitted", (event) => {
 			this.#removeError() 
 			this.#update(event.detail)})
-		document.addEventListener("error", (event) => this.#showError(event.detail))
+		document.addEventListener("error", () => this.#showError())
 	}
 
 	#addControls() {
@@ -50,22 +49,23 @@ export class WorldExplorer extends EventTarget {
 	async #update(choices) {
 		const { dataset, filter, chartType } = choices
 
-		const rawData = await this.#tryToExtract(dataset)
-		const filteredData = this.dataFilter.filter(rawData, filter)
-		const data = this.dataParser.parse(filteredData, dataset)
-		
-		this.#emitParsedData({ data, dataset, filter, chartType })
-	}
-
-	async #tryToExtract(dataset) {
-		try {
-			return await this.dataExtractor.extract(dataset)
-		} catch (e) {
-			this.#showError(e.message)
+		const fetchedData = await this.dataExtractor.extract(dataset)
+		if (!fetchedData) {
+			this.#showError()
+			return
 		}
+
+		const data = this.#parse(fetchedData, choices)
+		this.#emitData({ data, dataset, filter, chartType })
 	}
 
-	#emitParsedData(data) {
+	#parse(fetchedData, choices) {
+		const filteredData = this.dataFilter.filter(fetchedData, choices.filter)
+		const parsedData = this.dataParser.parse(filteredData, choices.dataset)
+		return parsedData
+	}
+
+	#emitData(data) {
 		const event = new CustomEvent("data-parsed", {
 			detail: data,
 			bubbles: true
@@ -73,10 +73,9 @@ export class WorldExplorer extends EventTarget {
 		document.dispatchEvent(event)
 	}
 
-	#showError(message) {
+	#showError() {
 		const error = document.createElement("error-display")
-		this.container.children[1].before(error) // TODO fix
-		error.show(message)
+		this.container.querySelector("user-controls").after(error)
 	}
 
 	#removeError() {

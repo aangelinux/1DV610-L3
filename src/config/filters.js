@@ -1,5 +1,5 @@
 /**
- * @module Configures regions the user can filter by.
+ * @module Configures keys the user can filter by.
  */
 
 export class FilterConfig {

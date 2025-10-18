@@ -1,5 +1,5 @@
 /**
- * @module Defines logic for extracting data.
+ * @module Fetches data from an API.
  */
 
 export class DataExtractor {
@@ -10,35 +10,45 @@ export class DataExtractor {
 	}
 
 	async extract(dataset) {
-		let data
-		let path
-		
 		try {
-			path = this.#datasetConfig.api[dataset]
-			data = await this.#fetchDataFrom(path)
+			const data = await this.#tryFetch(dataset)
+			return data
 		} catch (error) {
-			console.log(error.message)
-			path = this.#datasetConfig.files[dataset]
-			data = await this.#fetchDataFrom(path)
+			console.error(error)
+			return ""
 		}
+	}
+
+	async #tryFetch(dataset) {
+		try {
+			const url = this.#datasetConfig.api[dataset]
+			return await this.#fetch(url)
+		} catch (error) {
+			const url = this.#datasetConfig.files[dataset]
+			return await this.#fetch(url)
+		}
+	}
+
+	async #fetch(url) {
+		const response = await fetch(url)
+		this.#validateResponse(response)
+
+		const result = await response.json()
+		const data = result[1]
+		this.#validateData(data)
+
 		return data
 	}
 
-	async #fetchDataFrom(url) {
-		const response = await fetch(url)
+	#validateResponse(response) {
 		if (!response.ok) {
-			throw new Error("Data couldn't be fetched.", response.status)
+			throw new Error("Data couldn't be fetched.")
 		}
-
-		const result = await response.json()
-		this.#validate(result)
-		
-		return result[1]  // second object in array contains the data
 	}
 
-	#validate(result) {
-		if (!result || !Array.isArray(result) || result.length === 0) {
-			throw new Error("Data couldn't be fetched.")
-		}		
+	#validateData(data) {
+		if (!data || !Array.isArray(data) || data.length === 0) {
+			throw new Error("Data was corrupted.")
+		}
 	}
 }

@@ -1,5 +1,5 @@
 /**
- * @module Defines logic for filtering through datasets.
+ * @module Filters through datasets to find data matching the filter key.
  */
 
 export class DataFilter {

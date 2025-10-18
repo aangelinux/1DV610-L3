@@ -39,7 +39,11 @@ customElements.define("chart-display",
 		}
 
 		#setTitle(choices) {
-			const title = `${choices.dataset} ${this.#chartConfig.scales[choices.dataset]}: ${choices.filter}`
+			const dataset = choices.dataset
+			const scale = this.#chartConfig.scales[dataset]
+			const filter = choices.filter
+
+			const title = `${dataset} ${scale}: ${filter}`
 			this.#chartConfig.title = title
 		}
 

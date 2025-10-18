@@ -1,5 +1,5 @@
 /**
- * @module Defines logic for parsing raw data into usable objects.
+ * @module Parses raw data into usable objects.
  */
 
 export class DataParser {
