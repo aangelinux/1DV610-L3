@@ -17,9 +17,9 @@
 
 ---  
 # Unit tests
-![UnitTests](https://img.shields.io/badge/unit_tests-2_pass_0_fail-green)
+![UnitTests](https://img.shields.io/badge/unit_tests-7_pass_0_fail-green)
   
 
 ---
 # Summary
-Manual tests have been done to check that all UI functions work as intended, and unit tests have been done to ensure all data is being extracted and parsed correctly.
+Manual tests have been done to check that all UI functions work as intended, and unit tests have been done to ensure data is being fetched, filtered, and parsed correctly.

@@ -43,13 +43,13 @@ export class DataExtractor {
 
 	#validateResponse(response) {
 		if (!response.ok) {
-			throw new Error("Data couldn't be fetched.")
+			throw new Error(`Data couldn't be fetched, status: ${response.status}`)
 		}
 	}
 
 	#validateData(data) {
 		if (!data || !Array.isArray(data) || data.length === 0) {
-			throw new Error("Data was corrupted.")
+			throw new Error(`Data was corrupted: ${data}`)
 		}
 	}
 }
