@@ -53,7 +53,6 @@ export class WorldExplorer extends EventTarget {
 		if (!fetchedData) {
 			return this.#showError()
 		}
-		
 		const data = this.#parse(fetchedData, choices)
 		this.#emitData({ data, dataset, filter, chartType })
 	}
