@@ -1,6 +1,10 @@
 # World Explorer
 <!-- Screenshots! -->
-The **World Explorer** website displays global and regional statistics for three different datasets: Population, GDP, and Emissions (CO2), all sourced from the [World Bank](https://www.worldbank.org/ext/en/home). The data is visualized with charts and easy-to-read tables; users may choose to view any combination of dataset and filter.  
+The **World Explorer** website displays global and regional statistics for three different datasets: Population, GDP per capita, and Emissions (CO2), all sourced from the [World Bank](https://www.worldbank.org/ext/en/home). The data is visualized with charts and tables; users can choose to view any combination of dataset and filter.  
+  
+![Website](/images/worldExplorer.png)  
+![Website_2](/images/worldExplorer_2.png)
+  
   
 ## Usage
 Link:  ""
