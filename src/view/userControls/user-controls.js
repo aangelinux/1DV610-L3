@@ -1,5 +1,5 @@
 /**
- * @module Defines a web-component for handling user controls.
+ * @module Defines a web-component for handling user choices.
  */
 
 import { template } from "./user-controls-template"
@@ -11,7 +11,7 @@ customElements.define("user-controls",
 		#filters
 		#filterButton
 		#chartButtons
-		#options = {
+		#userChoices = {
 			dataset: null,
 			filter: null,
 			chart: null,
@@ -56,8 +56,8 @@ customElements.define("user-controls",
 			this.abortController.abort()
 		}
 
-		#saveUserChoice(option, choice) {
-			this.#options[option] = choice.innerText
+		#saveUserChoice(key, choice) {
+			this.#userChoices[key] = choice.innerText
 		}
 
 		#updateDisplay(button, choice) {
@@ -71,9 +71,9 @@ customElements.define("user-controls",
 		}
 
 		#choicesAreValid() {
-			for (const option in this.#options) {
-				if (!this.#options[option]) {
-					alert(`Please choose a ${option}.`)
+			for (const key in this.#userChoices) {
+				if (!this.#userChoices[key]) {
+					alert(`Please choose a ${key}.`)
 					return false
 				}
 			}
@@ -83,9 +83,9 @@ customElements.define("user-controls",
 		#emitChoices() {
 			const event = new CustomEvent("choices-submitted", {
 				detail: {
-					dataset: this.#options.dataset,
-					filter: this.#options.filter,
-					chartType: this.#options.chart
+					dataset: this.#userChoices.dataset,
+					filter: this.#userChoices.filter,
+					chartType: this.#userChoices.chart
 				},
 				bubbles: true })
 

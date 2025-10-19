@@ -25,7 +25,6 @@ export class DataParser {
 				dataObjects.push(object)
 			}
 		})
-
 		return dataObjects
 	}
 

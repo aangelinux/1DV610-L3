@@ -6,13 +6,15 @@ import { template } from "./error-display-template.js"
 
 customElements.define("error-display",
   class extends HTMLElement {
+		#errorDisplay
+
 		constructor() {
 			super()
 
 			this.attachShadow({ mode: 'open' })
 				.appendChild(template.content.cloneNode(true))
 
-			this.abortController = new AbortController()
+			this.#errorDisplay = this.shadowRoot.querySelector("#error")
 		}
 
 		connectedCallback() {
@@ -20,11 +22,10 @@ customElements.define("error-display",
 		}
 
 		disconnectedCallback() {
-			this.abortController.abort()
 		}
 
 		#show() {
-			this.shadowRoot.querySelector("#error").style.display = "block"
+			this.#errorDisplay.style.display = "block"
 		}
 	}
 )

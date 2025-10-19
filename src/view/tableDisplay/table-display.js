@@ -61,9 +61,9 @@ customElements.define("table-display",
 			const row = document.createElement("tr")
 			const nameCell = this.#createNameCell(object.name)
 			const valueCell = this.#createValueCell(object.value)
-
 			row.appendChild(nameCell)
 			row.appendChild(valueCell)
+			
 			return row
 		}
 
