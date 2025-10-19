@@ -5,7 +5,7 @@ The **World Explorer** website displays global and regional statistics for three
 ![Website2](/images/worldExplorer_2.png)
   
 ## Usage
-Link:  ""
+Link: [World Explorer](https://l3worldexplorer.netlify.app/)
   
 ## Contributions
 Contributions are welcome:  
