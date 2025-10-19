@@ -15,11 +15,12 @@
 | #5   | Errors are handled in a user-friendly way            | \-                                                                                                           | 1\. Text says "Something went wrong"<br>2\. Image of cat displayed on page                                                                                                                          | \-                                                    | ✅      |  
   
   
+
+
 ---  
 # Unit tests
-![UnitTests](https://img.shields.io/badge/unit_tests-7_pass_0_fail-green)
-  
+[Unit tests](/tests/unit.spec.js) ![badge](https://img.shields.io/badge/unit_tests-7_pass_0_fail-green)  
 
 ---
 # Summary
-Manual tests have been done to check that all UI functions work as intended, and unit tests have been done to ensure data is being fetched, filtered, and parsed correctly.
+Manual tests have been done to check that all UI components work as intended, and unit tests have been done to ensure data is being fetched, filtered, and parsed correctly.

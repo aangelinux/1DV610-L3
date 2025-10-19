@@ -61,6 +61,6 @@ I kapitel 10 beskrivs principer som **Classes Should Be Small!**, **Single Respo
 ## Kapitel 11 System
 I kapitel 11 beskrivs principen **Separate Constructing a System from Using It**, som säger att objekt initialisering ska hållas separat från användning. För att följa den principen skapade jag en funktion, ```main()``` som ansvarar för att initiera alla objekt som applikationen använder, enligt **Separation of Main**, och skicka in dem i konstruktorn enligt **Dependency Injection**. Detta gjorde det mycket enklare att skapa enhetstester eftersom objekt inte längre är tätt kopplade till varandra och man kan skapa mocks av objekt.
   
-För systemets arkitektur valde jag ett MVC-mönster; jag tänkte att design patterns inte är nödvändiga här eftersom applikationen är relativt liten och enkel och inte kommer bli större.  
+För systemets arkitektur valde jag ett event-drivet MVC-mönster eftersom applikationen är relativt liten och enkel. Men om den hade blivit större skulle det kanske varit bättre med en mer formell arkitektur/design pattern.  
   
 ![C11](/images/code/chapter11.png)

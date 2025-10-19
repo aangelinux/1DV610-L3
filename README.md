@@ -15,7 +15,7 @@ Contributions are welcome:
 - Run Jest unit tests with ```npm test```.
   
 ## Documentation
-[Requirements Spec](/docs/requirements.md)  
+[Specification](/docs/requirements.md)  
 [Test Report](/docs/testReport.md)  
 [Open Issues](/docs/issues.md)  
   
@@ -32,3 +32,4 @@ Licensed under the MIT license.
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
