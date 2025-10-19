@@ -1,6 +1,5 @@
 /**
  * @module Defines a web-component for handling user controls.
- * @file src/components/user-controls.js
  */
 
 import { template } from "./user-controls-template"

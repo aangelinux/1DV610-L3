@@ -1,6 +1,5 @@
 /**
  * @module Defines a web-component for displaying tables.
- * @file src/components/table-display.js
  */
 
 import { template } from "./table-display-template.js"

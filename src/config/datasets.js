@@ -9,7 +9,7 @@ export class DatasetConfig {
 		"Emissions (CO2)": "https://api.worldbank.org/v2/country/all/indicator/EN.GHG.CO2.MT.CE.AR5?format=json&date=2023&per_page=300"
 	}
 
-	#FILES = {  // Backup if API fails
+	#FILES = {  // Fallback if API fails
 		"Population": "/data/population.json",
 		"GDP per capita": "/data/gdp.json",
 		"Emissions (CO2)": "/data/emissions.json"

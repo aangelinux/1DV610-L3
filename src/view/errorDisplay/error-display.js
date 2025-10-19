@@ -1,6 +1,5 @@
 /**
  * @module Defines a web-component for displaying user-friendly errors.
- * @file src/components/error-display.js
  */
 
 import { template } from "./error-display-template.js"

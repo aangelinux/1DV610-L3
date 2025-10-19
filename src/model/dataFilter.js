@@ -1,5 +1,5 @@
 /**
- * @module Filters through datasets to find data matching the filter key.
+ * @module Filters through datasets and saves data that matches the key.
  */
 
 export class DataFilter {
@@ -33,8 +33,8 @@ export class DataFilter {
 
 	#isMatch(object, country) { 
 		const objectCountry = object["country"]
-		const countryName = objectCountry["value"]
+		const objectCountryName = objectCountry["value"]
 		
-		return countryName === country
+		return objectCountryName === country
 	}
 }

@@ -1,5 +1,5 @@
 /**
- * @module Fetches data from an API.
+ * @module Fetches datasets.
  */
 
 export class DataExtractor {
@@ -11,7 +11,7 @@ export class DataExtractor {
 
 	async extract(dataset) {
 		try {
-			const data = await this.#tryFetch(dataset)
+			const data = await this.#tryApiThenFiles(dataset)
 			return data
 		} catch (error) {
 			console.error(error)
@@ -19,7 +19,7 @@ export class DataExtractor {
 		}
 	}
 
-	async #tryFetch(dataset) {
+	async #tryApiThenFiles(dataset) {
 		try {
 			const url = this.#datasetConfig.api[dataset]
 			return await this.#fetch(url)
@@ -35,8 +35,9 @@ export class DataExtractor {
 		this.#validateResponse(response)
 
 		const result = await response.json()
-		const data = result[1] // second object in array contains data
-		this.#validateData(data)
+		this.#validateResult(result)
+		const data = result[1] // Second object in result contains data
+		this.#validateResult(data)
 
 		return data
 	}
@@ -47,9 +48,9 @@ export class DataExtractor {
 		}
 	}
 
-	#validateData(data) {
-		if (!data || !Array.isArray(data) || data.length === 0) {
-			throw new Error(`Data was corrupted: ${data}`)
+	#validateResult(result) {
+		if (!result || !Array.isArray(result) || result.length < 1) {
+			throw new Error(`Data was corrupted: ${result}`)
 		}
 	}
 }

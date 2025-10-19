@@ -1,6 +1,5 @@
 /**
  * @module Defines a web-component for displaying charts.
- * @file src/components/chart-display.js
  */
 
 import { template } from "./chart-display-template.js"
