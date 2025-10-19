@@ -19,7 +19,8 @@
 
 ---  
 # Unit tests
-[Unit tests](/tests/unit.spec.js) ![badge](https://img.shields.io/badge/unit_tests-7_pass_0_fail-green)  
+[Unit tests](/tests/unit.spec.js)  
+![badge](https://img.shields.io/badge/unit_tests-7_pass_0_fail-green)  
 
 ---
 # Summary
