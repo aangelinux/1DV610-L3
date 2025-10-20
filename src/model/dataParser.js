@@ -50,7 +50,7 @@ export class DataParser {
 		}
 
 		const scale = this.#datasetConfig.scales[this.#dataset]
-		const scaledValue = parseInt((value / scale).toFixed())
+		const scaledValue = Math.round((value / scale))
 		return scaledValue
 	}
 }

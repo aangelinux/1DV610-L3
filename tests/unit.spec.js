@@ -3,10 +3,10 @@
  */
 
 import { describe, test, expect, jest } from "@jest/globals"
+import { DatasetConfig } from "../src/config/datasets.js"
 import { DataParser } from "../src/model/dataParser.js"
 import { DataExtractor } from "../src/model/dataExtractor.js"
 import { DataFilter } from "../src/model/dataFilter.js"
-import { DatasetConfig } from "../src/config/datasets.js"
 
 import { MockFilterConfig } from "./__mocks__/filters.js"
 import { mockFetchedData, mockFilteredData, mockParsedData } from "./__mocks__/data.js"

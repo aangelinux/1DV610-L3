@@ -34,14 +34,14 @@ Enligt kapitel 6 bör man exponera data via data strukturer, och låta separata 
   
 ---
 ## Kapitel 7 Felhantering
-I kapitel 7 beskriver principerna **Use Exceptions Rather than Return Codes** och **Write Your Try-Catch-Finally Statement First** att fel ska hanteras med undantag, och try-catch block ska skrivas först. Där min kod anropar ett externt API lät jag den kasta undantag om anropet misslyckas eller responsen är inkorrekt, och jag definierade ett try-catch block som fångar dessa undantag och returnerar en tom sträng. Om en tom sträng returneras stoppar controller-klassen dataflödet och applikationen visar upp ett användarvänligt felmeddelande. Jag valde att returnera en tom sträng istället för null pga bokens regel **Don't Return Null**. Men jag var osäker på om det var en okej lösning eftersom det är otydligt varför en tom sträng returneras, och utan kontrollsatsen i controller-klassen som ser till att dataflödet stoppas kan applikationen fortsätta köra på ogiltig data.  
+I kapitel 7 beskriver principerna **Use Exceptions Rather than Return Codes** och **Write Your Try-Catch-Finally Statement First** att fel ska hanteras med undantag, och try-catch block ska skrivas först. I applikationen är det främst två klasser som anropar varsitt API där fel kan uppstå. Jag har därför använt try-catch block för att fånga alla eventuella fel, och sedan låtit controller-klassen hantera fel genom att visa upp ett användarvänligt felmeddelande på appen. I en av klasserna använde jag dock en lösning som förmodligen var dålig; ifall API-anropet misslyckas låter jag klassen fånga felet i en try-catch och returnera en tom sträng, vilket gör att controller-klassen stoppar applikationsflödet och visar upp felmeddelande. Jag valde en tom sträng istället för null pga bokens princip **Don't Return Null**. Men det kändes som en svag och otydlig lösning och det hade nog kunnat hanteras på mycket bättre sätt.  
   
 ![C7](/images/code/chapter7.png)  
 ![C7.2](/images/code/chapter7_2.png)
 
 ---
 ## Kapitel 8 Gränser
-Enligt kapitel 8s princip **Clean Boundaries** ska extern kod alltid isoleras från ens egen kod, eftersom man inte har kontroll över ändringar som görs i den externa koden. I den här applikation är det två externa system som anropas, min L2 modul och World Banks API. För att isolera dessa från resten av applikationen har jag lagt modulanropen i en separat webbkomponent, och för att hantera eventuella problem med anrop till World Banks API har jag sparat all data i JSON-filer, så att de kan användas som fallback.  
+Enligt kapitel 8s princip **Clean Boundaries** ska extern kod alltid isoleras från ens egen kod eftersom man inte har kontroll över ändringar som kan göras i den externa koden. I den här applikation är det två externa system som anropas, min L2 modul och World Banks API. Jag har isolerat modulanropen i en separat webbkomponent så att resten av applikation fungerar som vanligt ifall problem inträffar i modulen. För att isolera anropen till World Bank API:et har jag lagt dem i en separat klass, DataExtractor, och lagrat data i JSON-filer som kan användas som fallback ifall det blir problem med API:et.  
   
 ![C8](/images/code/chapter8.png)
   
@@ -55,7 +55,8 @@ I kapitel 9 beskriver principerna **Clean Tests** och **Single Concept Per Test*
 ## Kapitel 10 Klasser
 I kapitel 10 beskrivs principer som **Classes Should Be Small!**, **Single Responsibility Principle**, och **Cohesion**, som säger att klasser ska vara små, fokuserade, och hantera en uppgift var. Initiellt hade jag endast en klass för att hantera data, vilket bröt mot alla dessa principer. Jag delade därför upp den i tre klasser: DataExtractor, DataFilter, och DataParser. Klasserna är nu mycket mindre och fokuserade, vilket gör koden enklare att testa, debugga, och underhålla. Det gjorde det även enklare att följa kapitel 5s regel om att filer ska vara små, och kapitel 2s principer om att skapa tydliga namn; eftersom varje klass endast gör en sak var det lättare att komma på beskrivande namn.  
   
-![C10](/images/code/chapter10.png)
+![C10](/images/code/chapter10.png)  
+![C10.2](/images/code/chapter10_2.png)
 
 ---
 ## Kapitel 11 System

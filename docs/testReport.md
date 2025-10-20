@@ -27,4 +27,4 @@
 
 ---
 # Summary
-Manual tests have been done to check that all UI components work as intended, and unit tests have been done to ensure data is being fetched, filtered, and parsed correctly.
+Manual tests are done to ensure that all UI components work as intended. Unit tests make sure data is being fetched, filtered, and parsed correctly. They run automatically when pushing to the remote repo.

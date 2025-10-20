@@ -8,15 +8,6 @@ import "../view/tableDisplay/table-display.js"
 import "../view/errorDisplay/error-display.js"
 
 export class WorldExplorer extends EventTarget {
-	// TODO
-	// Finish README (GIF, link)
-	// Add jsdocs to public methods
-	// Change .toFixed() to Math.round()
-	// Add pipeline for automatic unit tests
-	// Create 1-2 unit tests for controller
-	// Add coverage report
-	// Refactor L2, update reflections
-	
 	constructor(dependencies) {
 		super()
 
