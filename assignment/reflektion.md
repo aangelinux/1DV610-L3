@@ -22,7 +22,9 @@ I funktionen nedan har jag lagt till en kommentar som förklarar att det andra o
   
 ---
 ## Kapitel 5 Formatering
-Enligt kapitel 5 bör man formatera kod i en logisk vertikal order med relaterad logik nära varandra och metodanrop i en nedåtgående sekvens enligt principerna **Vertical Density**, **Vertical Distance**, och **Vertical Ordering**. Jag har därför försökt strukturera koden så att alla anropade metoder ligger precis nedanför (eller så nära som möjligt) den anropande metoden. I L2 hade jag problem med principen **Horizontal Formatting** som säger att man inte ska ha för långa kodrader. Problemet var att många av mina metod- och variabelnamn var långa eftersom jag försökte följa kapitel 2s principer **Use Meaningful Names**, och för att jag försökte skriva tydliga exception-meddelanden, vilket ledde till att kodraderna blev långa. I vissa fall kunde jag dela upp koden på flera rader (tex metodargument, objekt), men i andra fall behövde jag välja mellan att korta ned namnen/meddelanden eller låta kodraderna vara långa.  
+Enligt kapitel 5 bör man formatera kod i en logisk vertikal order med relaterad logik nära varandra och metodanrop i en nedåtgående sekvens enligt principerna **Vertical Density**, **Vertical Distance**, och **Vertical Ordering**. Jag har därför försökt strukturera koden så att alla anropade metoder ligger precis nedanför (eller så nära som möjligt) den anropande metoden.  
+  
+I L2 hade jag problem med principen **Horizontal Formatting** som säger att man inte ska ha för långa kodrader. Problemet var att många av mina metod- och variabelnamn var långa eftersom jag försökte följa kapitel 2s principer **Use Meaningful Names**, och för att jag försökte skriva tydliga exception-meddelanden, vilket ledde till att kodraderna blev långa. I vissa fall kunde jag dela upp koden på flera rader (tex metodargument, objekt), men i andra fall behövde jag välja mellan att korta ned namnen/meddelanden eller låta kodraderna vara långa.  
   
 Jag använde också **The Newspaper Metaphor** till hjälp för att skapa strukturen, enligt bilden nedan.
   
@@ -30,20 +32,26 @@ Jag använde också **The Newspaper Metaphor** till hjälp för att skapa strukt
   
 ---
 ## Kapitel 6 Objekt och Data Strukturer
-I L2 hade jag en klass, Config, som både utförde operationer på sin egen data och exponerade dem för andra klasser via publika accessors. Detta bröt mot kapitel 6s princip om **Data/Object Anti-Symmetry** och skapade en sk **Hybrid**. Jag flyttade därför datan till en separat klass, en DTO, som endast definierar klassvariabler och exponerar dem via getters men inte har några andra metoder eller beteende. Dock var Config en relativt liten klass redan innan jag flyttade ut datan till en separat DTO, så man kan ju argumentera för att den här ändringen mest tillförde onödig komplexitet och extra kod. Å andra sidan gör det Config mer testbar; eftersom DTOn skickas in med dependency injection skulle det vara lätt att mocka DTOn om man vill testa Configs metoder med annan data.  
+I L2 hade jag en klass, Config, som både utförde operationer på sin egen data och exponerade dem för andra klasser via publika accessors. Detta bröt mot kapitel 6s princip om **Data/Object Anti-Symmetry** och skapade en sk **Hybrid**. Jag flyttade därför datan till en separat klass, en DTO, som endast definierar klassvariabler och exponerar dem via getters men inte har några andra metoder eller beteende.  
+  
+Dock var Config en relativt liten klass redan innan jag flyttade ut datan till en separat DTO, så man kan ju argumentera för att den här ändringen mest tillförde onödig komplexitet och extra kod. Å andra sidan gör det Config mer testbar; eftersom DTOn skickas in med dependency injection skulle det vara lätt att mocka DTOn om man vill testa Configs metoder med annan data.  
   
 ![C6](/images/code/chapter6.png)
   
 ---
 ## Kapitel 7 Felhantering
-I kapitel 7 beskriver principerna **Use Exceptions Rather than Return Codes** och **Write Your Try-Catch-Finally Statement First** att fel ska hanteras med undantag, och try-catch block ska skrivas först. I L2 modulen kastas undantag om valideringsfel uppstår. I applikationen kan det främst inträffa fel där externa API:er anropas, så jag har använt try-catch block för att fånga alla eventuella fel och sedan låtit controller-klassen visa upp ett användarvänligt felmeddelande på appen. I klassen DataExtractor använde jag dock en lösning som förmodligen inte var bra. Ifall API-anropet misslyckas låter jag klassen fånga felet i en try-catch och returnera en tom sträng, vilket gör att controller-klassen stoppar applikationsflödet och visar upp ett felmeddelande. Jag valde en tom sträng istället för null pga bokens princip **Don't Return Null**. Men lösningen är otydlig och verkar inte så robust, så det hade kanske varit bättre att låta DataExtractor kasta undantaget och sedan fånga och hantera det i controllern, eller hitta en annan lösning.  
+I kapitel 7 beskriver principerna **Use Exceptions Rather than Return Codes** och **Write Your Try-Catch-Finally Statement First** att fel ska hanteras med undantag, och try-catch block ska skrivas först. I L2 modulen kastas undantag om valideringsfel uppstår. I applikationen kan det främst inträffa fel där externa API:er anropas, så jag har använt try-catch block för att fånga alla eventuella fel och sedan låtit controller-klassen visa upp ett användarvänligt felmeddelande på appen.  
+  
+I klassen DataExtractor använde jag dock en lösning som förmodligen inte var bra. Ifall API-anropet misslyckas låter jag klassen fånga felet i en try-catch och returnera en tom sträng, vilket gör att controller-klassen stoppar applikationsflödet och visar upp ett felmeddelande. Jag valde en tom sträng istället för null pga bokens princip **Don't Return Null**. Men lösningen är otydlig och verkar inte så robust, så det hade kanske varit bättre att låta DataExtractor kasta undantaget och sedan fånga och hantera det i controllern, eller hitta en annan lösning.  
   
 ![C7](/images/code/chapter7.png)  
 ![C7.2](/images/code/chapter7_2.png)
 
 ---
 ## Kapitel 8 Gränser
-Enligt kapitel 8s princip **Clean Boundaries** ska extern kod alltid isoleras från ens egen kod eftersom man inte har kontroll över ändringar som kan göras i den externa modulen. I den här applikation är det två externa system som anropas, L2 modulen och World Banks API. Jag har isolerat modulanropen i en separat webbkomponent så att resten av applikation fungerar som vanligt ifall problem skulle inträffa i modulen. För att isolera anropen till World Bank API:et har jag lagt dem i en separat klass, DataExtractor, och lagrat data i JSON-filer som kan användas som fallback ifall det blir problem med API:et. Jag valde JSON-filer eftersom det är lätt att spara ned dem i public/ mappen och låta applikationen hämta dem ifall det behövs. De innehåller samma data så slutanvändare skulle inte märka någon skillnad när de använder appen. Men det finns säkerligen andra och bättre lösningar på problemet.  
+Enligt kapitel 8s princip **Clean Boundaries** ska extern kod alltid isoleras från ens egen kod eftersom man inte har kontroll över ändringar som kan göras i den externa modulen. I den här applikation är det två externa system som anropas, L2 modulen och World Banks API. Jag har isolerat modulanropen i en separat webbkomponent så att resten av applikation fungerar som vanligt ifall problem skulle inträffa i modulen.  
+  
+För att isolera anropen till World Banks API har jag lagt dem i en separat klass, DataExtractor, och lagrat data i JSON-filer som kan användas som fallback ifall det blir problem med API:et. Jag valde JSON-filer eftersom det är lätt att spara ned dem i public/ mappen och låta applikationen hämta dem ifall det behövs. De innehåller samma data så slutanvändare skulle inte märka någon skillnad när de använder appen. Men det finns säkerligen andra och bättre lösningar på problemet.  
   
 ![C8](/images/code/chapter8.png)
   
