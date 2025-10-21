@@ -21,11 +21,10 @@
 # Unit tests
 [Controller tests](/tests/controller.spec.js)  
 [Model tests](/tests/model.spec.js)    
-[Coverage](https://github.com/aangelinux/1DV610-L3/actions/workflows/github-actions-demo.yml)  
   
-![badge](https://img.shields.io/badge/unit_tests-7_pass_0_fail-green)  
+![badge](https://img.shields.io/badge/unit_tests-11_pass_0_fail-green)  
 
 
 ---
 # Summary
-Manual tests are done to ensure that all UI components work as intended. Unit tests make sure data is being fetched, filtered, and parsed correctly. They run automatically when pushing to the remote repo.
+Manual test ensure that all UI components work as intended. Unit tests make sure data handling works properly and that the controller handles DOM events correctly. All unit tests run automatically with GitHub Actions when pushing to the repo.

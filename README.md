@@ -14,7 +14,7 @@ Contributions are welcome:
 - Follow the code style, write clear commit messages.
 - Open a pull request and describe your changes.
 - For bugfixes/requests, open an issue.
-- Run Jest unit tests with ```npm test```.
+- Testing manually or with unit tests is encouraged.
   
 ## Documentation
 [Specification](/docs/requirements.md)  
