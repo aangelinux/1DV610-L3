@@ -1,5 +1,5 @@
 /**
- * @module Defines unit tests for all data handling.
+ * @module Tests all data handling logic.
  */
 
 import { describe, test, expect, jest } from "@jest/globals"

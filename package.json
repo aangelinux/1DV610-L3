@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/aangelinux/1DV610-L3.git"
   },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
   "author": "Angelina Larsson",
   "license": "MIT",
   "dependencies": {

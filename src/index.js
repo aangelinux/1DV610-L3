@@ -12,13 +12,12 @@ import { WorldExplorer } from "./controller/worldExplorer"
 function main() {
 	const datasetConfig = new DatasetConfig()
 	const filterConfig = new FilterConfig()
-	const dependencies = {
+	
+	new WorldExplorer({
 		extractor: new DataExtractor(datasetConfig),
 		filter: new DataFilter(filterConfig),
 		parser: new DataParser(datasetConfig),
-	}
-
-	new WorldExplorer(dependencies)
+	})
 }
 
 main()

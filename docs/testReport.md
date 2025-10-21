@@ -19,7 +19,8 @@
 
 ---  
 # Unit tests
-[Unit tests](/tests/unit.spec.js)  
+[Controller tests](/tests/controller.spec.js)  
+[Model tests](/tests/model.spec.js)    
 [Coverage](https://github.com/aangelinux/1DV610-L3/actions/workflows/github-actions-demo.yml)  
   
 ![badge](https://img.shields.io/badge/unit_tests-7_pass_0_fail-green)  
